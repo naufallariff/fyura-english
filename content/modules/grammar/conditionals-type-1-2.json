@@ -1,0 +1,171 @@
+{
+    "id": "int-gram-conditionals",
+    "slug": "conditionals-type-1-2",
+    "tier": "intermediate",
+    "category": "grammar",
+    "layoutVariant": "comparative-split",
+    "order": 18,
+    "title": "Conditionals (Type 1 & Type 2): Real Plans vs. Hypothetical Scenarios",
+    "subtitle": "CEFR B1–B2 • Likely Future Outcomes vs. Imagined Present Alternatives",
+    "estimatedMinutes": 20,
+    "topics": [
+        {
+            "id": "first-conditional",
+            "badgeNumber": 1,
+            "colSpan": "half",
+            "tags": [
+                "Conditionals",
+                "Real Future"
+            ],
+            "title": "1. First Conditional (Real & Likely Future)",
+            "subtitle": "If + Simple Present → Will + Verb-1",
+            "explanation": "Digunakan untuk merencanakan skenario nyata yang sangat mungkin terjadi di masa depan beserta konsekuensinya ('Jika syarat A terpenuhi nanti, maka hasil B akan terjadi').",
+            "rationale": "Meskipun merujuk masa depan, klausa setelah 'If' memakai Simple Present sebagai syarat, sedangkan klausa hasil memakai 'will/can/should + V1'.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "If + Subject + Simple Present, Subject + will ('ll) / can + Verb-1"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "If + Subject + don't/doesn't + V1, Subject + won't + Verb-1"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "What will + Subject + do + if + Subject + Simple Present?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "PROJECT CONTINGENCY PLANNING",
+                    "register": "Workplace",
+                    "positive": "If all integration tests pass, we'll deploy to production tonight.",
+                    "negative": "If we don't optimize the images, the page won't load fast on mobile.",
+                    "question": "What will happen if the API rate limit exceeds 1,000 requests?",
+                    "nuanceNote": "Skenario ini realistis dan sedang diperhitungkan secara aktif.",
+                    "xrayTokens": [
+                        {
+                            "word": "If all integration tests pass",
+                            "role": "Condition Clause (Simple Present)",
+                            "nuance": "Jangan memakai 'will' di dalam klausa 'If'",
+                            "colorTag": "subject"
+                        },
+                        {
+                            "word": "we'll deploy",
+                            "role": "Result Clause (Future Will)",
+                            "nuance": "Konsekuensi nyata jika syarat terpenuhi",
+                            "colorTag": "verb"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Dilarang Memakai 'Will' Setelah 'If' (atau 'When / As soon as')",
+                    "explanation": "Kata penghubung waktu dan syarat (if, when, as soon as, before, until) selalu diikuti Simple Present, bukan 'will'.",
+                    "wrongExample": "If it will rain tomorrow, we will cancel the outdoor event.",
+                    "correctExample": "If it rains tomorrow, we will cancel the outdoor event."
+                }
+            ],
+            "tipsAndTricks": [
+                "Kata 'unless' berarti 'if... not' (Unless we cache the data = If we don't cache the data)."
+            ]
+        },
+        {
+            "id": "second-conditional",
+            "badgeNumber": 2,
+            "colSpan": "half",
+            "tags": [
+                "Conditionals",
+                "Hypothetical"
+            ],
+            "title": "2. Second Conditional (Imaginary & Hypothetical)",
+            "subtitle": "If + Simple Past → Would + Verb-1",
+            "explanation": "Digunakan untuk membayangkan situasi yang tidak nyata sekarang, berandai-andai tentang kondisi berbeda, atau memberikan saran secara diplomatis ('Seandainya saja sekarang..., maka aku akan...').",
+            "rationale": "Bentuk lampau (Verb-2 / were) di sini bukan menunjukkan waktu masa lalu, melainkan 'jarak psikologis' dari kenyataan saat ini.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "If + Subject + Simple Past (V2 / were), Subject + would ('d) / could + V1"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "If + Subject + didn't + V1 / weren't, Subject + wouldn't + V1"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "What would + Subject + do + if + Subject + Simple Past?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "HYPOTHETICAL DESIGN & ADVICE",
+                    "register": "Workplace",
+                    "positive": "If we had a larger budget, we would build native iOS and Android apps.",
+                    "negative": "If I were you, I wouldn't rewrite the entire backend from scratch.",
+                    "question": "What would you change if you redesigned the onboarding flow?",
+                    "nuanceNote": "Faktanya saat ini budget terbatas, sehingga kita membayangkan skenario alternatif dengan 'had' dan 'would'.",
+                    "xrayTokens": [
+                        {
+                            "word": "If I were you",
+                            "role": "Subjunctive Hypothetical Frame",
+                            "nuance": "Frasa standar B2 untuk memberi saran halus ('Kalau aku jadi kamu...')",
+                            "colorTag": "hack"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Gunakan 'Were' untuk Semua Subjek dalam Pengandaian Formal",
+                    "explanation": "Dalam Second Conditional, 'If I were...', 'If he were...', dan 'If it were...' dianggap standar emas dibandingkan 'was'.",
+                    "wrongExample": "If I was the product owner, I would prioritize usability.",
+                    "correctExample": "If I were the product owner, I would prioritize usability."
+                }
+            ],
+            "tipsAndTricks": [
+                "Perbedaan rasa: 'If I win' (kamu yakin punya peluang besar menang) vs. 'If I won' (kamu hanya berandai-andai iseng)."
+            ]
+        }
+    ],
+    "practiceQuiz": [
+        {
+            "id": "q-int-cond-01",
+            "topicId": "second-conditional",
+            "scenario": {
+                "setting": "Diskusi Teknis dengan Rekan Kerja",
+                "interlocutor": "Rekanmu ragu apakah harus menghapus database lama hari ini tanpa backup",
+                "intent": "Memberikan saran pencegahan menggunakan pola pengandaian halus."
+            },
+            "question": "Kalimat mana yang paling natural dan gramatikal?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "If I were you, I wouldn't drop that table without a backup.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "b",
+                    "text": "If I am you, I won't drop that table without a backup.",
+                    "isCorrect": false
+                },
+                {
+                    "id": "c",
+                    "text": "If I would be you, I didn't drop that table without a backup.",
+                    "isCorrect": false
+                }
+            ],
+            "deepExplanation": {
+                "whyCorrect": "Karena aku mustahil menjadi dirimu (situasi imajiner), gunakan Second Conditional: 'If I were you, I wouldn't + V1'.",
+                "whyOthersFail": "Opsi A memakai First Conditional untuk hal yang mustahil, dan Opsi C menukar posisi 'would' dan past tense.",
+                "realLifeHack": "Hafalkan satu paket: 'If I were you, I'd + V1' sebagai senjata saran paling sopan dalam bahasa Inggris."
+            }
+        }
+    ]
+}

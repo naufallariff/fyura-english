@@ -1,0 +1,165 @@
+{
+    "id": "int-pos-nouns",
+    "slug": "abstract-collective-nouns",
+    "tier": "intermediate",
+    "category": "part-of-speech",
+    "layoutVariant": "comparative-split",
+    "order": 11,
+    "title": "Abstract & Collective Nouns: Conceptual Framing & Group Agreement",
+    "subtitle": "CEFR B1–B2 • Intangible Concepts, Institutional Entities & Verb Agreement",
+    "estimatedMinutes": 18,
+    "topics": [
+        {
+            "id": "abstract-nouns-framing",
+            "badgeNumber": 1,
+            "colSpan": "half",
+            "tags": [
+                "Nouns",
+                "Abstract Concepts"
+            ],
+            "title": "1. Abstract Nouns (Ideas, Qualities & States)",
+            "subtitle": "Converting Adjectives and Verbs into Analytical Concepts",
+            "explanation": "Kata benda abstrak merujuk pada konsep yang tidak bisa disentuh secara fisik seperti kualitas, emosi, atau proses (reliability, efficiency, accountability, transparency). Di level B1–B2, kata benda ini menjadi tulang punggung komunikasi profesional dan laporan kerja.",
+            "rationale": "Daripada mengulang kalimat panjang ('system works fast and never crashes'), penutur tingkat lanjut merangkumnya menjadi satu konsep padat ('high reliability and efficiency') agar argumen terdengar ringkas dan berbobot.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "S + V + [Abstract Noun: -ness / -ity / -tion / -ment] + Preposition"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "S + Aux + not + have / show + [Abstract Noun]"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "How does + S + improve / measure + [Abstract Noun]?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "WORKPLACE & PRODUCT STRATEGY",
+                    "register": "Workplace",
+                    "positive": "Clear communication builds strong trust and accountability across teams.",
+                    "negative": "The previous workflow didn't provide enough visibility into deadlines.",
+                    "question": "How can we improve latency and reliability in our API?",
+                    "nuanceNote": "Sebagian besar abstract noun bersifat Uncountable, sehingga tidak memakai 'a/an' maupun akhiran '-s' saat dibahas secara umum.",
+                    "xrayTokens": [
+                        {
+                            "word": "accountability",
+                            "role": "Uncountable Abstract Noun",
+                            "nuance": "Konsep tanggung jawab profesional tanpa artikel 'a' atau '-s'",
+                            "colorTag": "subject"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Abstract Noun yang Bisa Dihitung Saat Merujuk Kejadian Spesifik",
+                    "explanation": "Kata seperti 'opportunity', 'challenge', 'decision', dan 'solution' adalah abstract noun yang BISA dihitung (an opportunity, two challenges).",
+                    "wrongExample": "We faced many difficult challenge during migration.",
+                    "correctExample": "We faced many difficult challenges during migration."
+                }
+            ],
+            "tipsAndTricks": [
+                "Kenali akhiran pembentuk abstract noun: -tion/-sion (decision), -ity (scalability), -ment (deployment), -ness (awareness), -ship (leadership)."
+            ]
+        },
+        {
+            "id": "collective-nouns-agreement",
+            "badgeNumber": 2,
+            "colSpan": "half",
+            "tags": [
+                "Nouns",
+                "Collective Entities"
+            ],
+            "title": "2. Collective Nouns (Team, Staff, Committee)",
+            "subtitle": "Single Institutional Unit vs. Individual Members",
+            "explanation": "Kata benda kolektif merujuk pada sekumpulan orang atau objek sebagai satu kesatuan tunggal (team, company, government, audience, staff, board). Kata kerjanya mengikuti apakah kelompok itu bertindak serempak atau sebagai individu.",
+            "rationale": "Dalam bahasa Inggris Amerika (US) yang menjadi standar industri teknologi global, kata benda kolektif hampir selalu diperlakukan sebagai tunggal (singular) karena dipandang sebagai satu organisasi utuh.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "The [team / company / staff] + Singular Verb (is / has / reviews)"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "The [team / committee] + doesn't / hasn't + Verb-1"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Is / Has + the [team / board] + Verb / Adjective?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "ORGANIZATIONAL UPDATES",
+                    "register": "Workplace",
+                    "positive": "The engineering team has approved the new architecture.",
+                    "negative": "The company doesn't allow unencrypted connections in production.",
+                    "question": "Is the product team ready for tomorrow's demo?",
+                    "nuanceNote": "Meskipun anggota tim berjumlah 10 orang, subjeknya adalah 1 unit ('The engineering team'), sehingga memakai 'has' dan 'is'.",
+                    "xrayTokens": [
+                        {
+                            "word": "The engineering team has",
+                            "role": "Collective Noun + Singular Auxiliary",
+                            "nuance": "Dipandang sebagai satu entitas organisasi tunggal",
+                            "colorTag": "verb"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Kata 'Police' dan 'People' Selalu Jamak",
+                    "explanation": "Tidak seperti 'team' atau 'staff', kata 'police' dan 'people' selalu memakai kata kerja jamak (are, have, do).",
+                    "wrongExample": "The police is investigating the cybersecurity breach.",
+                    "correctExample": "The police are investigating the cybersecurity breach."
+                }
+            ],
+            "tipsAndTricks": [
+                "Jika ingin merujuk ke masing-masing orang di dalam kelompok secara eksplisit, tambahkan kata 'members' (The team members are discussing...)."
+            ]
+        }
+    ],
+    "practiceQuiz": [
+        {
+            "id": "q-int-nouns-01",
+            "topicId": "collective-nouns-agreement",
+            "scenario": {
+                "setting": "Email Pembaruan Proyek ke Klien Internasional",
+                "interlocutor": "Stakeholder proyek menanyakan status persetujuan desain",
+                "intent": "Menyampaikan keputusan tim menggunakan kesesuaian subjek-predikat standar US English."
+            },
+            "question": "Kalimat mana yang paling tepat untuk email bisnis?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Our design team have finalized the prototype.",
+                    "isCorrect": false
+                },
+                {
+                    "id": "b",
+                    "text": "Our design team has finalized the prototype.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "c",
+                    "text": "Our design teams has finalized the prototype.",
+                    "isCorrect": false
+                }
+            ],
+            "deepExplanation": {
+                "whyCorrect": "'Our design team' adalah satu kesatuan unit kolektif sehingga berpasangan dengan kata kerja bantu tunggal 'has'.",
+                "whyOthersFail": "Opsi A kurang konsisten dengan standar korespondensi bisnis US, dan Opsi C mencampur subjek jamak dengan verb tunggal.",
+                "realLifeHack": "Ganti sementara kata 'the team' dengan 'it' di kepalamu: karena kita berkata 'It has finalized', maka 'The team has finalized' pasti benar."
+            }
+        }
+    ]
+}

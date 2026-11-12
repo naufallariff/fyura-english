@@ -1,0 +1,165 @@
+{
+    "id": "beg-gram-present-cont",
+    "slug": "present-continuous",
+    "tier": "beginner",
+    "category": "grammar",
+    "layoutVariant": "asymmetric-spotlight",
+    "order": 8,
+    "title": "Present Continuous: Actions in Progress & Temporary Projects",
+    "subtitle": "CEFR A1–A2 • Live Moment Activity, Ongoing Sprints & Confirmed Arrangements",
+    "estimatedMinutes": 16,
+    "topics": [
+        {
+            "id": "present-cont-now-temporary",
+            "badgeNumber": 1,
+            "colSpan": "medium",
+            "tags": [
+                "Present",
+                "Continuous"
+            ],
+            "title": "1. Live Actions & Temporary Projects",
+            "subtitle": "Happening Right Now or Around the Current Period",
+            "explanation": "Gabungan Present (sekarang) dan Continuous (sedang berjalan). Dipakai untuk aktivitas yang sedang terjadi tepat detik ini saat berbicara, maupun proyek sementara yang sedang dikerjakan minggu/bulan ini.",
+            "rationale": "Bentuk 'be + V-ing' memberi sinyal bahwa aksi tersebut memiliki titik awal dan titik akhir (sedang dalam proses berjalan, belum selesai).",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "Subject + am / is / are + V-ing + Object"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "Subject + am / is / are + not + V-ing + Object"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Am / Is / Are + Subject + V-ing + Object?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "RIGHT NOW & THIS MONTH",
+                    "register": "Workplace",
+                    "positive": "I am refactoring the frontend layout this week.",
+                    "negative": "The API server isn't responding right now.",
+                    "question": "Are you working on the authentication module today?",
+                    "nuanceNote": "Meskipun saat ngobrol kamu sedang memegang gelas kopi, 'I am refactoring... this week' tetap benar karena proses proyeknya sedang berlangsung.",
+                    "xrayTokens": [
+                        {
+                            "word": "am refactoring",
+                            "role": "Present Continuous Predicate",
+                            "nuance": "Proyek aktif sementara dalam rentang minggu ini",
+                            "colorTag": "verb"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Aturan Ejaan V-ing (Drop -e & Double Consonant)",
+                    "explanation": "Akhiran -e bisu dihapus sebelum -ing (write → writing, make → making). Kata 1 suku kata berpola konsonan-vokal-konsonan digandakan huruf akhirnya (run → running, plan → planning).",
+                    "wrongExample": "She is writeing code and planing the sprint.",
+                    "correctExample": "She is writing code and planning the sprint."
+                }
+            ],
+            "tipsAndTricks": [
+                "Jangan pernah melupakan 'am/is/are' sebelum V-ing. Kalimat 'I working now' tidak lengkap tanpa 'am'."
+            ]
+        },
+        {
+            "id": "present-cont-arrangements",
+            "badgeNumber": 2,
+            "colSpan": "narrow",
+            "tags": [
+                "Present",
+                "Near Future"
+            ],
+            "title": "2. Confirmed Personal Arrangements",
+            "subtitle": "Social & Work Appointments Already Agreed Upon",
+            "explanation": "Digunakan untuk rencana pribadi atau agenda pertemuan terdekat yang sudah disepakati bersama pihak lain (sudah masuk kalender).",
+            "rationale": "Karena persiapannya sudah berjalan dari sekarang, penutur asli menganggap agenda tersebut sudah dalam proses menuju kejadian.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "S + am/is/are + V-ing + [Future Time Marker]"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "S + am/is/are + not + V-ing + [Future Time Marker]"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "What + are/is + S + V-ing + [Future Time Marker]?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "CALENDAR APPOINTMENTS",
+                    "register": "Workplace",
+                    "positive": "We are meeting the client at 10 AM tomorrow.",
+                    "negative": "I'm not attending the offline event this Saturday.",
+                    "question": "What are you doing tonight after work?",
+                    "nuanceNote": "Menunjukkan janji temu yang sudah pasti waktunya.",
+                    "xrayTokens": [
+                        {
+                            "word": "are meeting",
+                            "role": "Arranged Future Continuous",
+                            "nuance": "Janji temu yang sudah dikonfirmasi dengan klien",
+                            "colorTag": "hack"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Wajib Ada Penanda Waktu Masa Depan",
+                    "explanation": "Jika dipakai untuk janji mendatang, sertakan kata waktu (tonight, tomorrow, next week) agar tidak dikira sedang terjadi detik ini.",
+                    "wrongExample": "I am meeting my mentor. (Terdengar sedang bertemu detik ini)",
+                    "correctExample": "I am meeting my mentor at 4 PM today."
+                }
+            ],
+            "tipsAndTricks": [
+                "Pertanyaan basa-basi paling alami untuk menanyakan rencana akhir pekan teman: 'What are you doing this weekend?'"
+            ]
+        }
+    ],
+    "practiceQuiz": [
+        {
+            "id": "q-pcont-01",
+            "topicId": "present-cont-arrangements",
+            "scenario": {
+                "setting": "Obrolan Setelah Jam Kerja",
+                "interlocutor": "Rekan kerja mengajak makan malam nanti malam",
+                "intent": "Menjelaskan bahwa kamu sudah punya janji terjadwal dengan tim desain."
+            },
+            "question": "Jawaban mana yang paling alami?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Sorry, I meet the design team at 7 PM tonight.",
+                    "isCorrect": false
+                },
+                {
+                    "id": "b",
+                    "text": "Sorry, I'm meeting the design team at 7 PM tonight.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "c",
+                    "text": "Sorry, I meeting the design team at 7 PM tonight.",
+                    "isCorrect": false
+                }
+            ],
+            "deepExplanation": {
+                "whyCorrect": "'I'm meeting... tonight' adalah bentuk paling alami untuk agenda pertemuan yang sudah dijadwalkan.",
+                "whyOthersFail": "Opsi A kurang alami untuk janji pribadi, dan Opsi C kehilangan auxiliary 'am'.",
+                "realLifeHack": "Gunakan contractions ('I'm', 'We're', 'She's') saat berbicara agar ritme kalimat terdengar halus."
+            }
+        }
+    ]
+}

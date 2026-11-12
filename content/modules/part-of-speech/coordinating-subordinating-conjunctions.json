@@ -1,0 +1,171 @@
+{
+    "id": "int-pos-conjunctions",
+    "slug": "coordinating-subordinating-conjunctions",
+    "tier": "intermediate",
+    "category": "part-of-speech",
+    "layoutVariant": "comparative-split",
+    "order": 14,
+    "title": "Conjunctions & Connectors: Cause, Contrast & Logical Flow",
+    "subtitle": "CEFR B1–B2 • Subordinating Clauses (Although, Despite, Since) & Discourse Markers",
+    "estimatedMinutes": 18,
+    "topics": [
+        {
+            "id": "contrast-connectors",
+            "badgeNumber": 1,
+            "colSpan": "half",
+            "tags": [
+                "Conjunctions",
+                "Contrast"
+            ],
+            "title": "1. Contrast Connectors (Although, Even Though vs. Despite)",
+            "subtitle": "Clause Connectors vs. Noun Phrase Prepositions",
+            "explanation": "Digunakan untuk menghubungkan dua ide yang bertentangan. 'Although / Even though' wajib diikuti subjek + kata kerja (klausa lengkap), sedangkan 'Despite / In spite of' hanya diikuti kata benda atau V-ing.",
+            "rationale": "Kesalahan paling sering pada pembelajar B1 adalah menaruh kalimat lengkap langsung setelah 'despite'. Memisahkan keduanya menjaga struktur kalimat tetap kokoh.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "Although / Even though + [S + V], [Main Clause]  |  Despite + [Noun / V-ing], [Main Clause]"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "Although + S + Aux + not + V, [Result]  |  Despite + [Negative Noun], [Result]"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Did + S + V + despite + [Noun / V-ing]?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "OVERCOMING OBSTACLES",
+                    "register": "Workplace",
+                    "positive": "Although the deadline was tight, we shipped the feature on time.",
+                    "negative": "Despite having limited resources, the team didn't compromise on quality.",
+                    "question": "Did you finish the migration despite the network outage?",
+                    "nuanceNote": "Setelah 'despite', kata kerja 'have' berubah menjadi gerund 'having'.",
+                    "xrayTokens": [
+                        {
+                            "word": "Although the deadline was tight",
+                            "role": "Subordinating Conjunction + Clause",
+                            "nuance": "Diikuti Subjek (deadline) + Verb (was)",
+                            "colorTag": "subject"
+                        },
+                        {
+                            "word": "Despite having",
+                            "role": "Preposition + Gerund (V-ing)",
+                            "nuance": "Tidak boleh diikuti kalimat utuh tanpa 'the fact that'",
+                            "colorTag": "hack"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Jangan Menggabungkan 'Although' dan 'But' dalam Satu Kalimat",
+                    "explanation": "Dalam bahasa Indonesia kita sering berkata 'Meskipun..., tetapi...'. Dalam bahasa Inggris, pilih salah satu saja.",
+                    "wrongExample": "Although it was raining, but we still went out.",
+                    "correctExample": "Although it was raining, we still went out."
+                }
+            ],
+            "tipsAndTricks": [
+                "Jika terlanjur mengucapkan 'Despite...' dan ingin menyambungnya dengan kalimat utuh, tambahkan jembatan 'the fact that': 'Despite the fact that it rained...'"
+            ]
+        },
+        {
+            "id": "cause-result-connectors",
+            "badgeNumber": 2,
+            "colSpan": "half",
+            "tags": [
+                "Conjunctions",
+                "Cause & Effect"
+            ],
+            "title": "2. Cause & Result Connectors (Since, As, Therefore, Consequently)",
+            "subtitle": "Articulating Logical Reasoning in Discussions & Reports",
+            "explanation": "Selain 'because', penutur B1–B2 menggunakan 'since' dan 'as' untuk alasan yang sudah dipahami bersama, serta 'therefore' atau 'as a result' untuk menarik kesimpulan logis.",
+            "rationale": "Memvariasikan kata hubung sebab-akibat membuat presentasi bisnis dan argumen tertulis terdengar terstruktur dan meyakinkan.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "Since / As + [Reason Clause], [Result Clause]  |  [Cause]. Therefore, [Result]."
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "Since + S + Aux + not + V, [Alternative Action]"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Since + [Condition], should we + V1?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "ARCHITECTURAL & BUSINESS DECISIONS",
+                    "register": "Workplace",
+                    "positive": "Since traffic peaks at noon, we configured auto-scaling in advance.",
+                    "negative": "The third-party API was deprecated; therefore, we didn't integrate it.",
+                    "question": "Since everyone is online, shall we start the sprint review?",
+                    "nuanceNote": "'Since' di awal kalimat memberikan konteks alasan secara halus sebelum menyampaikan keputusan utama.",
+                    "xrayTokens": [
+                        {
+                            "word": "Since",
+                            "role": "Causal Subordinator",
+                            "nuance": "Bermakna 'karena/mengingat' (bukan 'sejak' dalam konteks ini)",
+                            "colorTag": "nuance"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "'Because' (Klausa) vs. 'Because of' (Frasa Benda)",
+                    "explanation": "'Because' diikuti S + V, sedangkan 'because of' atau 'due to' diikuti kata benda.",
+                    "wrongExample": "The flight was delayed because heavy fog.",
+                    "correctExample": "The flight was delayed because of heavy fog."
+                }
+            ],
+            "tipsAndTricks": [
+                "Gunakan 'Due to + Noun' untuk laporan kerja yang formal (e.g., 'Due to server maintenance, the portal will be offline')."
+            ]
+        }
+    ],
+    "practiceQuiz": [
+        {
+            "id": "q-int-conj-01",
+            "topicId": "contrast-connectors",
+            "scenario": {
+                "setting": "Laporan Pasca-Insiden (Post-Mortem)",
+                "interlocutor": "Engineering Manager membaca ringkasan pemulihan sistem",
+                "intent": "Menyampaikan kontras antara tingginya trafik dan stabilitas sistem."
+            },
+            "question": "Pilih kalimat yang benar secara tata bahasa:",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Despite traffic increased by 300%, the server stayed online.",
+                    "isCorrect": false
+                },
+                {
+                    "id": "b",
+                    "text": "Despite a 300% surge in traffic, the server stayed online.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "c",
+                    "text": "Although a 300% surge in traffic, the server stayed online.",
+                    "isCorrect": false
+                }
+            ],
+            "deepExplanation": {
+                "whyCorrect": "'Despite' diikuti frasa kata benda ('a 300% surge in traffic') tanpa kata kerja di dalamnya.",
+                "whyOthersFail": "Opsi A menaruh klausa (S + V) setelah 'despite', dan Opsi C menaruh frasa benda tanpa kata kerja setelah 'although'.",
+                "realLifeHack": "Rumus anti-salah: Although + S + V | Despite + Noun / V-ing."
+            }
+        }
+    ]
+}

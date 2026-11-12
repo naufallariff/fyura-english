@@ -1,0 +1,177 @@
+{
+    "id": "beg-pos-pronouns",
+    "slug": "pronouns-case",
+    "tier": "beginner",
+    "category": "part-of-speech",
+    "layoutVariant": "comparative-split",
+    "order": 3,
+    "title": "Pronouns: Subject, Object & Possessive Case Systems",
+    "subtitle": "CEFR A1–A2 • Grammatical Case Shifts & Reference Clarity",
+    "estimatedMinutes": 15,
+    "topics": [
+        {
+            "id": "subject-vs-object-pronouns",
+            "badgeNumber": 1,
+            "colSpan": "half",
+            "tags": [
+                "Pronouns",
+                "Case System"
+            ],
+            "title": "1. Subject vs. Object Pronouns",
+            "subtitle": "Actor Position vs. Receiver Position",
+            "explanation": "Kata ganti berubah bentuk tergantung posisinya dalam kalimat: apakah ia pelaku aksi sebelum kata kerja (I, you, he, she, it, we, they) atau penerima aksi setelah kata kerja/preposisi (me, you, him, her, it, us, them).",
+            "rationale": "Dalam bahasa Indonesia kata 'dia' atau 'mereka' tidak berubah di depan maupun di belakang kalimat. Dalam bahasa Inggris, posisi menentukan bentuk kata agar otak pendengar langsung tahu siapa melakukan apa kepada siapa.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "[Subject: I/He/She/We/They] + Verb + [Object: me/him/her/us/them]"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "[Subject] + Aux + not + Verb + [Object / Preposition + Object]"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Aux + [Subject] + Verb + [Object]?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "TEAM COLLABORATION",
+                    "register": "Workplace",
+                    "positive": "She sent us the updated API documentation this morning.",
+                    "negative": "They didn't invite him to the sprint planning session.",
+                    "question": "Can you share the design link with them?",
+                    "nuanceNote": "Setelah kata kerja 'sent/invite' dan preposisi 'with/to/for', wajib memakai bentuk Object (us, him, them).",
+                    "xrayTokens": [
+                        {
+                            "word": "She",
+                            "role": "Subject Pronoun",
+                            "nuance": "Pelaku aksi di awal kalimat",
+                            "colorTag": "subject"
+                        },
+                        {
+                            "word": "us",
+                            "role": "Indirect Object Pronoun",
+                            "nuance": "Penerima dokumen (bukan 'we')",
+                            "colorTag": "nuance"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Jebakan 'Me and My Friend' di Awal Kalimat",
+                    "explanation": "Saat menyebut dua pelaku di awal kalimat, keduanya harus berbentuk Subject.",
+                    "wrongExample": "Me and Naufal are building a new web app.",
+                    "correctExample": "Naufal and I are building a new web app."
+                }
+            ],
+            "tipsAndTricks": [
+                "Tes Hapus Pasangan: Coba hapus nama orang lain di kalimat ('Naufal and I went...'). Kamu tidak akan pernah berkata 'Me went', pasti 'I went'."
+            ]
+        },
+        {
+            "id": "possessive-adjectives-vs-pronouns",
+            "badgeNumber": 2,
+            "colSpan": "half",
+            "tags": [
+                "Pronouns",
+                "Possession"
+            ],
+            "title": "2. Possessive Adjectives vs. Possessive Pronouns",
+            "subtitle": "Determiner + Noun vs. Standalone Ownership",
+            "explanation": "Possessive Adjective (my, your, his, her, its, our, their) wajib diikuti kata benda, sedangkan Possessive Pronoun (mine, yours, his, hers, ours, theirs) berdiri sendiri menggantikan kata benda agar tidak diulang.",
+            "rationale": "Penutur asli menghindari pengulangan kata benda yang sama dalam dua kalimat berdekatan dengan meleburkan pemilik dan bendanya menjadi satu kata mandiri.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "[My/Your/Their + Noun]  |  [Mine/Yours/Theirs] (Standalone)"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "This isn't [my + Noun] / This isn't [mine]."
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Is this [your + Noun] or [mine / hers / theirs]?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "WORKSPACE DEVICES",
+                    "register": "Daily Life",
+                    "positive": "My laptop is charging, so I am borrowing hers.",
+                    "negative": "That charger isn't mine; it belongs to our designer.",
+                    "question": "Is this notebook yours or theirs?",
+                    "nuanceNote": "'Hers' berarti 'her laptop', sehingga kata 'laptop' tidak perlu diulang lagi.",
+                    "xrayTokens": [
+                        {
+                            "word": "My laptop",
+                            "role": "Possessive Adjective + Noun",
+                            "nuance": "Wajib menempel pada kata benda",
+                            "colorTag": "subject"
+                        },
+                        {
+                            "word": "hers",
+                            "role": "Standalone Possessive Pronoun",
+                            "nuance": "Sudah mewakili 'her laptop'",
+                            "colorTag": "hack"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Its (Kepemilikan) vs. It's (It is / It has)",
+                    "explanation": "Kata ganti kepemilikan tidak pernah memakai tanda petik (apostrophe).",
+                    "wrongExample": "The system lost it's connection.",
+                    "correctExample": "The system lost its connection. (It's = It is)"
+                }
+            ],
+            "tipsAndTricks": [
+                "Ingat aturan sederhana: Ada benda di belakangnya = my/your/their. Tidak ada benda di belakangnya = mine/yours/theirs."
+            ]
+        }
+    ],
+    "practiceQuiz": [
+        {
+            "id": "q-pron-01",
+            "topicId": "subject-vs-object-pronouns",
+            "scenario": {
+                "setting": "Daily Standup Meeting",
+                "interlocutor": "Rekan tim menanyakan siapa yang mengirim laporan bug",
+                "intent": "Menjawab dengan struktur subjek gabungan yang benar."
+            },
+            "question": "Pilih kalimat yang paling tepat secara tata bahasa:",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Rina and me submitted the report yesterday.",
+                    "isCorrect": false
+                },
+                {
+                    "id": "b",
+                    "text": "Rina and I submitted the report yesterday.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "c",
+                    "text": "Rina and mine submitted the report yesterday.",
+                    "isCorrect": false
+                }
+            ],
+            "deepExplanation": {
+                "whyCorrect": "Posisi sebelum kata kerja 'submitted' adalah posisi subjek, sehingga wajib memakai 'I'.",
+                "whyOthersFail": "'Me' hanya untuk posisi objek, dan 'mine' adalah kata ganti kepemilikan.",
+                "realLifeHack": "Selalu letakkan nama orang lain terlebih dahulu sebelum 'I' (Rina and I) sebagai etika kesopanan standar."
+            }
+        }
+    ]
+}

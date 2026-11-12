@@ -1,0 +1,171 @@
+{
+    "id": "beg-pos-adjectives",
+    "slug": "adjectives-order",
+    "tier": "beginner",
+    "category": "part-of-speech",
+    "layoutVariant": "asymmetric-spotlight",
+    "order": 5,
+    "title": "Adjectives: Predicative Placement & Royal Order",
+    "subtitle": "CEFR A1–A2 • Pre-Nominal Modification & Multi-Adjective Sequencing",
+    "estimatedMinutes": 14,
+    "topics": [
+        {
+            "id": "adjective-placement",
+            "badgeNumber": 1,
+            "colSpan": "medium",
+            "tags": [
+                "Adjectives",
+                "Syntax"
+            ],
+            "title": "1. Attributive vs. Predicative Position",
+            "subtitle": "Before the Noun vs. After Linking Verbs",
+            "explanation": "Kata sifat (Adjective) tidak pernah berubah bentuk menjadi jamak meskipun bendanya banyak. Posisinya selalu berada SEBELUM kata benda yang dijelaskan, atau SETELAH linking verb (be, look, feel, sound).",
+            "rationale": "Berbeda dengan bahasa Indonesia yang meletakkan sifat di belakang benda ('rumah besar'), bahasa Inggris menaruh sifat di depan benda ('big house') agar pendengar langsung mendapat gambaran visual sebelum benda disebut.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "Determiner + Adjective + Noun  |  Subject + Be/Feel/Look + Adjective"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "Subject + Be + not + Adjective  |  Aux + not + have + Adj + Noun"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Is/Are + Subject + Adjective?  |  Does + Subject + look/seem + Adjective?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "PRODUCT & INTERFACE DESCRIPTION",
+                    "register": "Workplace",
+                    "positive": "We designed a clean interface that feels super responsive.",
+                    "negative": "The old dashboard wasn't intuitive for new users.",
+                    "question": "Does the new layout look clear on mobile screens?",
+                    "nuanceNote": "'Clean' diletakkan sebelum 'interface', sedangkan 'responsive' dan 'clear' diletakkan setelah 'feels/look'.",
+                    "xrayTokens": [
+                        {
+                            "word": "a clean interface",
+                            "role": "Attributive Adjective + Noun",
+                            "nuance": "Sifat mendahului benda yang dijelaskan",
+                            "colorTag": "subject"
+                        },
+                        {
+                            "word": "feels super responsive",
+                            "role": "Linking Verb + Predicative Adjective",
+                            "nuance": "Menjelaskan kondisi subjek setelah kata kerja indra",
+                            "colorTag": "nuance"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Adjective Tidak Pernah Jamak (-s)",
+                    "explanation": "Meskipun kata bendanya jamak, kata sifat di depannya tetap tunggal.",
+                    "wrongExample": "We solved three difficults problems.",
+                    "correctExample": "We solved three difficult problems."
+                }
+            ],
+            "tipsAndTricks": [
+                "Gunakan kata kerja indra (looks, sounds, feels, tastes, seems) sebagai pengganti 'is' agar deskripsimu terdengar jauh lebih natural."
+            ]
+        },
+        {
+            "id": "royal-order-adjectives",
+            "badgeNumber": 2,
+            "colSpan": "narrow",
+            "tags": [
+                "Adjectives",
+                "OSASCOMP"
+            ],
+            "title": "2. Multi-Adjective Order (OSASCOMP)",
+            "subtitle": "Opinion → Size → Age → Shape → Color → Origin → Material",
+            "explanation": "Ketika menumpuk dua atau tiga kata sifat sekaligus di depan benda, penutur asli mengikuti urutan baku: Opini subjektif dulu, baru fakta fisik (Ukuran, Umur, Warna, Asal, Bahan).",
+            "rationale": "Aturan ini membuat persepsi pendengar mengalir dari kesan umum menuju spesifikasi teknis benda secara alami.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "[Opinion] + [Size] + [Age] + [Color] + [Origin] + [Material] + Noun"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "Not + [Opinion] + [Physical Fact] + Noun"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Do you have a [Opinion] + [Size/Color] + Noun?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "DESCRIBING OBJECTS",
+                    "register": "Daily Life",
+                    "positive": "I bought a sleek new silver Japanese laptop.",
+                    "negative": "I don't like bulky old plastic keyboards.",
+                    "question": "Did you see that small black leather bag?",
+                    "nuanceNote": "Opini (sleek/bulky) selalu paling depan, tepat sebelum ukuran/umur/warna.",
+                    "xrayTokens": [
+                        {
+                            "word": "sleek new silver",
+                            "role": "Opinion → Age → Color",
+                            "nuance": "Urutan alami sebelum kata benda 'laptop'",
+                            "colorTag": "hack"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Jangan Menumpuk Lebih dari 3 Kata Sifat",
+                    "explanation": "Secara tata bahasa urutan OSASCOMP bisa panjang, tetapi dalam komunikasi nyata maksimal 2–3 kata sifat agar tetap enak dibaca.",
+                    "wrongExample": "A beautiful big new square white Indonesian wooden table.",
+                    "correctExample": "A beautiful large wooden table."
+                }
+            ],
+            "tipsAndTricks": [
+                "Cukup ingat prinsip singkat: 'Opini dulu, Fakta belakangan' (a great small café, bukan a small great café)."
+            ]
+        }
+    ],
+    "practiceQuiz": [
+        {
+            "id": "q-adj-01",
+            "topicId": "royal-order-adjectives",
+            "scenario": {
+                "setting": "Ulasan Perangkat Kerja",
+                "interlocutor": "Teman menanyakan tas laptop barumu",
+                "intent": "Mendeskripsikan tas dengan urutan kata sifat standar."
+            },
+            "question": "Urutan frasa mana yang terdengar paling alami bagi penutur asli?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "A black minimalist durable backpack",
+                    "isCorrect": false
+                },
+                {
+                    "id": "b",
+                    "text": "A durable minimalist black backpack",
+                    "isCorrect": true
+                },
+                {
+                    "id": "c",
+                    "text": "A backpack durable black minimalist",
+                    "isCorrect": false
+                }
+            ],
+            "deepExplanation": {
+                "whyCorrect": "Opini/kualitas (durable, minimalist) mendahului warna (black), dan semuanya berada sebelum kata benda (backpack).",
+                "whyOthersFail": "Opsi A menaruh warna di depan opini, sedangkan Opsi C memakai urutan bahasa Indonesia.",
+                "realLifeHack": "Warna hampir selalu menempel paling dekat dengan kata benda utamanya (black backpack, white mug)."
+            }
+        }
+    ]
+}

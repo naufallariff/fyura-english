@@ -1,0 +1,165 @@
+{
+    "id": "int-gram-gerund-inf",
+    "slug": "gerunds-vs-infinitives",
+    "tier": "intermediate",
+    "category": "grammar",
+    "layoutVariant": "comparative-split",
+    "order": 19,
+    "title": "Gerunds vs. Infinitives: Verb Complement Patterns",
+    "subtitle": "CEFR B1–B2 • V-ing as Nominal Activity vs. To + V1 as Future Goal",
+    "estimatedMinutes": 20,
+    "topics": [
+        {
+            "id": "gerund-patterns",
+            "badgeNumber": 1,
+            "colSpan": "half",
+            "tags": [
+                "Verb Patterns",
+                "Gerund (V-ing)"
+            ],
+            "title": "1. Gerunds (Verb-ing as a Noun Activity)",
+            "subtitle": "After Prepositions, As Sentence Subjects & After Specific Verbs",
+            "explanation": "Gerund adalah kata kerja yang diberi akhiran '-ing' agar berfungsi sebagai kata benda (aktivitas). Wajib dipakai sebagai subjek kalimat, setelah preposisi (in, on, at, for, without, about), dan setelah kata kerja tertentu (enjoy, avoid, finish, suggest, keep, consider).",
+            "rationale": "Bayangkan V-ing sebagai 'nama sebuah aktivitas nyata yang sudah atau sedang dialami', bukan sekadar niat ke depan.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "[V-ing as Subject] + V  |  Preposition + V-ing  |  [enjoy/avoid/suggest] + V-ing"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "Subject + Aux + not + [enjoy / mind / recommend] + V-ing"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Have you considered / Would you mind + V-ing?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "ENGINEERING PRACTICES & HABITS",
+                    "register": "Workplace",
+                    "positive": "Writing automated tests prevents regressions, and I enjoy debugging complex logic.",
+                    "negative": "You can't deploy to production without running the linter first.",
+                    "question": "Have you considered using edge caching for faster response times?",
+                    "nuanceNote": "Setelah preposisi 'without', kata kerja 'run' wajib berubah menjadi 'running'.",
+                    "xrayTokens": [
+                        {
+                            "word": "without running",
+                            "role": "Preposition + Gerund",
+                            "nuance": "Semua preposisi (before, after, without, by, for) wajib diikuti V-ing",
+                            "colorTag": "hack"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Frasa 'Look Forward To' Memakai V-ing (Bukan V1!)",
+                    "explanation": "Kata 'to' dalam 'look forward to', 'be used to', dan 'committed to' adalah preposisi, sehingga wajib diikuti V-ing atau Noun.",
+                    "wrongExample": "I look forward to hear from you soon.",
+                    "correctExample": "I look forward to hearing from you soon."
+                }
+            ],
+            "tipsAndTricks": [
+                "Aturan Emas Preposisi: Setiap kali kata kerja muncul tepat setelah preposisi (in, on, at, by, for, with, without, about), langsung ubah ke bentuk V-ing!"
+            ]
+        },
+        {
+            "id": "infinitive-patterns",
+            "badgeNumber": 2,
+            "colSpan": "half",
+            "tags": [
+                "Verb Patterns",
+                "Infinitive (To + V1)"
+            ],
+            "title": "2. To-Infinitives (Purpose, Goals & Decisions)",
+            "subtitle": "After Adjectives, Expressing Purpose & Forward-Looking Verbs",
+            "explanation": "Digunakan untuk menyatakan tujuan ('untuk melakukan X'), setelah kata sifat (easy to read, important to note), dan setelah kata kerja yang mengarah pada target atau keputusan ke depan (decide, plan, want, hope, learn, agree, promise).",
+            "rationale": "'To + V1' memiliki arah panah ke masa depan—menunjukkan niat, rencana, atau tujuan yang ingin dicapai.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "[decide/plan/want/learn] + to + V1  |  It is + Adj + to + V1"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "Subject + decided / agreed + not + to + V1"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "What do you plan / hope + to + V1?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "GOALS & ARCHITECTURAL DECISIONS",
+                    "register": "Workplace",
+                    "positive": "We decided to adopt TypeScript to reduce runtime errors.",
+                    "negative": "It isn't easy to maintain tightly coupled components.",
+                    "question": "What features are you planning to build next quarter?",
+                    "nuanceNote": "'to reduce' menjawab pertanyaan 'untuk tujuan apa?' (In order to reduce).",
+                    "xrayTokens": [
+                        {
+                            "word": "decided to adopt",
+                            "role": "Decision Verb + To-Infinitive",
+                            "nuance": "'Decide' selalu mengarah ke tindakan tujuan 'to + V1'",
+                            "colorTag": "verb"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Kata Kerja yang Berubah Makna: Remember & Stop",
+                    "explanation": "'Stop + V-ing' = berhenti melakukan kebiasaan (stop smoking). 'Stop + to V1' = berhenti sejenak untuk melakukan hal lain (stop to rest). 'Remember + V-ing' = ingat kenangan lalu; 'Remember + to V1' = ingat tugas yang harus dilakukan.",
+                    "wrongExample": "Please remember locking the door before you leave.",
+                    "correctExample": "Please remember to lock the door before you leave."
+                }
+            ],
+            "tipsAndTricks": [
+                "Gunakan pola 'It is + Adjective + to + V1' untuk membuka opini profesional: 'It is essential to validate all user inputs'."
+            ]
+        }
+    ],
+    "practiceQuiz": [
+        {
+            "id": "q-int-ger-01",
+            "topicId": "gerund-patterns",
+            "scenario": {
+                "setting": "Penutup Email Lamaran / Kerja Sama Bisnis",
+                "interlocutor": "Rekruter atau mitra bisnis internasional",
+                "intent": "Menutup email dengan frasa profesional yang tepat secara tata bahasa."
+            },
+            "question": "Kalimat penutup email mana yang benar?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "I look forward to discuss this opportunity with you.",
+                    "isCorrect": false
+                },
+                {
+                    "id": "b",
+                    "text": "I look forward to discussing this opportunity with you.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "c",
+                    "text": "I am looking forward for discuss this opportunity with you.",
+                    "isCorrect": false
+                }
+            ],
+            "deepExplanation": {
+                "whyCorrect": "Dalam frasa 'look forward to', kata 'to' adalah preposisi sehingga wajib diikuti Gerund ('discussing').",
+                "whyOthersFail": "Opsi A memakai V1 setelah preposisi 'to', dan Opsi C salah memakai preposisi 'for'.",
+                "realLifeHack": "Gunakan 'I look forward to hearing from you' (formal) atau 'Looking forward to chatting!' (semi-formal)."
+            }
+        }
+    ]
+}

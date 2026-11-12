@@ -1,0 +1,165 @@
+{
+    "id": "beg-gram-simple-present",
+    "slug": "simple-present-tense",
+    "tier": "beginner",
+    "category": "grammar",
+    "layoutVariant": "comparative-split",
+    "order": 7,
+    "title": "Simple Present Tense: Habits, Facts & Fixed Schedules",
+    "subtitle": "CEFR A1–A2 • Timeless Truths, Routines & Timetable Anchors",
+    "estimatedMinutes": 16,
+    "topics": [
+        {
+            "id": "present-habits-facts",
+            "badgeNumber": 1,
+            "colSpan": "half",
+            "tags": [
+                "Present",
+                "Simple"
+            ],
+            "title": "1. Habits & General Truths",
+            "subtitle": "Recurring Routines & Permanent Facts",
+            "explanation": "Digunakan untuk kebiasaan yang berulang secara rutin (habits), fakta ilmiah atau kebenaran umum yang selalu berlaku, serta kondisi permanen saat ini.",
+            "rationale": "Disebut 'Simple' karena menyatakan fakta apa adanya tanpa menekankan proses sedang berlangsung, dan 'Present' karena berlaku dalam lingkup realitas masa kini.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "S + V1 (-s/-es) + O  |  Nominal: S + am/is/are + Adj/Noun/Adv"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "S + do/does + not + V1 + O  |  Nominal: S + am/is/are + not + Adj/Noun"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Do/Does + S + V1 + O?  |  Nominal: Am/Is/Are + S + Adj/Noun?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "DAILY HABIT & GENERAL TRUTH",
+                    "register": "Daily Life",
+                    "positive": "I drink black coffee every morning, and water boils at 100°C.",
+                    "negative": "I don't drink coffee after 4 PM because it affects my sleep.",
+                    "question": "Do you review your tasks every morning before coding?",
+                    "nuanceNote": "Penanda frekuensi seperti always, usually, often, every morning selalu berpasangan dengan Simple Present.",
+                    "xrayTokens": [
+                        {
+                            "word": "drink",
+                            "role": "Simple Present Verb",
+                            "nuance": "Menunjukkan rutinitas berulang setiap pagi",
+                            "colorTag": "verb"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Stative Verbs (Kata Kerja Perasaan/Pikiran)",
+                    "explanation": "Kata kerja seperti know, understand, believe, want, need, prefer jarang memakai -ing meskipun terjadi detik ini—gunakan Simple Present.",
+                    "wrongExample": "I am understanding the formula now.",
+                    "correctExample": "I understand the formula now."
+                }
+            ],
+            "tipsAndTricks": [
+                "Posisi kata keterangan frekuensi (always, usually, never): letakkan SEBELUM kata kerja aksi (I always check), tetapi SETELAH To Be (I am always ready)."
+            ]
+        },
+        {
+            "id": "present-fixed-schedules",
+            "badgeNumber": 2,
+            "colSpan": "half",
+            "tags": [
+                "Present",
+                "Timetables"
+            ],
+            "title": "2. Fixed Timetables & Public Schedules",
+            "subtitle": "Future Events Governed by Official Schedules",
+            "explanation": "Simple Present juga dipakai untuk membicarakan kejadian di masa depan apabila kejadian tersebut terikat pada jadwal resmi yang sudah baku (kereta, pesawat, kelas, jadwal rilis).",
+            "rationale": "Karena jadwal transportasi atau kalender akademik dianggap fakta tetap yang sudah dikunci sistem, penutur asli memandangnya sebagai fakta masa kini.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "Event/Transport + V1 (-s/-es) + at [Time] + [Future Marker]"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "Event/Transport + doesn't/don't + V1 + until [Time]"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "What time + does/do + Event/Transport + V1?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "TRANSPORT & CLASS TIMETABLE",
+                    "register": "Travel",
+                    "positive": "The commuter train leaves at 7:15 AM tomorrow.",
+                    "negative": "The workshop doesn't start until 10:00 AM.",
+                    "question": "What time does our flight depart tonight?",
+                    "nuanceNote": "Meskipun ada kata 'tomorrow' atau 'tonight', tetap memakai 'leaves/depart' karena mengikuti jadwal resmi.",
+                    "xrayTokens": [
+                        {
+                            "word": "leaves at 7:15 AM",
+                            "role": "Timetable Present",
+                            "nuance": "Jadwal keberangkatan kereta yang sudah tetap",
+                            "colorTag": "hack"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Jadwal Resmi vs. Rencana Pribadi",
+                    "explanation": "Gunakan Simple Present hanya untuk jadwal sistem/publik. Untuk janji pribadi dengan teman, gunakan Present Continuous atau 'going to'.",
+                    "wrongExample": "I meet my friend for dinner tonight. (Kurang alami untuk janji pribadi)",
+                    "correctExample": "The movie starts at 8 PM, and I'm meeting my friend at 7:30 PM."
+                }
+            ],
+            "tipsAndTricks": [
+                "Jika subjeknya adalah benda/acara terjadwal (the train, the flight, the class, the movie), Simple Present adalah pilihan paling natural."
+            ]
+        }
+    ],
+    "practiceQuiz": [
+        {
+            "id": "q-spres-01",
+            "topicId": "present-habits-facts",
+            "scenario": {
+                "setting": "Sesi Belajar Mandiri",
+                "interlocutor": "Mentor menanyakan apakah kamu sudah paham materi hari ini",
+                "intent": "Merespons dengan stative verb yang tepat."
+            },
+            "question": "Kalimat mana yang paling tepat?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Yes, I am knowing how to use it now.",
+                    "isCorrect": false
+                },
+                {
+                    "id": "b",
+                    "text": "Yes, I know how to use it now.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "c",
+                    "text": "Yes, I knows how to use it now.",
+                    "isCorrect": false
+                }
+            ],
+            "deepExplanation": {
+                "whyCorrect": "'Know' adalah stative verb (kondisi mental), sehingga memakai Simple Present 'I know' meskipun disertai kata 'now'.",
+                "whyOthersFail": "Stative verb tidak memakai bentuk -ing, dan subjek 'I' tidak memakai akhiran -s.",
+                "realLifeHack": "Daftar stative verb wajib hafal: know, understand, want, need, like, love, prefer, believe."
+            }
+        }
+    ]
+}
