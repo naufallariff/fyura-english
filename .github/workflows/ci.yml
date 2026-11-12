@@ -36,7 +36,7 @@ jobs:
         run: pnpm lint
 
       - name: Typecheck TypeScript
-        run: npx tsc --noEmit
+        run: npx next typegen && npx tsc --noEmit
 
       - name: Build production bundle
         run: pnpm build
