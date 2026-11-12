@@ -1,0 +1,171 @@
+{
+    "id": "prof-gram-inversion",
+    "slug": "inversion-elliptical-constructions",
+    "tier": "proficient",
+    "category": "grammar",
+    "layoutVariant": "comparative-split",
+    "order": 25,
+    "title": "Negative Inversion & Elliptical Structures: Rhetorical Emphasis",
+    "subtitle": "CEFR C1–C2 • Fronted Negative Adverbials & Sophisticated Clause Ellipsis",
+    "estimatedMinutes": 22,
+    "topics": [
+        {
+            "id": "negative-adverbial-inversion",
+            "badgeNumber": 1,
+            "colSpan": "half",
+            "tags": [
+                "Inversion",
+                "C2 Rhetoric"
+            ],
+            "title": "1. Negative & Restrictive Inversion (Seldom, Rarely, Not only, Under no circumstances)",
+            "subtitle": "Fronting Negative Adverbs with Interrogative Auxiliary Order",
+            "explanation": "Ketika kata keterangan negatif atau pembatas (Never, Rarely, Seldom, Not only, Under no circumstances, No sooner) dipindahkan ke awal kalimat untuk penekanan dramatis atau formal, urutan Subjek dan Auxiliary dibalik seperti kalimat tanya.",
+            "rationale": "Inversi menarik perhatian pendengar/pembaca seketika pada bagian awal kalimat—sangat efektif dalam presentasi eksekutif, pidato, dan esai argumentatif.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "[Negative/Restrictive Adverb] + Auxiliary (do/did/have/should/can) + Subject + Main Verb"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "Under no circumstances + should / must + Subject + Verb-1"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Not only + Aux + S + V, but S + also + V (Declarative Emphasis)"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "KEYNOTE PRESENTATIONS & SECURITY MANDATES",
+                    "register": "Workplace",
+                    "positive": "Not only did the new architecture cut costs by 40%, but it also doubled throughput.",
+                    "negative": "Under no circumstances should production credentials be shared in public channels.",
+                    "question": "Seldom have we seen such a clean migration across distributed services.",
+                    "nuanceNote": "Meski diakhiri titik (bukan tanda tanya), urutan 'did the new architecture cut' memakai struktur inversi.",
+                    "xrayTokens": [
+                        {
+                            "word": "Not only did the new architecture cut",
+                            "role": "Negative Adverbial + Inverted Auxiliary",
+                            "nuance": "'Did' maju ke depan subjek karena 'Not only' ditaruh di awal kalimat",
+                            "colorTag": "subject"
+                        },
+                        {
+                            "word": "Under no circumstances should",
+                            "role": "Prohibitive Inversion",
+                            "nuance": "Penekanan larangan mutlak tingkat eksekutif",
+                            "colorTag": "hack"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Inversi dengan 'Only After / Only When / Only By' Terjadi di Klausa Kedua",
+                    "explanation": "Jika kalimat diawali 'Only after...' atau 'Only when...', inversi dilakukan pada klausa utama setelah koma, bukan tepat setelah 'Only when'.",
+                    "wrongExample": "Only when did we check the logs we found the root cause.",
+                    "correctExample": "Only when we checked the logs did we find the root cause."
+                }
+            ],
+            "tipsAndTricks": [
+                "Gunakan 'Not only + Aux + S + V, but it also...' satu kali dalam presentasi atau esai untuk memberi dampak retoris yang kuat."
+            ]
+        },
+        {
+            "id": "ellipsis-and-substitution",
+            "badgeNumber": 2,
+            "colSpan": "half",
+            "tags": [
+                "Ellipsis",
+                "Cohesion"
+            ],
+            "title": "2. Auxiliary Ellipsis & Pro-Form Substitution (So, Neither, One/Ones)",
+            "subtitle": "Eliminating Redundancy in High-Fluency Dialogue",
+            "explanation": "Penutur tingkat C1–C2 tidak mengulang kata kerja atau frasa panjang yang baru saja diucapkan lawan bicara. Mereka memotongnya menggunakan auxiliary pendek (I hope so, Neither have I, We didn't intend to).",
+            "rationale": "Elipsis membuat dialog terdengar cepat, tajam, dan alami—sebaliknya, mengulang seluruh kalimat lawan bicara terdengar seperti robot.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "So + Aux + Subject  |  Subject + Aux + too  |  I hope / think / believe so"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "Neither / Nor + Aux + Subject  |  I don't think so  |  I hope not"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Will the build succeed? — I certainly hope so / I'm afraid not."
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "NATURAL CONVERSATIONAL RESPONSES",
+                    "register": "Daily Life",
+                    "positive": "They haven't tested the edge cases yet, and neither have we.",
+                    "negative": "He wanted to rewrite the module, though the lead architect advised him not to.",
+                    "question": "Will the server migration cause any downtime? — I certainly hope not.",
+                    "nuanceNote": "'Advised him not to' memotong 'not to rewrite the module' sehingga ringkas dan idiomatis.",
+                    "xrayTokens": [
+                        {
+                            "word": "neither have we",
+                            "role": "Inverted Negative Agreement Ellipsis",
+                            "nuance": "Menyetujui pernyataan negatif tanpa mengulang seluruh klausa",
+                            "colorTag": "nuance"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Gunakan 'I Hope Not' (Bukan 'I Don't Hope So')",
+                    "explanation": "Kata kerja 'hope' tidak dinegasikan menjadi 'don't hope so'—bentuk bakunya adalah 'I hope not'.",
+                    "wrongExample": "Is the API down again? — I don't hope so.",
+                    "correctExample": "Is the API down again? — I hope not."
+                }
+            ],
+            "tipsAndTricks": [
+                "Gunakan 'to' di akhir kalimat untuk menggantikan seluruh frasa kerja: 'You don't have to join if you don't want to.'"
+            ]
+        }
+    ],
+    "practiceQuiz": [
+        {
+            "id": "q-prof-inv-01",
+            "topicId": "negative-adverbial-inversion",
+            "scenario": {
+                "setting": "Panduan Keamanan Produksi (Production Runbook)",
+                "interlocutor": "Tim DevOps membaca protokol darurat akses database",
+                "intent": "Menulis larangan mutlak dengan struktur inversi formal."
+            },
+            "question": "Kalimat mana yang menggunakan Negative Inversion dengan benar?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Under no circumstances you should run destructive queries on production.",
+                    "isCorrect": false
+                },
+                {
+                    "id": "b",
+                    "text": "Under no circumstances should you run destructive queries on production.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "c",
+                    "text": "Under no circumstances should you to run destructive queries on production.",
+                    "isCorrect": false
+                }
+            ],
+            "deepExplanation": {
+                "whyCorrect": "Frasa negatif di awal ('Under no circumstances') memicu pembalikan posisi auxiliary 'should' ke depan subjek 'you'.",
+                "whyOthersFail": "Opsi A tidak membalik posisi 'should', dan Opsi C salah menyisipkan 'to' setelah modal verb.",
+                "realLifeHack": "Setiap kali memulai kalimat dengan 'Never', 'Rarely', 'Seldom', atau 'Under no circumstances', langsung ikuti dengan kata bantu (do/did/have/should/can)."
+            }
+        }
+    ]
+}

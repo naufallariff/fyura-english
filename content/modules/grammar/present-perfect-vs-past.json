@@ -1,0 +1,171 @@
+{
+    "id": "int-gram-present-perfect",
+    "slug": "present-perfect-vs-past",
+    "tier": "intermediate",
+    "category": "grammar",
+    "layoutVariant": "comparative-split",
+    "order": 15,
+    "title": "Present Perfect vs. Simple Past: Time Connection vs. Finished History",
+    "subtitle": "CEFR B1–B2 • Life Experience, Unfinished Periods & Present Relevance",
+    "estimatedMinutes": 20,
+    "topics": [
+        {
+            "id": "present-perfect-bridge",
+            "badgeNumber": 1,
+            "colSpan": "half",
+            "tags": [
+                "Present Perfect",
+                "Bridge to Now"
+            ],
+            "title": "1. Present Perfect (Have / Has + Verb-3)",
+            "subtitle": "Experiences, Recent Updates & Ongoing Duration",
+            "explanation": "Jembatan antara masa lalu dan sekarang. Digunakan untuk pengalaman hidup tanpa menyebut kapan terjadinya, aksi yang baru saja selesai dengan dampak terasa sekarang, atau durasi yang masih berlanjut hingga detik ini (for / since).",
+            "rationale": "Fokusnya bukan pada KAPAN kejadian itu berlangsung, melainkan pada HASIL atau PENGALAMAN yang kamu miliki saat ini.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "Subject + have / has + Verb-3 (Past Participle) + Object"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "Subject + haven't / hasn't + Verb-3 + (yet)"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Have / Has + Subject + (ever) + Verb-3 + (yet)?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "EXPERIENCE & CURRENT STATUS",
+                    "register": "Workplace",
+                    "positive": "I have worked with Next.js for three years, and we have just deployed v2.",
+                    "negative": "We haven't received the client's final sign-off yet.",
+                    "question": "Have you ever integrated a payment gateway into a web app?",
+                    "nuanceNote": "'For three years' menunjukkan pekerjaan itu dimulai 3 tahun lalu dan MASIH berlanjut sampai hari ini.",
+                    "xrayTokens": [
+                        {
+                            "word": "have worked",
+                            "role": "Present Perfect Continuous State",
+                            "nuance": "Dimulai di masa lalu dan masih aktif hingga sekarang",
+                            "colorTag": "verb"
+                        },
+                        {
+                            "word": "yet",
+                            "role": "Negative/Question Time Adverb",
+                            "nuance": "Selalu diletakkan di akhir kalimat negatif/tanya ('sampai sekarang belum')",
+                            "colorTag": "hack"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Dilarang Memakai Penanda Waktu Lampau Tertutup (Yesterday, Last Year, In 2024)",
+                    "explanation": "Present Perfect tidak boleh digabung dengan waktu yang sudah tutup sepenuhnya.",
+                    "wrongExample": "I have finished the coding test yesterday.",
+                    "correctExample": "I finished the coding test yesterday. / I have already finished the coding test."
+                }
+            ],
+            "tipsAndTricks": [
+                "Gunakan 'for + durasi waktu' (for two months, for five years) dan 'since + titik awal waktu' (since Monday, since 2023)."
+            ]
+        },
+        {
+            "id": "simple-past-closed-anchor",
+            "badgeNumber": 2,
+            "colSpan": "half",
+            "tags": [
+                "Simple Past",
+                "Closed Time"
+            ],
+            "title": "2. Simple Past in Storytelling & Follow-Up Details",
+            "subtitle": "Pinpointing When, Where, and How a Past Event Happened",
+            "explanation": "Begitu percakapan berpindah dari pertanyaan umum ('Have you ever...?') ke detail spesifik ('When did you...?', 'How was it?'), tenses otomatis bergeser ke Simple Past (Verb-2).",
+            "rationale": "Dalam percakapan alami penutur asli, Present Perfect bertindak sebagai pembuka topik, lalu Simple Past menceritakan detail kronologisnya.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "Subject + Verb-2 + [Specific Past Time: yesterday / in 2025 / ago]"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "Subject + didn't + Verb-1 + [Specific Past Time]"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "When / Where / How + did + Subject + Verb-1?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "INTERVIEW CONVERSATION FLOW",
+                    "register": "Workplace",
+                    "positive": "I built that analytics dashboard last semester using TypeScript.",
+                    "negative": "We didn't use any external state library for that prototype.",
+                    "question": "When did you attend the developer conference in Jakarta?",
+                    "nuanceNote": "Pertanyaan yang diawali kata 'When...?' hampir selalu memakai Simple Past karena menanyakan titik waktu spesifik.",
+                    "xrayTokens": [
+                        {
+                            "word": "When did you attend",
+                            "role": "Specific Time Interrogative",
+                            "nuance": "'When' mengunci waktu di masa lampau sehingga wajib memakai 'did + V1'",
+                            "colorTag": "subject"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "'Been to' vs. 'Gone to'",
+                    "explanation": "'She has been to Bandung' = dia pernah ke Bandung dan sekarang sudah kembali. 'She has gone to Bandung' = dia berangkat ke Bandung dan sekarang masih di sana.",
+                    "wrongExample": "Welcome back! Where have you gone?",
+                    "correctExample": "Welcome back! Where have you been?"
+                }
+            ],
+            "tipsAndTricks": [
+                "Pola wawancara kerja B2: Mulai jawaban dengan Present Perfect ('I've led two frontend migrations'), lalu jelaskan detailnya dengan Simple Past ('In the first project, I reduced load time by 40%')."
+            ]
+        }
+    ],
+    "practiceQuiz": [
+        {
+            "id": "q-int-pp-01",
+            "topicId": "present-perfect-bridge",
+            "scenario": {
+                "setting": "Wawancara Kerja Teknis",
+                "interlocutor": "Pewawancara menanyakan pengalamanmu menggunakan Git dan CI/CD",
+                "intent": "Menjawab bahwa pengalaman itu dimulai beberapa tahun lalu dan masih berlanjut."
+            },
+            "question": "Kalimat mana yang paling tepat?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "I use GitHub Actions since 2023.",
+                    "isCorrect": false
+                },
+                {
+                    "id": "b",
+                    "text": "I have used GitHub Actions since 2023.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "c",
+                    "text": "I have used GitHub Actions two years ago.",
+                    "isCorrect": false
+                }
+            ],
+            "deepExplanation": {
+                "whyCorrect": "Aksi yang dimulai pada titik waktu lampau ('since 2023') dan masih berlangsung sampai sekarang wajib memakai Present Perfect ('have used').",
+                "whyOthersFail": "Opsi A salah memakai Simple Present dengan 'since', dan Opsi C menggabungkan Present Perfect dengan 'ago'.",
+                "realLifeHack": "Kata 'since' adalah sinyal paling kuat untuk Present Perfect (have/has + V3)."
+            }
+        }
+    ]
+}

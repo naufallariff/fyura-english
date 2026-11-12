@@ -1,0 +1,165 @@
+{
+    "id": "lab-conv-pragmatics",
+    "slug": "workplace-pragmatics",
+    "tier": "intermediate",
+    "category": "conversations",
+    "layoutVariant": "dialogue-storyboard",
+    "order": 26,
+    "title": "Conversational Pragmatics: Diplomatic Requests, Disagreement & Standup Updates",
+    "subtitle": "Cross-Level Lab (A2 → C1) • Politeness Registers, Softeners & Workplace Fluency",
+    "estimatedMinutes": 20,
+    "topics": [
+        {
+            "id": "diplomatic-requests-softeners",
+            "badgeNumber": 1,
+            "colSpan": "half",
+            "tags": [
+                "Pragmatics",
+                "Politeness"
+            ],
+            "title": "1. Diplomatic Requests & Softeners (Indirect Framing)",
+            "subtitle": "Replacing Blunt Imperatives with Collaborative Modal Frames",
+            "explanation": "Dalam budaya kerja internasional berbahasa Inggris, perintah langsung ('Send me the file', 'Fix this bug') terdengar kasar atau agresif. Penutur menggunakan modal lampau (Could you, Would you mind) dan pembuka lunak (I was wondering if...) untuk menjaga rasa saling menghormati.",
+            "rationale": "Jarak gramatikal (memakai bentuk lampau seperti 'could' atau 'was wondering') menciptakan ruang sopan santun sehingga lawan bicara merasa diajak bekerja sama, bukan diperintah.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "Could you possibly + V1...?  |  Would you mind + V-ing...?"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "Would you mind not + V-ing...?  |  No worries if you can't + V1."
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "I was wondering if you could + V1 + [Request]?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "ASYNC SLACK & CODE REVIEW REQUESTS",
+                    "register": "Workplace",
+                    "positive": "Could you take a quick look at my pull request when you have a moment?",
+                    "negative": "Would you mind not merging this branch until CI checks pass?",
+                    "question": "I was wondering if we could push the deadline back by one day?",
+                    "nuanceNote": "Menambahkan 'when you have a moment' atau 'a quick look' menurunkan tekanan psikologis pada rekan kerja.",
+                    "xrayTokens": [
+                        {
+                            "word": "Would you mind not merging",
+                            "role": "Polite Negative Request + Gerund",
+                            "nuance": "'Would you mind' selalu diikuti V-ing (dan jawabannya 'Not at all' jika setuju!)",
+                            "colorTag": "hack"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Cara Menjawab 'Would You Mind...?' (Yes Berarti Keberatan!)",
+                    "explanation": "Karena 'Would you mind...' secara harfiah berarti 'Apakah kamu keberatan...?', jika kamu bersedia membantu, jawablah 'Not at all' atau 'No, go ahead'—jangan jawab 'Yes'.",
+                    "wrongExample": "Would you mind sharing your screen? — Yes, sure! (Kontradiktif)",
+                    "correctExample": "Would you mind sharing your screen? — Not at all, let me share it now."
+                }
+            ],
+            "tipsAndTricks": [
+                "Ganti 'I want you to...' menjadi 'It would be great if we could...' saat memberi masukan desain atau kode."
+            ]
+        },
+        {
+            "id": "constructive-disagreement",
+            "badgeNumber": 2,
+            "colSpan": "half",
+            "tags": [
+                "Pragmatics",
+                "Negotiation"
+            ],
+            "title": "2. Constructive Disagreement & Standup Alignment",
+            "subtitle": "Validating First, Pivoting Smoothly & Reporting Blockers",
+            "explanation": "Menyatakan ketidaksetujuan secara profesional tanpa membuat lawan bicara defensif: validasi poin baiknya terlebih dahulu ('I see your point, however...'), lalu ajukan perspektif alternatif.",
+            "rationale": "Dalam rapat lintas negara, menyampaikan 'You are wrong' atau 'I disagree' secara telanjang memutus kolaborasi. Teknik 'Validate → Pivot → Propose' menjaga diskusi tetap objektif.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "I see where you're coming from; however, [Alternative Perspective]."
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "I'm not sure that approach will scale because [Reason]."
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Have we considered [Alternative Option] instead?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "SPRINT PLANNING & ARCHITECTURE DEBATE",
+                    "register": "Workplace",
+                    "positive": "That makes sense for the MVP; however, we might hit rate limits at scale.",
+                    "negative": "I'm not entirely convinced that adding another dependency is necessary.",
+                    "question": "How would you feel about testing this with a smaller cohort first?",
+                    "nuanceNote": "'I'm not entirely convinced...' terdengar jauh lebih diplomatis dan terbuka daripada 'I disagree'.",
+                    "xrayTokens": [
+                        {
+                            "word": "I see where you're coming from",
+                            "role": "Empathy Validation Frame",
+                            "nuance": "Menunjukkan kamu memahami logika lawan bicara sebelum memberi counter-argument",
+                            "colorTag": "subject"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Hindari 'Actually, you're wrong' di Rapat Tim",
+                    "explanation": "Kata 'Actually' di awal sanggahan sering terdengar meremehkan.",
+                    "wrongExample": "Actually, that's not how the API works.",
+                    "correctExample": "From what I've seen in the docs, the API handles that slightly differently."
+                }
+            ],
+            "tipsAndTricks": [
+                "Format Daily Standup 30 detik yang tajam: 'Yesterday I completed X, today I'm focusing on Y, and currently I'm blocked by Z.'"
+            ]
+        }
+    ],
+    "practiceQuiz": [
+        {
+            "id": "q-lab-conv-01",
+            "topicId": "diplomatic-requests-softeners",
+            "scenario": {
+                "setting": "Rapat Online dengan Klien Internasional",
+                "interlocutor": "Klien bertanya: 'Would you mind walking us through the dashboard?'",
+                "intent": "Menjawab bahwa kamu senang hati mempresentasikannya."
+            },
+            "question": "Jawaban mana yang paling tepat secara pragmatik?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Yes, I mind. Let's start.",
+                    "isCorrect": false
+                },
+                {
+                    "id": "b",
+                    "text": "Not at all! Let me share my screen right now.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "c",
+                    "text": "Yes, I would mind to do that.",
+                    "isCorrect": false
+                }
+            ],
+            "deepExplanation": {
+                "whyCorrect": "'Not at all' berarti 'Sama sekali tidak keberatan', yang merupakan persetujuan sopan untuk pertanyaan 'Would you mind...?'",
+                "whyOthersFail": "Menjawab 'Yes' pada pertanyaan 'Would you mind' secara harfiah berarti 'Ya, saya keberatan'.",
+                "realLifeHack": "Setiap kali mendengar 'Would you mind...?', jawab dengan 'Not at all' atau 'Of course not'."
+            }
+        }
+    ]
+}

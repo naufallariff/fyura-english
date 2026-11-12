@@ -1,0 +1,224 @@
+{
+    "id": "int-gram-modals",
+    "slug": "modal-auxiliaries",
+    "tier": "intermediate",
+    "category": "grammar",
+    "layoutVariant": "trio-staggered",
+    "order": 16,
+    "title": "Modal Verbs: Obligation, Advice & Degrees of Certainty",
+    "subtitle": "CEFR B1–B2 • Must vs. Have To, Should/Ought To & Epistemic Deduction",
+    "estimatedMinutes": 18,
+    "topics": [
+        {
+            "id": "modals-obligation",
+            "badgeNumber": 1,
+            "colSpan": "third",
+            "tags": [
+                "Modals",
+                "Obligation"
+            ],
+            "title": "1. Must vs. Have To (Rules & Necessity)",
+            "subtitle": "Internal Conviction vs. External Rules & No Obligation",
+            "explanation": "Keduanya berarti 'harus' dalam bentuk positif. Namun dalam bentuk negatif maknanya bertolak belakang total: 'mustn't' berarti DILARANG KERAS, sedangkan 'don't have to' berarti TIDAK WAJIB (opsional).",
+            "rationale": "Membedakan larangan keras dengan kebebasan memilih sangat krusial dalam instruksi kerja dan aturan keselamatan.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "Subject + must / have to / has to + Verb-1"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "mustn't + V1 (Prohibited)  |  don't/doesn't have to + V1 (Optional)"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Do / Does + Subject + have to + Verb-1?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "SECURITY & WORK POLICIES",
+                    "register": "Workplace",
+                    "positive": "You must encrypt API keys, and we have to submit reports by Friday.",
+                    "negative": "You mustn't commit .env files, though you don't have to attend optional syncs.",
+                    "question": "Do we have to wear formal attire on Fridays?",
+                    "nuanceNote": "'Mustn't' = dilarang melakukannya; 'don't have to' = boleh dilakukan kalau mau, tidak dilakukan juga tidak apa-apa.",
+                    "xrayTokens": [
+                        {
+                            "word": "don't have to",
+                            "role": "Absence of Obligation",
+                            "nuance": "Menunjukkan pilihan bebas (tidak wajib)",
+                            "colorTag": "hack"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Bentuk Lampau 'Must' Adalah 'Had To'",
+                    "explanation": "'Must' tidak punya bentuk lampau. Untuk menyatakan keharusan di masa lalu, gunakan 'had to + V1'.",
+                    "wrongExample": "Yesterday I musted stay late to fix a bug.",
+                    "correctExample": "Yesterday I had to stay late to fix a bug."
+                }
+            ],
+            "tipsAndTricks": [
+                "Modal verb (must, should, can, could, might) selalu diikuti Verb-1 murni tanpa 'to' dan tanpa '-s' (she must go, bukan she musts goes)."
+            ]
+        },
+        {
+            "id": "modals-advice",
+            "badgeNumber": 2,
+            "colSpan": "third",
+            "tags": [
+                "Modals",
+                "Recommendations"
+            ],
+            "title": "2. Should & Had Better (Advice & Warnings)",
+            "subtitle": "Constructive Suggestions vs. Urgent Consequence Warnings",
+            "explanation": "'Should' dipakai untuk saran baik yang sopan dan logis. 'Had better' dipakai untuk saran mendesak yang jika diabaikan akan menimbulkan konsekuensi buruk.",
+            "rationale": "Dalam diskusi tim, memakai 'should' atau 'could' terdengar kolaboratif dan tidak menggurui rekan kerja.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "Subject + should / had better ('d better) + Verb-1"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "Subject + shouldn't / had better not + Verb-1"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Should + Subject + Verb-1?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "CODE REVIEW & MENTORING",
+                    "register": "Workplace",
+                    "positive": "We should add unit tests, and you'd better back up the database first.",
+                    "negative": "You shouldn't ignore TypeScript warnings in strict mode.",
+                    "question": "Should we schedule a quick call to align on the schema?",
+                    "nuanceNote": "'You'd better' terdengar tegas dan mendesak—gunakan hanya saat ada risiko nyata jika tidak dilakukan.",
+                    "xrayTokens": [
+                        {
+                            "word": "should add",
+                            "role": "Advisory Modal + Base Verb",
+                            "nuance": "Saran teknis yang konstruktif dan profesional",
+                            "colorTag": "verb"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Bentuk Negatif 'Had Better' Adalah 'Had Better Not'",
+                    "explanation": "Jangan menaruh 'not' setelah 'had' (*hadn't better)—letakkan 'not' setelah 'better'.",
+                    "wrongExample": "You hadn't better deploy without testing.",
+                    "correctExample": "You'd better not deploy without testing."
+                }
+            ],
+            "tipsAndTricks": [
+                "Untuk memberi masukan yang lebih lembut di rapat, awali dengan 'Maybe we should...' atau 'I think we should...'."
+            ]
+        },
+        {
+            "id": "modals-deduction",
+            "badgeNumber": 3,
+            "colSpan": "third",
+            "tags": [
+                "Modals",
+                "Probability"
+            ],
+            "title": "3. Must, Might, Could, Can't (Logical Deduction)",
+            "subtitle": "Expressing Certainty & Possibility Based on Evidence",
+            "explanation": "Digunakan untuk menebak atau menyimpulkan situasi berdasarkan bukti: 'must' (95% yakin benar), 'might/may/could' (50% mungkin), dan 'can't' (95% yakin mustahil).",
+            "rationale": "Dalam troubleshooting teknis maupun diskusi sehari-hari, kita jarang 100% tahu penyebab masalah sebelum investigasi—modal deduction menunjukkan tingkat keyakinan kita secara akurat.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "Subject + must / might / could + [Be + Adj / Verb-1]"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "Subject + can't / might not + [Be + Adj / Verb-1]"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Could + Subject + be + [Cause / Location]?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "DEBUGGING & PROBLEM SOLVING",
+                    "register": "Workplace",
+                    "positive": "The server returns 401, so the token must be expired or it might be invalid.",
+                    "negative": "It can't be a database issue because read queries are still fast.",
+                    "question": "Could the CORS policy be blocking the request?",
+                    "nuanceNote": "Lawan kata dari 'must be' dalam tebakan logis adalah 'can't be' (bukan 'mustn't be').",
+                    "xrayTokens": [
+                        {
+                            "word": "must be expired",
+                            "role": "High-Certainty Deduction",
+                            "nuance": "Kesimpulan logis kuat berdasarkan kode error 401",
+                            "colorTag": "nuance"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Lawan dari Tebakan 'Must Be' Adalah 'Can't Be'",
+                    "explanation": "Ketika yakin sesuatu tidak mungkin terjadi berdasarkan bukti, gunakan 'can't be'.",
+                    "wrongExample": "He just left 2 minutes ago; he mustn't be home yet.",
+                    "correctExample": "He just left 2 minutes ago; he can't be home yet."
+                }
+            ],
+            "tipsAndTricks": [
+                "Skala keyakinan cepat: Must (pasti) → Should (kemungkinan besar) → Might/Could (mungkin saja) → Can't (mustahil)."
+            ]
+        }
+    ],
+    "practiceQuiz": [
+        {
+            "id": "q-int-mod-01",
+            "topicId": "modals-obligation",
+            "scenario": {
+                "setting": "Onboarding Anggota Tim Baru",
+                "interlocutor": "Rekan baru bertanya apakah ia wajib hadir di sesi coffee chat santai hari Jumat",
+                "intent": "Menjelaskan bahwa sesi tersebut bersifat sukarela (tidak wajib)."
+            },
+            "question": "Jawaban mana yang menyampaikan maksud 'tidak wajib' dengan benar?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "You mustn't join the Friday coffee chat.",
+                    "isCorrect": false
+                },
+                {
+                    "id": "b",
+                    "text": "You don't have to join the Friday coffee chat—it's totally optional.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "c",
+                    "text": "You haven't to join the Friday coffee chat.",
+                    "isCorrect": false
+                }
+            ],
+            "deepExplanation": {
+                "whyCorrect": "'Don't have to' berarti tidak ada keharusan (opsional).",
+                "whyOthersFail": "'Mustn't' berarti dilarang keras (seolah dia tidak boleh ikut), sedangkan 'haven't to' tidak gramatikal dalam konteks ini.",
+                "realLifeHack": "Ganti 'don't have to' dengan 'don't need to' jika ingin terdengar lebih ringan."
+            }
+        }
+    ]
+}

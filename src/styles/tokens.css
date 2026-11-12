@@ -1,26 +1,29 @@
 @theme {
   /* Soft-UI Canvas & Elevated Surfaces */
-  --color-canvas: #eef2f7;
-  --color-surface: #f8fafc;
-  --color-surface-elevated: #ffffff;
-  --color-ink-primary: #0f172a;
+  --color-canvas: #EBF0F7;
+  --color-surface: #F6F9FC;
+  --color-surface-elevated: #FFFFFF;
+  --color-ink-primary: #0F172A;
   --color-ink-secondary: #475569;
-  --color-ink-muted: #94a3b8;
+  --color-ink-muted: #94A3B8;
 
-  /* Semantic Fluency Stages (Colorful Anchors) */
-  --color-stage-foundation: #10b981; /* Beginner - Emerald */
-  --color-stage-fluidity: #0ea5e9; /* Intermediate - Electric Sky */
-  --color-stage-precision: #8b5cf6; /* Professional - Vivid Violet */
-  --color-stage-native: #f59e0b; /* Fluent - Warm Amber */
-  --color-lab-thematic: #f43f5e; /* Real-World Labs - Coral Rose */
+  /* Semantic Fluency Stages */
+  --color-stage-foundation: #10B981;
+  --color-stage-fluidity: #0EA5E9;
+  --color-stage-precision: #8B5CF6;
+  --color-stage-native: #F59E0B;
+  --color-lab-thematic: #F43F5E;
 
-  /* Tactile Soft Shadows */
+  /* Soft-UI Tactile Elevation (Mirip Referensi Nexora) */
   --shadow-soft-card:
-    0 10px 25px -5px rgba(15, 23, 42, 0.04),
-    0 4px 10px -2px rgba(15, 23, 42, 0.02),
+    0 12px 28px -8px rgba(15, 23, 42, 0.05),
+    0 4px 10px -2px rgba(15, 23, 42, 0.025),
     inset 0 1px 0 0 rgba(255, 255, 255, 0.95);
+  --shadow-soft-sidebar:
+    4px 0 24px rgba(15, 23, 42, 0.04),
+    inset -1px 0 0 0 rgba(255, 255, 255, 0.9);
   --shadow-soft-pill:
-    0 4px 14px rgba(14, 165, 233, 0.16),
+    0 6px 16px -4px rgba(59, 130, 246, 0.22),
     inset 0 1px 0 0 rgba(255, 255, 255, 0.95);
 
   /* Snappy Physics Easing */

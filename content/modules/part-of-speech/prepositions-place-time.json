@@ -1,0 +1,305 @@
+{
+    "id": "beg-pos-prepositions",
+    "slug": "prepositions-place-time",
+    "tier": "beginner",
+    "category": "part-of-speech",
+    "layoutVariant": "trio-staggered",
+    "order": 2,
+    "title": "Prepositions of Time & Place: In, On, At & Zero Prepositions",
+    "subtitle": "CEFR A1–A2 • Spatial Containers, Surface Contact & Precision Point Anchors",
+    "estimatedMinutes": 18,
+    "topics": [
+        {
+            "id": "preposition-in",
+            "badgeNumber": 1,
+            "colSpan": "third",
+            "tags": [
+                "Prepositions",
+                "Broad Scope"
+            ],
+            "title": "1. IN (Containers & Long Periods)",
+            "subtitle": "Enclosed Spaces, Cities, Months & Years",
+            "explanation": "Digunakan ketika objek berada di dalam batas wilayah tertutup (ruangan, kota, negara) atau rentang waktu yang luas (bulan, tahun, musim, dekade).",
+            "rationale": "Bayangkan 'IN' sebagai kotak tiga dimensi atau kalender besar yang membungkus suatu kejadian dari segala sisi.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "S + V + in + [City / Country / Room / Month / Year]"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "S + Aux + not + V + in + [Enclosed Space / Period]"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Aux + S + V + in + [Location / Period]?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "LOCATION & TIMELINE",
+                    "register": "Workplace",
+                    "positive": "Our engineering team works in Jakarta and launches in October.",
+                    "negative": "We don't hold physical meetings in the main lobby.",
+                    "question": "Did you finish your degree in 2025?",
+                    "nuanceNote": "Kota (Jakarta), bulan (October), dan tahun (2025) semuanya dianggap wadah luas.",
+                    "xrayTokens": [
+                        {
+                            "word": "in Jakarta",
+                            "role": "Prepositional Phrase of Place",
+                            "nuance": "Batas geografis kota memakai 'in'",
+                            "colorTag": "nuance"
+                        },
+                        {
+                            "word": "in October",
+                            "role": "Prepositional Phrase of Time",
+                            "nuance": "Nama bulan tanpa tanggal spesifik selalu memakai 'in'",
+                            "colorTag": "hack"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Parts of the Day (In the morning/afternoon/evening)",
+                    "explanation": "Bagian hari yang panjang memakai 'in the...', tetapi malam hari memakai 'at night'.",
+                    "wrongExample": "I usually study coding in night.",
+                    "correctExample": "I usually study coding in the evening or at night."
+                }
+            ],
+            "tipsAndTricks": [
+                "Setiap kali menyebut nama bulan saja atau tahun saja, otak otomatis memilih 'IN'."
+            ]
+        },
+        {
+            "id": "preposition-on",
+            "badgeNumber": 2,
+            "colSpan": "third",
+            "tags": [
+                "Prepositions",
+                "Surface & Dates"
+            ],
+            "title": "2. ON (Surfaces, Streets & Days)",
+            "subtitle": "Physical Contact, Specific Days & Calendar Dates",
+            "explanation": "Digunakan untuk benda yang menempel di atas permukaan datar, nama jalan (tanpa nomor bangunan), serta hari dan tanggal spesifik.",
+            "rationale": "Secara visual, 'ON' berarti menyentuh permukaan luar atau menempel pada satu kotak tanggal spesifik di kalender.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "S + V + on + [Surface / Street / Day / Specific Date]"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "S + Aux + not + V + on + [Day / Date / Surface]"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Aux + S + V + on + [Day / Date / Surface]?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "SCHEDULES & SURFACES",
+                    "register": "Daily Life",
+                    "positive": "The design review is on Friday, and the report is on your desk.",
+                    "negative": "Our office isn't open on Sunday mornings.",
+                    "question": "Are you flying to Bandung on November 15th?",
+                    "nuanceNote": "Begitu tanggal muncul (November 15th), preposisi berubah dari 'in' menjadi 'on'.",
+                    "xrayTokens": [
+                        {
+                            "word": "on Friday",
+                            "role": "Day Anchor",
+                            "nuance": "Semua nama hari memakai 'on'",
+                            "colorTag": "hack"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Public Transport Rule (On a bus / train / plane)",
+                    "explanation": "Kendaraan besar tempat kita bisa berdiri dan berjalan di lorongnya memakai 'on', bukan 'in'.",
+                    "wrongExample": "I am reading a book in the train.",
+                    "correctExample": "I am reading a book on the train (tapi: in a car / in a taxi)."
+                }
+            ],
+            "tipsAndTricks": [
+                "Jika kata waktunya mengandung kata 'Day' (Monday, Birthday, Holiday) atau tanggal pasti, gunakan 'ON'."
+            ]
+        },
+        {
+            "id": "preposition-at",
+            "badgeNumber": 3,
+            "colSpan": "third",
+            "tags": [
+                "Prepositions",
+                "Exact Point"
+            ],
+            "title": "3. AT (Exact Points & Clock Time)",
+            "subtitle": "Specific Coordinates, Addresses & Exact Hours",
+            "explanation": "Digunakan untuk titik lokasi paling presisi (alamat lengkap bernomor, titik temu) dan waktu jam yang tepat.",
+            "rationale": "Bayangkan 'AT' sebagai pin merah di Google Maps atau jarum jam yang menunjuk satu angka pasti.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "S + V + at + [Exact Time / Specific Point / Full Address]"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "S + Aux + not + V + at + [Exact Time / Location Point]"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "What time / Where + Aux + S + V + at?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "MEETING POINTS & CLOCKS",
+                    "register": "Travel",
+                    "positive": "Let's meet at the station entrance at 7:30 PM.",
+                    "negative": "He doesn't arrive at the office until 9:00 AM.",
+                    "question": "Will you be at the airport gate at noon?",
+                    "nuanceNote": "Titik temu spesifik (station entrance, airport gate) memakai 'at' agar tidak tersesat.",
+                    "xrayTokens": [
+                        {
+                            "word": "at 7:30 PM",
+                            "role": "Exact Temporal Point",
+                            "nuance": "Penunjuk jam selalu memakai 'at'",
+                            "colorTag": "subject"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "At the weekend vs. On the weekend",
+                    "explanation": "Keduanya benar: penutur British cenderung memakai 'at the weekend', sedangkan American memakai 'on the weekend'.",
+                    "wrongExample": "What do you do in the weekend?",
+                    "correctExample": "What do you do on the weekend? / at the weekend?"
+                }
+            ],
+            "tipsAndTricks": [
+                "Ingat piramida terbalik: IN (Kota/Bulan) → ON (Jalan/Hari) → AT (Alamat Nomor/Jam)."
+            ]
+        },
+        {
+            "id": "zero-prepositions",
+            "badgeNumber": 4,
+            "colSpan": "full",
+            "tags": [
+                "Zero Preposition",
+                "Critical Rule"
+            ],
+            "title": "4. Zero Preposition Zones (When to Omit In, On, At)",
+            "subtitle": "Deictic Time Markers (Next, Last, This, Every) & Directional 'Home'",
+            "explanation": "Jangan gunakan 'in', 'on', atau 'at' sebelum kata penunjuk waktu relatif seperti this, next, last, every, yesterday, tomorrow, maupun sebelum kata 'home' dengan kata kerja gerak (go/come/arrive).",
+            "rationale": "Kata-kata seperti 'next Friday' atau 'yesterday' sudah membawa informasi penunjuk waktu di dalam dirinya sendiri, sehingga preposisi menjadi mubazir.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "S + V + [this / next / last / every + Time]  |  S + go/arrive + home"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "S + Aux + not + V + [yesterday / tomorrow / next week]"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Aux + S + V + [this weekend / next month]?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "NEXT / LAST / THIS MARKERS",
+                    "register": "Workplace",
+                    "positive": "We are deploying the new release next Tuesday.",
+                    "negative": "I didn't join the standup call yesterday morning.",
+                    "question": "Are you working from home this Friday?",
+                    "nuanceNote": "Bandingkan: 'on Friday' (memakai on), tetapi 'next Friday' dan 'this Friday' (tanpa on).",
+                    "xrayTokens": [
+                        {
+                            "word": "next Tuesday",
+                            "role": "Deictic Time Adverbial",
+                            "nuance": "Bebas preposisi karena diawali 'next'",
+                            "colorTag": "hack"
+                        }
+                    ]
+                },
+                {
+                    "conditionTitle": "GOING HOME VS. STAYING AT HOME",
+                    "register": "Daily Life",
+                    "positive": "I usually go home at 6 PM and relax at home.",
+                    "negative": "She didn't get home until midnight.",
+                    "question": "What time are you heading home tonight?",
+                    "nuanceNote": "Kata kerja gerak (go/get/head) + home = tanpa 'to/at'. Kata kerja diam (stay/be/relax) = at home.",
+                    "xrayTokens": [
+                        {
+                            "word": "go home",
+                            "role": "Motion Verb + Adverbial Home",
+                            "nuance": "Tidak pernah memakai 'go to home'",
+                            "colorTag": "nuance"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Kesalahan Paling Umum: 'Go to home' & 'On next week'",
+                    "explanation": "Hindari menyisipkan 'to' sebelum 'home' dan hindari 'on/in' sebelum 'next/last'.",
+                    "wrongExample": "I will go to home and call you on next Monday.",
+                    "correctExample": "I will go home and call you next Monday."
+                }
+            ],
+            "tipsAndTricks": [
+                "Begitu mulut mengucapkan kata 'this, next, last, every', langsung kunci preposisi—jangan ucapkan 'in/on/at'!"
+            ]
+        }
+    ],
+    "practiceQuiz": [
+        {
+            "id": "q-prep-beg-01",
+            "topicId": "zero-prepositions",
+            "scenario": {
+                "setting": "Slack Channel Tim Produk",
+                "interlocutor": "Tech Lead menanyakan jadwal rilis fitur baru",
+                "intent": "Menjawab jadwal hari tertentu menggunakan penanda waktu relatif."
+            },
+            "question": "Pilih kalimat yang paling tepat dan natural untuk dikirim di Slack:",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "We will deploy the update on next Monday at 9 AM.",
+                    "isCorrect": false
+                },
+                {
+                    "id": "b",
+                    "text": "We will deploy the update next Monday at 9 AM.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "c",
+                    "text": "We will deploy the update next Monday in 9 AM.",
+                    "isCorrect": false
+                }
+            ],
+            "deepExplanation": {
+                "whyCorrect": "'Next Monday' tidak memakai preposisi karena diawali 'next', sedangkan jam spesifik '9 AM' wajib memakai 'at'.",
+                "whyOthersFail": "Opsi A keliru menambahkan 'on' sebelum 'next Monday', dan Opsi C salah memakai 'in' untuk jam.",
+                "realLifeHack": "Aturan cepat: 'on Monday' (pakai on), 'next Monday' (tanpa on)."
+            }
+        }
+    ]
+}

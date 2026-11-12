@@ -1,0 +1,224 @@
+{
+    "id": "beg-pos-articles",
+    "slug": "articles-determiners",
+    "tier": "beginner",
+    "category": "part-of-speech",
+    "layoutVariant": "trio-staggered",
+    "order": 6,
+    "title": "Articles: Indefinite (A/An), Definite (The) & Zero Article",
+    "subtitle": "CEFR A1–A2 • Listener Familiarity & Specificity Signaling",
+    "estimatedMinutes": 16,
+    "topics": [
+        {
+            "id": "indefinite-a-an",
+            "badgeNumber": 1,
+            "colSpan": "third",
+            "tags": [
+                "Articles",
+                "First Mention"
+            ],
+            "title": "1. A / An (First Mention & General)",
+            "subtitle": "Singular Countable Nouns Introduced for the First Time",
+            "explanation": "Digunakan untuk benda tunggal yang bisa dihitung saat pertama kali disebut atau ketika pendengar belum tahu benda spesifik mana yang dimaksud. 'A' untuk bunyi konsonan, 'An' untuk bunyi vokal.",
+            "rationale": "'A/An' berfungsi seperti lampu sorot pembuka yang memperkenalkan karakter atau objek baru ke dalam percakapan.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "S + V + a [Consonant Sound] / an [Vowel Sound] + Singular Noun"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "S + Aux + not + V + a / an + Singular Noun"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Do you have / Is there + a / an + Singular Noun?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "INTRODUCING AN ITEM",
+                    "register": "Workplace",
+                    "positive": "I found a bug in the login form and wrote an issue ticket.",
+                    "negative": "We don't have an umbrella in the car.",
+                    "question": "Is there a coffee shop near this station?",
+                    "nuanceNote": "Pemilihan 'a' vs 'an' ditentukan oleh BUNYI ucapan, bukan huruf tulisannya (an hour, a university).",
+                    "xrayTokens": [
+                        {
+                            "word": "an issue ticket",
+                            "role": "Indefinite Article + Noun",
+                            "nuance": "Diawali bunyi vokal /ɪ/ sehingga memakai 'an'",
+                            "colorTag": "hack"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Huruf 'U' dan 'H' yang Menipu (Sound Rule)",
+                    "explanation": "'University' dibaca /juː.../ (bunyi konsonan Y) sehingga memakai 'a'. 'Hour' dibaca /aʊər/ (H bisu, bunyi vokal) sehingga memakai 'an'.",
+                    "wrongExample": "An university student waited a hour.",
+                    "correctExample": "A university student waited an hour."
+                }
+            ],
+            "tipsAndTricks": [
+                "Ucapkan kata bendanya keras-keras: jika mulut terbuka mengeluarkan bunyi A, I, U, E, O di awal, pakai 'An'."
+            ]
+        },
+        {
+            "id": "definite-the",
+            "badgeNumber": 2,
+            "colSpan": "third",
+            "tags": [
+                "Articles",
+                "Shared Context"
+            ],
+            "title": "2. The (Specific & Shared Knowledge)",
+            "subtitle": "Second Mention, Unique Entities & Mutual Context",
+            "explanation": "Digunakan ketika pembicara dan pendengar sama-sama tahu benda spesifik mana yang dimaksud—baik karena sudah disebut sebelumnya, jelas dari situasi sekitar, maupun benda tunggal di dunia.",
+            "rationale": "'The' berarti 'yang itu—kamu pasti tahu yang mana'. Bisa dipakai untuk benda tunggal, jamak, maupun Uncountable.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "S + V + the + [Known / Unique / Second-Mention Noun]"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "S + Aux + not + V + the + [Specific Noun]"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Did you check / Where is + the + [Specific Noun]?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "SECOND MENTION & SHARED CONTEXT",
+                    "register": "Daily Life",
+                    "positive": "I bought a book yesterday. The book explains English logic clearly.",
+                    "negative": "Please don't close the door; the air conditioner is off.",
+                    "question": "Can you send me the link we discussed earlier?",
+                    "nuanceNote": "Kalimat pertama memakai 'a book' (baru dikenalkan), kalimat kedua berubah menjadi 'the book' (sudah diketahui).",
+                    "xrayTokens": [
+                        {
+                            "word": "The book",
+                            "role": "Definite Second Mention",
+                            "nuance": "Merujuk spesifik pada buku yang baru dibeli di kalimat sebelumnya",
+                            "colorTag": "subject"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Superlative & Ordinal Numbers Selalu Memakai 'The'",
+                    "explanation": "Kata paling (the best, the fastest) dan urutan (the first, the second) selalu spesifik sehingga wajib memakai 'the'.",
+                    "wrongExample": "This is best solution for first release.",
+                    "correctExample": "This is the best solution for the first release."
+                }
+            ],
+            "tipsAndTricks": [
+                "Tanyakan pada dirimu: 'Apakah lawan bicaraku langsung menunjuk benda yang sama jika aku sebut ini?' Jika ya, pakai 'The'."
+            ]
+        },
+        {
+            "id": "zero-article",
+            "badgeNumber": 3,
+            "colSpan": "third",
+            "tags": [
+                "Articles",
+                "Generalizations"
+            ],
+            "title": "3. Zero Article (General Concepts)",
+            "subtitle": "Plural & Uncountable Nouns in General Statements",
+            "explanation": "Jangan gunakan artikel (a, an, the) ketika membicarakan sesuatu secara umum menggunakan kata benda jamak (Plural) atau kata benda tak terhitung (Uncountable), serta sebelum nama bahasa, olahraga, dan sebagian besar negara.",
+            "rationale": "Menambahkan 'the' pada pernyataan umum menyempitkan makna menjadi kelompok tertentu saja.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "[Plural Noun / Uncountable Noun] + V (General Truth)"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "S + don't/doesn't + V + [Plural / Uncountable Noun]"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Do you like + [Plural / Uncountable Noun]?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "GENERAL PREFERENCES",
+                    "register": "Daily Life",
+                    "positive": "Developers love clean documentation and good coffee.",
+                    "negative": "I don't drink sugary drinks before sleeping.",
+                    "question": "Do you speak English or Japanese at work?",
+                    "nuanceNote": "Membicarakan kopi dan dokumentasi secara umum di dunia, bukan secangkir kopi tertentu.",
+                    "xrayTokens": [
+                        {
+                            "word": "Developers",
+                            "role": "Bare Plural Generalization",
+                            "nuance": "Tanpa 'the' karena merujuk seluruh developer secara umum",
+                            "colorTag": "nuance"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Nama Negara Tanpa 'The' vs. Dengan 'The'",
+                    "explanation": "Negara tunggal tanpa 'the' (Indonesia, Japan, France). Negara berbentuk persatuan/jamak memakai 'the' (the United States, the UK, the Netherlands).",
+                    "wrongExample": "I live in the Indonesia and want to visit United Kingdom.",
+                    "correctExample": "I live in Indonesia and want to visit the United Kingdom."
+                }
+            ],
+            "tipsAndTricks": [
+                "Bandingkan: 'I love music' (musik secara umum = tanpa the) vs. 'I love the music in this game' (musik spesifik di game ini = pakai the)."
+            ]
+        }
+    ],
+    "practiceQuiz": [
+        {
+            "id": "q-art-01",
+            "topicId": "indefinite-a-an",
+            "scenario": {
+                "setting": "Pendaftaran Kampus & Pelatihan",
+                "interlocutor": "Panitia administrasi memeriksa berkas peserta",
+                "intent": "Menyebut status mahasiswa universitas dengan artikel yang tepat."
+            },
+            "question": "Pilih kalimat yang benar secara pelafalan dan tata bahasa:",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "He is an university student from Tangerang.",
+                    "isCorrect": false
+                },
+                {
+                    "id": "b",
+                    "text": "He is a university student from Tangerang.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "c",
+                    "text": "He is university student from Tangerang.",
+                    "isCorrect": false
+                }
+            ],
+            "deepExplanation": {
+                "whyCorrect": "'University' diawali bunyi konsonan /j/ ('yoo-niversity'), sehingga menggunakan 'a'.",
+                "whyOthersFail": "Opsi A terjebak oleh huruf 'u' secara visual, dan Opsi C menghilangkan artikel wajib untuk benda tunggal.",
+                "realLifeHack": "Gunakan 'an' untuk kata seperti 'an umbrella' (bunyi 'a'), tetapi 'a' untuk 'a user / a uniform / a university' (bunyi 'yu')."
+            }
+        }
+    ]
+}

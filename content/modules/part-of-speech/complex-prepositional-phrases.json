@@ -1,0 +1,171 @@
+{
+    "id": "prof-pos-prepositions",
+    "slug": "complex-prepositional-phrases",
+    "tier": "proficient",
+    "category": "part-of-speech",
+    "layoutVariant": "asymmetric-spotlight",
+    "order": 21,
+    "title": "Idiomatic & Multi-Word Prepositional Phrases: Precision Collocations",
+    "subtitle": "CEFR C1–C2 • Dependent Prepositions & Complex Discourse Connectors",
+    "estimatedMinutes": 20,
+    "topics": [
+        {
+            "id": "complex-multiword-prepositions",
+            "badgeNumber": 1,
+            "colSpan": "medium",
+            "tags": [
+                "Prepositions",
+                "C1 Discourse"
+            ],
+            "title": "1. Multi-Word Prepositional Phrases (In light of, By means of, On behalf of)",
+            "subtitle": "Framing Context, Agency & Criteria in Professional Rhetoric",
+            "explanation": "Frasa preposisi majemuk terdiri dari dua atau tiga kata yang berfungsi sebagai satu unit penghubung (in light of, with respect to, in accordance with, at the expense of, irrespective of) dan selalu diikuti frasa kata benda atau Gerund (V-ing).",
+            "rationale": "Frasa ini memberi penutur tingkat lanjut kemampuan untuk membingkai sudut pandang, merujuk regulasi, atau menyoroti trade-off secara sangat presisi dalam negosiasi dan penulisan.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "[In light of / In accordance with / By means of] + [Noun Phrase / V-ing], [Clause]"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "S + V + [irrespective of / regardless of] + [Constraint / Noun Phrase]"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Should we adjust the roadmap [in light of] + [Recent Findings]?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "STRATEGIC TRADE-OFFS & COMPLIANCE",
+                    "register": "Workplace",
+                    "positive": "In light of recent security audits, we redesigned the authentication flow.",
+                    "negative": "We must never optimize speed at the expense of data integrity.",
+                    "question": "Was the user data processed in accordance with privacy regulations?",
+                    "nuanceNote": "'At the expense of X' berarti mengorbankan X demi mendapatkan hal lain—frasa kunci saat membahas architectural trade-offs.",
+                    "xrayTokens": [
+                        {
+                            "word": "In light of",
+                            "role": "Contextual Multi-Word Preposition",
+                            "nuance": "Bermakna 'mempertimbangkan fakta/temuan baru dari...'",
+                            "colorTag": "subject"
+                        },
+                        {
+                            "word": "at the expense of",
+                            "role": "Trade-Off Prepositional Phrase",
+                            "nuance": "Menunjukkan pengorbanan satu aspek demi aspek lain",
+                            "colorTag": "hack"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Jangan Menggabungkan 'With regards to' (Salah) — Gunakan 'With regard to' atau 'Regarding'",
+                    "explanation": "Dalam korespondensi formal, bentuk baku tunggalnya adalah 'with regard to' (tanpa -s) atau satu kata 'regarding'.",
+                    "wrongExample": "With regards to your proposal, we have two questions.",
+                    "correctExample": "With regard to your proposal (or Regarding your proposal), we have two questions."
+                }
+            ],
+            "tipsAndTricks": [
+                "Gunakan 'irrespective of' atau 'regardless of' untuk menunjukkan bahwa sebuah aturan berlaku universal tanpa pengecualian."
+            ]
+        },
+        {
+            "id": "dependent-prepositions-c1",
+            "badgeNumber": 2,
+            "colSpan": "narrow",
+            "tags": [
+                "Collocations",
+                "Dependent Prepositions"
+            ],
+            "title": "2. Dependent Prepositions (Adjective/Verb + Fixed Preposition)",
+            "subtitle": "Mastering Native Pairings (Conducive to, Susceptible to, Adept at)",
+            "explanation": "Kata kerja dan kata sifat tingkat lanjut memiliki pasangan preposisi tetap yang tidak bisa diterjemahkan kata per kata dari bahasa Indonesia (e.g., susceptible to, accountable for, stem from, attribute X to Y).",
+            "rationale": "Ketepatan pasangan preposisi inilah yang langsung membedakan penutur C1 dari pembelajar menengah.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "S + Be + [conducive to / susceptible to / adept at] + [Noun / V-ing]"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "S + Aux + not + [refrain from / abstain from] + [V-ing]"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "What factors did the outage [stem from]?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "ROOT CAUSE & CAPABILITY ANALYSIS",
+                    "register": "Workplace",
+                    "positive": "The latency spike stemmed from an unindexed database query.",
+                    "negative": "A well-structured workspace is conducive to deep focus.",
+                    "question": "Which services are most susceptible to traffic bursts?",
+                    "nuanceNote": "'Stem from' berarti 'berakar/berasal dari'—jauh lebih elegan daripada 'come from' dalam analisis akar masalah.",
+                    "xrayTokens": [
+                        {
+                            "word": "stemmed from",
+                            "role": "Verb + Dependent Preposition",
+                            "nuance": "Menunjukkan asal-usul penyebab teknis secara presisi",
+                            "colorTag": "verb"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "'Comprise' Tidak Memakai 'Of' dalam Kalimat Aktif",
+                    "explanation": "Gunakan 'comprise' langsung diikuti objek (The suite comprises four modules), atau 'is composed of' (pasif).",
+                    "wrongExample": "The curriculum comprises of twenty-seven modules.",
+                    "correctExample": "The curriculum comprises twenty-seven modules."
+                }
+            ],
+            "tipsAndTricks": [
+                "Hafalkan pasangan 'to' yang diikuti V-ing: 'conducive to learning', 'prone to crashing', 'committed to delivering'."
+            ]
+        }
+    ],
+    "practiceQuiz": [
+        {
+            "id": "q-prof-prep-01",
+            "topicId": "complex-multiword-prepositions",
+            "scenario": {
+                "setting": "Diskusi Arsitektur Sistem",
+                "interlocutor": "Principal Engineer menanyakan apakah kita sebaiknya menonaktifkan validasi demi mempercepat proses",
+                "intent": "Menolak opsi tersebut karena mengorbankan keamanan sistem."
+            },
+            "question": "Frasa preposisi mana yang paling tepat melengkapi kalimat: 'We should never boost performance ___ security'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "in accordance with",
+                    "isCorrect": false
+                },
+                {
+                    "id": "b",
+                    "text": "at the expense of",
+                    "isCorrect": true
+                },
+                {
+                    "id": "c",
+                    "text": "on behalf of",
+                    "isCorrect": false
+                }
+            ],
+            "deepExplanation": {
+                "whyCorrect": "'At the expense of' secara tepat bermakna mendapatkan satu keuntungan dengan mengorbankan aspek penting lainnya.",
+                "whyOthersFail": "'In accordance with' berarti sesuai aturan, dan 'on behalf of' berarti atas nama seseorang.",
+                "realLifeHack": "Gunakan 'at the expense of [quality/sleep/security]' setiap kali membahas trade-off."
+            }
+        }
+    ]
+}

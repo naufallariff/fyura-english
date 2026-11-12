@@ -1,0 +1,212 @@
+{
+    "version": "2.1.0",
+    "userPlacement": {
+        "currentCefr": "A2",
+        "targetCefr": "B2",
+        "score": 58
+    },
+    "tiers": [
+        {
+            "id": "beginner",
+            "label": "Beginner",
+            "cefrBadge": "CEFR A1–A2",
+            "description": "Basic User • Daily & Routine Foundations",
+            "accent": "emerald",
+            "categories": [
+                {
+                    "id": "part-of-speech",
+                    "label": "Part of Speech",
+                    "modules": [
+                        {
+                            "slug": "nouns-foundations",
+                            "title": "Nouns & Countability",
+                            "status": "ready"
+                        },
+                        {
+                            "slug": "prepositions-place-time",
+                            "title": "Prepositions of Time & Place",
+                            "status": "ready"
+                        },
+                        {
+                            "slug": "pronouns-case",
+                            "title": "Personal & Possessive Pronouns",
+                            "status": "ready"
+                        },
+                        {
+                            "slug": "verbs-be-action",
+                            "title": "To Be & Core Action Verbs",
+                            "status": "ready"
+                        },
+                        {
+                            "slug": "adjectives-order",
+                            "title": "Adjectives & Royal Order",
+                            "status": "ready"
+                        },
+                        {
+                            "slug": "articles-determiners",
+                            "title": "Articles (A, An, The)",
+                            "status": "ready"
+                        }
+                    ]
+                },
+                {
+                    "id": "grammar",
+                    "label": "Grammar",
+                    "modules": [
+                        {
+                            "slug": "simple-present-tense",
+                            "title": "Simple Present Tense",
+                            "status": "ready"
+                        },
+                        {
+                            "slug": "present-continuous",
+                            "title": "Present Continuous Tense",
+                            "status": "ready"
+                        },
+                        {
+                            "slug": "simple-past-tense",
+                            "title": "Simple Past Tense",
+                            "status": "ready"
+                        },
+                        {
+                            "slug": "future-will-going-to",
+                            "title": "Future Forms (Will vs. Going To)",
+                            "status": "ready"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "intermediate",
+            "label": "Intermediate",
+            "cefrBadge": "CEFR B1–B2",
+            "description": "Independent User • Workplace & Social Fluency",
+            "accent": "sky",
+            "categories": [
+                {
+                    "id": "part-of-speech",
+                    "label": "Part of Speech",
+                    "modules": [
+                        {
+                            "slug": "abstract-collective-nouns",
+                            "title": "Abstract & Collective Nouns",
+                            "status": "ready"
+                        },
+                        {
+                            "slug": "relative-reflexive-pronouns",
+                            "title": "Relative & Reflexive Pronouns",
+                            "status": "ready"
+                        },
+                        {
+                            "slug": "adverbs-manner-frequency",
+                            "title": "Adverbs of Manner & Degree",
+                            "status": "ready"
+                        },
+                        {
+                            "slug": "coordinating-subordinating-conjunctions",
+                            "title": "Conjunctions & Connectors",
+                            "status": "ready"
+                        }
+                    ]
+                },
+                {
+                    "id": "grammar",
+                    "label": "Grammar",
+                    "modules": [
+                        {
+                            "slug": "present-perfect-vs-past",
+                            "title": "Present Perfect vs. Simple Past",
+                            "status": "ready"
+                        },
+                        {
+                            "slug": "modal-auxiliaries",
+                            "title": "Modal Verbs of Obligation & Advice",
+                            "status": "ready"
+                        },
+                        {
+                            "slug": "passive-voice-core",
+                            "title": "Passive Voice Structures",
+                            "status": "ready"
+                        },
+                        {
+                            "slug": "conditionals-type-1-2",
+                            "title": "Conditionals (Type 1 & Type 2)",
+                            "status": "ready"
+                        },
+                        {
+                            "slug": "gerunds-vs-infinitives",
+                            "title": "Gerunds vs. Infinitives",
+                            "status": "ready"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "proficient",
+            "label": "Proficient",
+            "cefrBadge": "CEFR C1–C2",
+            "description": "Proficient User • Nuance, Diplomacy & Mastery",
+            "accent": "violet",
+            "categories": [
+                {
+                    "id": "part-of-speech",
+                    "label": "Part of Speech",
+                    "modules": [
+                        {
+                            "slug": "nominalization-derivatives",
+                            "title": "Nominalization & Derivatives",
+                            "status": "ready"
+                        },
+                        {
+                            "slug": "complex-prepositional-phrases",
+                            "title": "Multi-Word Prepositional Phrases",
+                            "status": "ready"
+                        }
+                    ]
+                },
+                {
+                    "id": "grammar",
+                    "label": "Grammar",
+                    "modules": [
+                        {
+                            "slug": "mixed-conditionals-subjunctive",
+                            "title": "Mixed Conditionals & Subjunctive",
+                            "status": "ready"
+                        },
+                        {
+                            "slug": "causative-structures",
+                            "title": "Causative Verbs (Have, Get, Make)",
+                            "status": "ready"
+                        },
+                        {
+                            "slug": "reduced-relative-clauses",
+                            "title": "Reduced Relative Clauses",
+                            "status": "ready"
+                        },
+                        {
+                            "slug": "inversion-elliptical-constructions",
+                            "title": "Negative Inversion & Ellipsis",
+                            "status": "ready"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "thematicLabs": [
+        {
+            "id": "conversations",
+            "label": "Conversational Pragmatics",
+            "description": "Greetings, Diplomatic Requests, Apologies & Workplace Meetings",
+            "slug": "workplace-pragmatics"
+        },
+        {
+            "id": "vocabulary",
+            "label": "Thematic Lexicon & Idioms",
+            "description": "Airports, Healthcare, Tech Engineering & Native Proverbs",
+            "slug": "situational-lexicon"
+        }
+    ]
+}

@@ -1,0 +1,165 @@
+{
+    "id": "beg-gram-future",
+    "slug": "future-will-going-to",
+    "tier": "beginner",
+    "category": "grammar",
+    "layoutVariant": "comparative-split",
+    "order": 10,
+    "title": "Future Forms: Spontaneous 'Will' vs. Planned 'Be Going To'",
+    "subtitle": "CEFR A1–A2 • Instant Decisions & Promises vs. Prior Intentions & Evidence",
+    "estimatedMinutes": 16,
+    "topics": [
+        {
+            "id": "future-will",
+            "badgeNumber": 1,
+            "colSpan": "half",
+            "tags": [
+                "Future",
+                "Spontaneous"
+            ],
+            "title": "1. Will + Verb-1 (Instant Decisions & Offers)",
+            "subtitle": "Decisions Made at the Moment of Speaking",
+            "explanation": "Digunakan ketika keputusan baru dibuat secara spontan tepat saat berbicara, saat menawarkan bantuan, berjanji, atau memprediksi berdasarkan opini pribadi.",
+            "rationale": "'Will' menunjukkan kesiapan instan tanpa rencana sebelumnya. Dalam percakapan lisan hampir selalu disingkat menjadi 'll (I'll, we'll).",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "Subject + will ('ll) + Verb-1 + Object"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "Subject + will not (won't) + Verb-1 + Object"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Will + Subject + Verb-1 + Object?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "INSTANT HELP & PROMISES",
+                    "register": "Workplace",
+                    "positive": "Oh, the link is broken? I'll fix it right away.",
+                    "negative": "I won't forget to send you the meeting notes.",
+                    "question": "Will you help me review this pull request?",
+                    "nuanceNote": "Keputusan 'I'll fix it' baru muncul detik itu juga setelah mendengar link rusak.",
+                    "xrayTokens": [
+                        {
+                            "word": "I'll fix",
+                            "role": "Spontaneous Future Modal",
+                            "nuance": "Respon cepat tanpa perencanaan sebelumnya",
+                            "colorTag": "verb"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Jangan Pakai 'Will' untuk Rencana Matang",
+                    "explanation": "Jika kamu sudah membeli tiket atau menjadwalkan proyek sejak minggu lalu, hindari memakai 'will' karena terdengar seolah baru diputuskan detik ini.",
+                    "wrongExample": "I bought the ticket. I will fly to Bali tomorrow.",
+                    "correctExample": "I bought the ticket. I'm going to fly (or I'm flying) to Bali tomorrow."
+                }
+            ],
+            "tipsAndTricks": [
+                "Gunakan 'I think I'll...' atau 'I'll probably...' untuk keputusan spontan yang santai di percakapan sehari-hari."
+            ]
+        },
+        {
+            "id": "future-going-to",
+            "badgeNumber": 2,
+            "colSpan": "half",
+            "tags": [
+                "Future",
+                "Planned Intent"
+            ],
+            "title": "2. Be Going To + Verb-1 (Prior Plans & Evidence)",
+            "subtitle": "Pre-Decided Intentions & Visible Signs",
+            "explanation": "Digunakan untuk rencana atau niat yang sudah diputuskan SEBELUM percakapan terjadi, serta prediksi yang didukung bukti nyata yang terlihat sekarang.",
+            "rationale": "Frasa 'going to' secara harfiah menggambarkan bahwa kamu sudah 'bergerak menuju' tujuan yang telah ditetapkan.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "Subject + am / is / are + going to + Verb-1 + Object"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "Subject + am / is / are + not + going to + Verb-1"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Am / Is / Are + Subject + going to + Verb-1?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "PLANNED ROADMAP & EVIDENCE",
+                    "register": "Workplace",
+                    "positive": "We are going to migrate the database next month.",
+                    "negative": "I'm not going to take any freelance projects this semester.",
+                    "question": "Are you going to apply for the developer cohort?",
+                    "nuanceNote": "Migrasi database dan pendaftaran cohort adalah keputusan yang sudah dipikirkan matang sebelumnya.",
+                    "xrayTokens": [
+                        {
+                            "word": "are going to migrate",
+                            "role": "Planned Future Intention",
+                            "nuance": "Rencana yang sudah diputuskan sebelum momen bicara",
+                            "colorTag": "hack"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Prediksi Berbasis Bukti Nyata di Depan Mata",
+                    "explanation": "Jika awan hitam pekat atau baterai tinggal 1%, gunakan 'going to'—bukan 'will'.",
+                    "wrongExample": "Look at the battery at 1%! My laptop will shut down.",
+                    "correctExample": "Look at the battery at 1%! My laptop is going to shut down."
+                }
+            ],
+            "tipsAndTricks": [
+                "Perbedaan inti dalam 3 kata: Will = Baru kepikiran. Going to = Sudah direncanakan."
+            ]
+        }
+    ],
+    "practiceQuiz": [
+        {
+            "id": "q-fut-01",
+            "topicId": "future-will",
+            "scenario": {
+                "setting": "Panggilan Video Tim",
+                "interlocutor": "Rekan kerja berkata suaramu tidak terdengar karena mikrofon masih mute",
+                "intent": "Merespons secara spontan detik itu juga."
+            },
+            "question": "Respons mana yang paling natural?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Oh sorry! I am going to unmute my mic now.",
+                    "isCorrect": false
+                },
+                {
+                    "id": "b",
+                    "text": "Oh sorry! I'll unmute my mic now.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "c",
+                    "text": "Oh sorry! I unmute my mic now.",
+                    "isCorrect": false
+                }
+            ],
+            "deepExplanation": {
+                "whyCorrect": "Tindakan menyalakan mikrofon dilakukan spontan tepat saat diberi tahu, sehingga memakai 'I'll + V1'.",
+                "whyOthersFail": "'Going to' terdengar seolah kamu sudah merencanakannya sejak kemarin.",
+                "realLifeHack": "Setiap kali berkata 'Oh, let me...' atau menawarkan bantuan mendadak, selalu pakai 'I'll'."
+            }
+        }
+    ]
+}
