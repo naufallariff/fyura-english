@@ -94,7 +94,7 @@ export function FloatingSidebar({ onClose }: FloatingSidebarProps) {
         setOpenCategories((prev) => ({ ...prev, [key]: !prev[key] }));
 
     return (
-        <aside className="flex h-full w-80 flex-col justify-between overflow-y-auto border-r border-white/90 bg-surface/95 px-4 py-5 shadow-(--shadow-soft-sidebar) backdrop-blur-xl">
+        <aside className="flex h-full w-72 flex-col justify-between overflow-y-auto border-r border-white/90 bg-surface/95 px-4 py-5 shadow-(--shadow-soft-sidebar) backdrop-blur-xl">
             <div className="space-y-5">
                 {/* Brand Header */}
                 <div className="flex items-center justify-between px-1.5">
