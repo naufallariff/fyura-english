@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 Fyura English — Neuro-Cognitive Language Workspace
 
-## Getting Started
+**Fyura English** adalah *interactive learning & conditional practice workspace* untuk menguasai bahasa Inggris bukan lewat hafalan rumus yang kaku, melainkan melalui **intuisi psikologis, mental model neurosains, dan simulasi situasi kehidupan nyata**.
 
-First, run the development server:
+## ✨ Keunggulan Utama
+
+- **Hybrid Dual-Axis Curriculum:** Materi disusun dalam 4 tingkatan rasa bahasa (*Foundation → Fluidity → Precision → Native Instinct*) sekaligus akses cepat lintas tema (*Real-World Labs* & *Grammar Matrix*).
+- **Interactive X-Ray Sentences:** Bedah struktur kalimat kata demi kata untuk memahami nuansa emosi, penekanan, dan jebakan penutur bahasa Indonesia.
+- **Conditional Scenario Quiz:** Latihan berbasis konteks sosial nyata (lokasi, lawan bicara, tingkat formalitas) dengan *deep neuro-feedback* instan.
+- **Zero-Database Static Engine:** Seluruh kurikulum disimpan dalam file `.json` tervalidasi **Zod**, dikompilasi statis oleh **Next.js App Router** untuk kecepatan maksimal di Vercel, dengan progres belajar tersimpan di `localStorage` (+ fitur *Export/Import JSON Backup*).
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js (App Router) & React
+- **Language:** TypeScript (`strict: true`)
+- **Styling:** Tailwind CSS v4 (`@theme` semantic tokens)
+- **Validation & State:** Zod + Zustand (`localStorage` persistence)
+- **Motion & Icons:** Motion + Lucide React
+
+## 🚀 Menjalankan Secara Lokal
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# Install dependencies
+pnpm install
+
+# Jalankan server development
 pnpm dev
-# or
-bun dev
+
+# Jalankan pengecekan kualitas kode sebelum commit
+pnpm lint && npx tsc --noEmit && pnpm build
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌿 Alur Kerja Git Branch
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* `main` — Production branch (terhubung ke domain utama Vercel).
+* `develop` — Staging / integration branch untuk preview fitur & konten.
+* `feat/*` — Pengembangan fitur UI & komponen interaktif.
+* `content/*` — Penambahan atau pembaruan materi JSON & kuis.
