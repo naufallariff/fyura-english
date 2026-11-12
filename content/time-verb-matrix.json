@@ -1,0 +1,1543 @@
+{
+    "meta": {
+        "title": "Arsitektur 4×4 Waktu, Sistem To Be & Anatomi 4 Verb",
+        "subtitle": "Master Blueprint • Manajemen Waktu Kalimat (+ / - / ?) & Intuisi Penutur Asli",
+        "description": "Sistem waktu (tenses) dalam bahasa Inggris bekerja layaknya mesin presisi berbasis matriks koordinat 4 × 4. Setiap dimensi waktu (Present, Past, Future, Past Future) selalu berulang dalam 4 kondisi aspek yang sama (01–04), digerakkan oleh kata kerja bantu (To Be / Auxiliary) sebagai penunjuk waktu dan perubahan bentuk verb (V1, V2, V3, V-ing) sebagai penunjuk sifat kejadian.",
+        "axisTimeTitle": "1. Sumbu Waktu (4 Dimensi Time)",
+        "axisTimeDesc": "Menjawab: 'Di mana posisi kamera ceritanya?' Terdiri dari Present (kini), Past (lampau), Future (mendatang), dan Past Future (proyeksi ke depan dari sudut pandang masa lalu).",
+        "axisAspectTitle": "2. Sumbu Kondisi (4 Aspek 01–04)",
+        "axisAspectDesc": "Menjawab: 'Bagaimana sifat kejadiannya di titik waktu tersebut?' Berulang identik 01–04 di setiap waktu: 01 Simple, 02 Continuous, 03 Perfect, dan 04 Perfect Continuous."
+    },
+    "aspects": [
+        {
+            "id": "simple",
+            "code": "01",
+            "title": "Simple",
+            "badge": "Fakta Utuh / Kebiasaan",
+            "timelineVisual": "────●──── (Satu titik utuh / berulang)",
+            "description": "Kejadian dipandang sebagai satu titik fakta utuh, rutinitas, atau jadwal tetap tanpa menyoroti proses yang sedang bergerak maupun hasil yang menempel.",
+            "focus": "Keberadaan fakta umum, kebiasaan berulang, atau peristiwa tunggal",
+            "verbSignature": "V1 / V2 / will + V1 (Nominal: To Be)"
+        },
+        {
+            "id": "continuous",
+            "code": "02",
+            "title": "Continuous",
+            "badge": "Sedang Berlangsung / Dinamis",
+            "timelineVisual": "──[~~~●~~~]── (Di tengah proses)",
+            "description": "Berasal dari kata continue (berlanjut). Kejadian sedang berada di tengah proses aktif (belum selesai) tepat pada titik waktu spesifik yang sedang dibicarakan.",
+            "focus": "Aktivitas dinamis yang tengah berlangsung saat momen tertentu",
+            "verbSignature": "To Be + V-ing"
+        },
+        {
+            "id": "perfect",
+            "code": "03",
+            "title": "Perfect",
+            "badge": "Sempurna / Sudah Tuntas",
+            "timelineVisual": "───|====▶● (Tuntas sebelum titik acuan)",
+            "description": "Berasal dari bahasa Latin perfectus ('sudah selesai sepenuhnya'). Fokusnya bukan pada prosesnya, melainkan pada hasil, pengalaman, atau status tuntasnya sebelum titik waktu acuan.",
+            "focus": "Hasil akhir, efek yang terasa, dan status ketuntasan",
+            "verbSignature": "Have / Has / Had + V3"
+        },
+        {
+            "id": "perfect-continuous",
+            "code": "04",
+            "title": "Perfect Continuous",
+            "badge": "Sudah Berjalan & Terus Berlanjut",
+            "timelineVisual": "───|≈≈≈≈≈▶● (Akumulasi durasi aktif)",
+            "description": "Gabungan dua kondisi: kejadian sudah dimulai sejak titik sebelumnya (Perfect) dan hingga titik waktu acuan prosesnya masih terus berjalan (Continuous).",
+            "focus": "Akumulasi durasi atau rentang waktu yang ditempuh",
+            "verbSignature": "Have / Has / Had + been + V-ing"
+        }
+    ],
+    "toBeSystem": {
+        "roles": [
+            {
+                "id": "copula",
+                "badge": "Peran 01 • Kalimat Nominal",
+                "title": "Copula / Linking Verb (Penghubung Identitas & Sifat)",
+                "description": "Dalam kalimat Nominal (tanpa kata kerja aksi, melainkan diikuti Adjective, Noun, atau Adverb tempat/waktu), To Be bertindak sebagai jembatan penghubung karena setiap kalimat bahasa Inggris wajib memiliki kata kerja penanda waktu.",
+                "example": "She is a software architect. / The servers were offline yesterday.",
+                "highlights": [
+                    "Menghubungkan Subjek + Kata Sifat (is ready)",
+                    "Menghubungkan Subjek + Profesi/Identitas (am a developer)",
+                    "Menghubungkan Subjek + Lokasi/Waktu (were in Jakarta)"
+                ]
+            },
+            {
+                "id": "auxiliary",
+                "badge": "Peran 02 • Kalimat Verbal & Pasif",
+                "title": "Auxiliary Verb (Pembentuk Continuous & Passive Voice)",
+                "description": "Dalam kalimat Verbal yang sudah memiliki kata kerja aksi, To Be berubah menjadi kata kerja bantu dengan dua fungsi vital: (1) mendampingi V-ing untuk makna 'sedang' (Continuous), dan (2) mendampingi V3 untuk makna 'di- / ter-' (Passive Voice).",
+                "example": "They were deploying the patch. (Aktif Continuous) | The patch was deployed. (Pasif)",
+                "highlights": [
+                    "To Be + V-ing → Aktivitas sedang berjalan",
+                    "To Be + V3 → Kalimat pasif (objek dikenai aksi)",
+                    "Menyerap perubahan waktu (is/was/will be/has been)"
+                ]
+            },
+            {
+                "id": "suppletive",
+                "badge": "Peran 03 • 8 Wajah Perubahan",
+                "title": "Suppletive Verb (8 Bentuk Wujud Kata 'Be')",
+                "description": "To Be adalah kata kerja paling unik dalam bahasa Inggris karena berasal dari penggabungan tiga akar bahasa Jermanik kuno yang berbeda, sehingga wujudnya berubah total sesuai subjek, waktu, dan posisi sintaksisnya.",
+                "example": "be • am • is • are • was • were • been • being",
+                "highlights": [
+                    "Base (V0): be (setelah modal will, would, can, must, should)",
+                    "Present (V1): am (I), is (He/She/It), are (You/We/They)",
+                    "Past (V2): was (I/He/She/It), were (You/We/They)",
+                    "Participle: been (V3 setelah have/has/had) & being (V-ing)"
+                ]
+            }
+        ],
+        "auxiliaryLaws": [
+            {
+                "id": "first-aux-rule",
+                "title": "Hukum Auxiliary Pertama (The First-Auxiliary Operator Rule)",
+                "subtitle": "Rahasia Mengubah Kalimat (+) Menjadi (-) dan (?) di Semua 16 Kondisi",
+                "explanation": "Jika sebuah predikat memiliki rangkaian kata bantu panjang (misal: 'will have been working'), HANYA kata bantu PERTAMA ('will') yang menanggung perubahan waktu, ditempeli 'not' untuk kalimat negatif ('will not have been working'), dan melompat ke depan subjek untuk kalimat tanya ('Will you have been working?'). Kata-kata di belakangnya tetap diam!",
+                "formulaDemo": "(+) She [will] have been coding.  →  (-) She [will not] have been coding.  →  (?) [Will] she have been coding?"
+            },
+            {
+                "id": "dummy-do-support",
+                "title": "Misteri 'Dummy Do' (Do / Does / Did Support)",
+                "subtitle": "Mengapa Do/Does/Did Tiba-Tiba Muncul di Simple Present & Simple Past?",
+                "explanation": "Dari seluruh 16 sel matriks, hanya DUA sel yang tidak memiliki kata bantu terlihat pada kalimat positif (+): Simple Present (+) dan Simple Past (+). Karena bahasa Inggris melarang menempelkan 'not' langsung ke kata kerja utama (*I work not), bahasa Inggris memanggil kata bantu cadangan 'do / does / did' khusus saat kalimat berubah menjadi (-) atau (?), dan menyedot akhiran -s/-ed kembali ke V1!",
+                "formulaDemo": "(+) He worked yesterday.  →  (-) He [did not] work yesterday.  →  (?) [Did] he work yesterday?"
+            }
+        ],
+        "matrixRows": [
+            {
+                "aspectId": "simple",
+                "aspectLabel": "01. Simple (Nominal)",
+                "aspectSub": "Menyatakan sifat, identitas, atau lokasi tanpa V-aksi",
+                "present": {
+                    "formula": "am / is / are + Adj/Noun",
+                    "example": "I am ready. / She is an engineer."
+                },
+                "past": {
+                    "formula": "was / were + Adj/Noun",
+                    "example": "I was tired. / They were online."
+                },
+                "future": {
+                    "formula": "will + be + Adj/Noun",
+                    "example": "The API will be live tomorrow."
+                },
+                "pastFuture": {
+                    "formula": "would + be + Adj/Noun",
+                    "example": "He said the demo would be quick."
+                }
+            },
+            {
+                "aspectId": "continuous",
+                "aspectLabel": "02. Continuous (Auxiliary)",
+                "aspectSub": "To Be wajib hadir mendampingi V-ing",
+                "present": {
+                    "formula": "am / is / are + V-ing",
+                    "example": "She is debugging the service now."
+                },
+                "past": {
+                    "formula": "was / were + V-ing",
+                    "example": "She was debugging at 9 PM."
+                },
+                "future": {
+                    "formula": "will + be + V-ing",
+                    "example": "She will be debugging tonight."
+                },
+                "pastFuture": {
+                    "formula": "would + be + V-ing",
+                    "example": "She would be debugging right now."
+                }
+            },
+            {
+                "aspectId": "perfect",
+                "aspectLabel": "03. Perfect (Nominal)",
+                "aspectSub": "To Be berubah menjadi V3 (been) setelah have/has/had",
+                "present": {
+                    "formula": "have / has + been + Adj/Noun",
+                    "example": "I have been busy since Monday."
+                },
+                "past": {
+                    "formula": "had + been + Adj/Noun",
+                    "example": "She had been lead dev for 3 years."
+                },
+                "future": {
+                    "formula": "will + have + been + Adj/Noun",
+                    "example": "By May, I will have been here 2y."
+                },
+                "pastFuture": {
+                    "formula": "would + have + been + Adj/Noun",
+                    "example": "It would have been impossible."
+                }
+            },
+            {
+                "aspectId": "perfect-continuous",
+                "aspectLabel": "04. Perfect Continuous",
+                "aspectSub": "Kombinasi been (Perfect) + V-ing (Continuous)",
+                "present": {
+                    "formula": "have / has + been + V-ing",
+                    "example": "I have been coding for 4 hours."
+                },
+                "past": {
+                    "formula": "had + been + V-ing",
+                    "example": "I had been waiting before he came."
+                },
+                "future": {
+                    "formula": "will + have + been + V-ing",
+                    "example": "I will have been working 5 years."
+                },
+                "pastFuture": {
+                    "formula": "would + have + been + V-ing",
+                    "example": "He would have been living here."
+                }
+            }
+        ]
+    },
+    "verbAnatomy": {
+        "forms": [
+            {
+                "code": "V1",
+                "label": "Base / Present Form",
+                "finiteness": "Finite (Present) & Bare Infinitive",
+                "title": "Bentuk Dasar & Masa Kini",
+                "reason": "Digunakan untuk menyatakan fakta umum dan kebiasaan saat ini (Simple Present), serta bentuk murni setelah kata bantu do/does/did dan modal verbs (will, would, can, must, should).",
+                "goldenRule": "Untuk subjek tunggal orang ketiga (He, She, It) pada Simple Present (+), V1 wajib ditambah -s / -es (go → goes, study → studies).",
+                "pronunciationOrSpelling": "Bunyi akhiran -s/-es: /s/ setelah bunyi tak bersuara (works), /z/ setelah bunyi bersuara (runs), /ɪz/ setelah bunyi desis (watches, fixes)."
+            },
+            {
+                "code": "V2",
+                "label": "Past Simple Form",
+                "finiteness": "Strictly Finite (Past Only)",
+                "title": "Bentuk Lampau Eksklusif",
+                "reason": "Satu-satunya bentuk kata kerja yang berdiri sendiri tanpa kata kerja bantu untuk mengunci peristiwa di masa lalu yang sudah selesai dan terputus dari masa kini.",
+                "goldenRule": "V2 HANYA muncul di kalimat positif Simple Past (+). Begitu kalimat berubah menjadi negatif (didn't) atau tanya (Did...), V2 wajib kembali ke V1!",
+                "pronunciationOrSpelling": "Bunyi akhiran -ed: /t/ setelah bunyi tak bersuara (worked, stopped), /d/ setelah bunyi bersuara (played, lived), /ɪd/ hanya setelah huruf t atau d (wanted, needed)."
+            },
+            {
+                "code": "V3",
+                "label": "Past Participle",
+                "finiteness": "Non-Finite (Timeless Result/Passive)",
+                "title": "Bentuk 'Sudah Tuntas' & Pasif",
+                "reason": "V3 BUKAN penunjuk waktu (bisa dipakai di Present, Past, maupun Future), melainkan penunjuk status bahwa aksi sudah tuntas (Perfect) atau bermakna 'di- / ter-' (Passive Voice).",
+                "goldenRule": "Sebagai predikat utama kalimat, V3 tidak pernah bisa berdiri sendiri; ia wajib didampingi have/has/had (Perfect) atau To Be (Passive).",
+                "pronunciationOrSpelling": "Banyak irregular V3 memiliki ciri khas akhiran -en atau -n (written, spoken, broken, taken, seen, gone, known)."
+            },
+            {
+                "code": "V-ing",
+                "label": "Present Participle / Gerund",
+                "finiteness": "Non-Finite (Dynamic Action / Noun)",
+                "title": "Bentuk 'Sedang Bergerak' & Aktivitas",
+                "reason": "Menggambarkan aksi yang sedang aktif berjalan, dinamis, dan belum selesai pada titik waktu mana pun—serta berfungsi sebagai kata benda aktivitas (Gerund) setelah preposisi.",
+                "goldenRule": "Untuk menjadi kata kerja utama dalam kalimat, V-ing wajib didampingi To Be (am/is/are/was/were/be/been).",
+                "pronunciationOrSpelling": "Ejaan V-ing: hapus huruf -e bisu (write → writing), gandakan konsonan akhir pada pola 1 suku kata CVC (plan → planning, run → running)."
+            }
+        ],
+        "traps": [
+            {
+                "number": "01",
+                "title": "Wajah Kembar V2 dan V3 pada Regular Verbs",
+                "explanation": "Pada kata kerja beraturan (worked, deployed, tested), ejaan V2 dan V3 100% identik. Cara membedakannya: jika berdiri langsung setelah subjek tanpa kata bantu, itu V2 (Simple Past). Jika didahului have/has/had atau To Be, itu V3.",
+                "contrastExample": "I deployed the app yesterday (V2) vs. I have deployed the app (V3)."
+            },
+            {
+                "number": "02",
+                "title": "Zero-Change Verbs (V1 = V2 = V3) & Jebakan 'Read'",
+                "explanation": "Kata seperti cut-cut-cut, put-put-put, dan read-read-read (V2 & V3 dibaca /red/ seperti warna merah) memiliki ejaan sama. Analisisnya lewat subjek tunggal: 'He put it here yesterday' (tanpa -s pada He membuktikan itu V2!).",
+                "contrastExample": "He reads daily (V1 Present) vs. He read it yesterday (V2 Past, dibaca /red/)."
+            },
+            {
+                "number": "03",
+                "title": "Jebakan 'Have Had' dan 'Had Had'",
+                "explanation": "Jangan bingung melihat dua kata 'had' berurutan. Kata pertama adalah Auxiliary Perfect ('sudah'), sedangkan kata kedua adalah V3 dari kata kerja utama 'have' (memiliki/makan/mengalami).",
+                "contrastExample": "I have had breakfast (Saya sudah sarapan) | She had had enough before she left."
+            },
+            {
+                "number": "04",
+                "title": "V-ing sebagai Kata Kerja Continuous vs. Gerund (Kata Benda)",
+                "explanation": "Jika didahului To Be ('She is coding'), V-ing adalah kata kerja Continuous. Jika berdiri sebagai subjek kalimat atau setelah preposisi tanpa To Be ('Coding is fun' / 'without testing'), V-ing adalah Gerund (kata benda).",
+                "contrastExample": "She is building an app (Verb) vs. Building an app takes focus (Gerund Subject)."
+            }
+        ],
+        "ablautPatterns": [
+            {
+                "code": "A-A-A",
+                "title": "Pola Tetap Sama (Zero-Change)",
+                "rule": "Umumnya kata kerja pendek 1 suku kata yang berakhiran huruf -t atau -d.",
+                "samples": "cut-cut-cut, put-put-put, hit-hit-hit, cost-cost-cost, shut-shut-shut, let-let-let"
+            },
+            {
+                "code": "I-A-U",
+                "title": "Pola Irama Vokal (I → A → U)",
+                "rule": "Vokal tengah bergeser berirama dari i (V1) menjadi a (V2) lalu u (V3).",
+                "samples": "sing-sang-sung, drink-drank-drunk, swim-swam-swum, ring-rang-rung, begin-began-begun"
+            },
+            {
+                "code": "A-B-B",
+                "title": "Pola V2 & V3 Kembar",
+                "rule": "Sering berakhiran -ought/-aught atau memendekkan vokal tengah dengan akhiran -t/-d.",
+                "samples": "buy-bought-bought, teach-taught-taught, feel-felt-felt, keep-kept-kept, build-built-built"
+            },
+            {
+                "code": "A-B-C",
+                "title": "Pola Berbeda Total (V3 Berakhiran -en / -n)",
+                "rule": "Ciri paling mudah mengenali V3 di kelompok ini adalah akhiran -en atau -n.",
+                "samples": "write-wrote-written, speak-spoke-spoken, take-took-taken, see-saw-seen, go-went-gone"
+            }
+        ],
+        "irregularVerbs": [
+            {
+                "v1": "be (am/is/are)",
+                "v2": "was / were",
+                "v3": "been",
+                "ving": "being",
+                "meaning": "menjadi / berada (To Be)",
+                "pattern": "A-B-C"
+            },
+            {
+                "v1": "have / has",
+                "v2": "had",
+                "v3": "had",
+                "ving": "having",
+                "meaning": "memiliki / makan / mengalami",
+                "pattern": "A-B-B"
+            },
+            {
+                "v1": "do / does",
+                "v2": "did",
+                "v3": "done",
+                "ving": "doing",
+                "meaning": "melakukan / mengerjakan",
+                "pattern": "A-B-C"
+            },
+            {
+                "v1": "go",
+                "v2": "went",
+                "v3": "gone",
+                "ving": "going",
+                "meaning": "pergi",
+                "pattern": "A-B-C"
+            },
+            {
+                "v1": "come",
+                "v2": "came",
+                "v3": "come",
+                "ving": "coming",
+                "meaning": "datang",
+                "pattern": "A-B-A"
+            },
+            {
+                "v1": "become",
+                "v2": "became",
+                "v3": "become",
+                "ving": "becoming",
+                "meaning": "menjadi",
+                "pattern": "A-B-A"
+            },
+            {
+                "v1": "run",
+                "v2": "ran",
+                "v3": "run",
+                "ving": "running",
+                "meaning": "berlari / menjalankan sistem",
+                "pattern": "A-B-A"
+            },
+            {
+                "v1": "see",
+                "v2": "saw",
+                "v3": "seen",
+                "ving": "seeing",
+                "meaning": "melihat",
+                "pattern": "A-B-C"
+            },
+            {
+                "v1": "eat",
+                "v2": "ate",
+                "v3": "eaten",
+                "ving": "eating",
+                "meaning": "makan",
+                "pattern": "A-B-C"
+            },
+            {
+                "v1": "drink",
+                "v2": "drank",
+                "v3": "drunk",
+                "ving": "drinking",
+                "meaning": "minum",
+                "pattern": "I-A-U"
+            },
+            {
+                "v1": "sing",
+                "v2": "sang",
+                "v3": "sung",
+                "ving": "singing",
+                "meaning": "bernyanyi",
+                "pattern": "I-A-U"
+            },
+            {
+                "v1": "swim",
+                "v2": "swam",
+                "v3": "swum",
+                "ving": "swimming",
+                "meaning": "berenang",
+                "pattern": "I-A-U"
+            },
+            {
+                "v1": "begin",
+                "v2": "began",
+                "v3": "begun",
+                "ving": "beginning",
+                "meaning": "memulai",
+                "pattern": "I-A-U"
+            },
+            {
+                "v1": "write",
+                "v2": "wrote",
+                "v3": "written",
+                "ving": "writing",
+                "meaning": "menulis",
+                "pattern": "A-B-C"
+            },
+            {
+                "v1": "speak",
+                "v2": "spoke",
+                "v3": "spoken",
+                "ving": "speaking",
+                "meaning": "berbicara",
+                "pattern": "A-B-C"
+            },
+            {
+                "v1": "break",
+                "v2": "broke",
+                "v3": "broken",
+                "ving": "breaking",
+                "meaning": "memecahkan / merusak",
+                "pattern": "A-B-C"
+            },
+            {
+                "v1": "take",
+                "v2": "took",
+                "v3": "taken",
+                "ving": "taking",
+                "meaning": "mengambil",
+                "pattern": "A-B-C"
+            },
+            {
+                "v1": "give",
+                "v2": "gave",
+                "v3": "given",
+                "ving": "giving",
+                "meaning": "memberi",
+                "pattern": "A-B-C"
+            },
+            {
+                "v1": "know",
+                "v2": "knew",
+                "v3": "known",
+                "ving": "knowing",
+                "meaning": "mengetahui / mengenal",
+                "pattern": "A-B-C"
+            },
+            {
+                "v1": "grow",
+                "v2": "grew",
+                "v3": "grown",
+                "ving": "growing",
+                "meaning": "tumbuh / berkembang",
+                "pattern": "A-B-C"
+            },
+            {
+                "v1": "choose",
+                "v2": "chose",
+                "v3": "chosen",
+                "ving": "choosing",
+                "meaning": "memilih",
+                "pattern": "A-B-C"
+            },
+            {
+                "v1": "forget",
+                "v2": "forgot",
+                "v3": "forgotten",
+                "ving": "forgetting",
+                "meaning": "melupakan",
+                "pattern": "A-B-C"
+            },
+            {
+                "v1": "drive",
+                "v2": "drove",
+                "v3": "driven",
+                "ving": "driving",
+                "meaning": "mengemudi",
+                "pattern": "A-B-C"
+            },
+            {
+                "v1": "fall",
+                "v2": "fell",
+                "v3": "fallen",
+                "ving": "falling",
+                "meaning": "jatuh / menurun",
+                "pattern": "A-B-C"
+            },
+            {
+                "v1": "get",
+                "v2": "got",
+                "v3": "got / gotten",
+                "ving": "getting",
+                "meaning": "mendapatkan / menjadi",
+                "pattern": "A-B-B"
+            },
+            {
+                "v1": "make",
+                "v2": "made",
+                "v3": "made",
+                "ving": "making",
+                "meaning": "membuat",
+                "pattern": "A-B-B"
+            },
+            {
+                "v1": "build",
+                "v2": "built",
+                "v3": "built",
+                "ving": "building",
+                "meaning": "membangun",
+                "pattern": "A-B-B"
+            },
+            {
+                "v1": "send",
+                "v2": "sent",
+                "v3": "sent",
+                "ving": "sending",
+                "meaning": "mengirim",
+                "pattern": "A-B-B"
+            },
+            {
+                "v1": "spend",
+                "v2": "spent",
+                "v3": "spent",
+                "ving": "spending",
+                "meaning": "menghabiskan (waktu/uang)",
+                "pattern": "A-B-B"
+            },
+            {
+                "v1": "buy",
+                "v2": "bought",
+                "v3": "bought",
+                "ving": "buying",
+                "meaning": "membeli",
+                "pattern": "A-B-B"
+            },
+            {
+                "v1": "bring",
+                "v2": "brought",
+                "v3": "brought",
+                "ving": "bringing",
+                "meaning": "membawa",
+                "pattern": "A-B-B"
+            },
+            {
+                "v1": "think",
+                "v2": "thought",
+                "v3": "thought",
+                "ving": "thinking",
+                "meaning": "berpikir",
+                "pattern": "A-B-B"
+            },
+            {
+                "v1": "teach",
+                "v2": "taught",
+                "v3": "taught",
+                "ving": "teaching",
+                "meaning": "mengajar",
+                "pattern": "A-B-B"
+            },
+            {
+                "v1": "catch",
+                "v2": "caught",
+                "v3": "caught",
+                "ving": "catching",
+                "meaning": "menangkap",
+                "pattern": "A-B-B"
+            },
+            {
+                "v1": "find",
+                "v2": "found",
+                "v3": "found",
+                "ving": "finding",
+                "meaning": "menemukan",
+                "pattern": "A-B-B"
+            },
+            {
+                "v1": "feel",
+                "v2": "felt",
+                "v3": "felt",
+                "ving": "feeling",
+                "meaning": "merasakan",
+                "pattern": "A-B-B"
+            },
+            {
+                "v1": "keep",
+                "v2": "kept",
+                "v3": "kept",
+                "ving": "keeping",
+                "meaning": "menjaga / menyimpan",
+                "pattern": "A-B-B"
+            },
+            {
+                "v1": "sleep",
+                "v2": "slept",
+                "v3": "slept",
+                "ving": "sleeping",
+                "meaning": "tidur",
+                "pattern": "A-B-B"
+            },
+            {
+                "v1": "leave",
+                "v2": "left",
+                "v3": "left",
+                "ving": "leaving",
+                "meaning": "meninggalkan / berangkat",
+                "pattern": "A-B-B"
+            },
+            {
+                "v1": "lose",
+                "v2": "lost",
+                "v3": "lost",
+                "ving": "losing",
+                "meaning": "kehilangan / kalah",
+                "pattern": "A-B-B"
+            },
+            {
+                "v1": "meet",
+                "v2": "met",
+                "v3": "met",
+                "ving": "meeting",
+                "meaning": "bertemu",
+                "pattern": "A-B-B"
+            },
+            {
+                "v1": "pay",
+                "v2": "paid",
+                "v3": "paid",
+                "ving": "paying",
+                "meaning": "membayar",
+                "pattern": "A-B-B"
+            },
+            {
+                "v1": "say",
+                "v2": "said",
+                "v3": "said",
+                "ving": "saying",
+                "meaning": "mengatakan",
+                "pattern": "A-B-B"
+            },
+            {
+                "v1": "tell",
+                "v2": "told",
+                "v3": "told",
+                "ving": "telling",
+                "meaning": "menceritakan / memberitahu",
+                "pattern": "A-B-B"
+            },
+            {
+                "v1": "understand",
+                "v2": "understood",
+                "v3": "understood",
+                "ving": "understanding",
+                "meaning": "memahami",
+                "pattern": "A-B-B"
+            },
+            {
+                "v1": "put",
+                "v2": "put",
+                "v3": "put",
+                "ving": "putting",
+                "meaning": "meletakkan",
+                "pattern": "A-A-A"
+            },
+            {
+                "v1": "cut",
+                "v2": "cut",
+                "v3": "cut",
+                "ving": "cutting",
+                "meaning": "memotong",
+                "pattern": "A-A-A"
+            },
+            {
+                "v1": "read",
+                "v2": "read (/red/)",
+                "v3": "read (/red/)",
+                "ving": "reading",
+                "meaning": "membaca",
+                "pattern": "A-A-A"
+            },
+            {
+                "v1": "cost",
+                "v2": "cost",
+                "v3": "cost",
+                "ving": "costing",
+                "meaning": "berharga / memakan biaya",
+                "pattern": "A-A-A"
+            },
+            {
+                "v1": "let",
+                "v2": "let",
+                "v3": "let",
+                "ving": "letting",
+                "meaning": "membiarkan / mengizinkan",
+                "pattern": "A-A-A"
+            }
+        ]
+    },
+    "tenseCoordinates": [
+        {
+            "id": "present-simple",
+            "aspectNumber": "01",
+            "name": "Simple Present",
+            "time": "present",
+            "timeLabel": "Present",
+            "aspect": "simple",
+            "aspectLabel": "01 • Simple",
+            "timelineGeometry": "───●───●───●─── (Fakta permanen & siklus rutinitas kini)",
+            "signalWords": [
+                "every day",
+                "always",
+                "usually",
+                "often",
+                "rarely",
+                "on Mondays"
+            ],
+            "reason": "Disebut Simple karena menyatakan fakta atau kebiasaan utuh tanpa embel-embel proses, dan Present karena berlaku dalam lingkup realitas saat ini (dulu begitu, sekarang begitu, dan besok masih begitu).",
+            "formulas": {
+                "pos": "S + V1 (s/es) + O",
+                "neg": "S + do/does + not + V1 + O",
+                "ask": "Do/Does + S + V1 + O?",
+                "nominalPos": "S + am/is/are + Adj/Noun/Adv"
+            },
+            "examples": [
+                {
+                    "condition": "Kebiasaan Rutin (Habit)",
+                    "pos": "I drink black coffee every morning before starting my work.",
+                    "neg": "I do not drink coffee after 4 PM because it affects my sleep.",
+                    "ask": "Do you drink black coffee every morning before work?",
+                    "note": "Rutinitas yang berulang secara konsisten dalam kehidupan saat ini."
+                },
+                {
+                    "condition": "Fakta Umum & Kondisi Nominal (General Truth)",
+                    "pos": "Water boils at 100 degrees Celsius, and the server is online.",
+                    "neg": "Water does not boil at 50 degrees Celsius under normal pressure.",
+                    "ask": "Does water boil at 100°C? / Is the server online?",
+                    "note": "Kebenaran ilmiah atau kondisi identitas/sifat yang berlaku saat ini."
+                },
+                {
+                    "condition": "Jadwal Resmi Tetap (Fixed Timetable)",
+                    "pos": "The express train leaves from the central station at 7 PM tonight.",
+                    "neg": "The express train does not leave at 6 PM tonight.",
+                    "ask": "What time does the express train leave tonight?",
+                    "note": "Jadwal transportasi atau kalender akademik resmi yang dikunci sistem."
+                }
+            ]
+        },
+        {
+            "id": "present-continuous",
+            "aspectNumber": "02",
+            "name": "Present Continuous",
+            "time": "present",
+            "timeLabel": "Present",
+            "aspect": "continuous",
+            "aspectLabel": "02 • Continuous",
+            "timelineGeometry": "───[~~~●~~~]─── (Sedang bergerak tepat di titik sekarang)",
+            "signalWords": [
+                "right now",
+                "at the moment",
+                "currently",
+                "this week",
+                "tonight"
+            ],
+            "reason": "Gabungan Present (sekarang) dan Continuous (sedang berlanjut). Artinya, aksi sedang aktif bergerak tepat detik ini saat berbicara atau berada dalam proyek sementara minggu/bulan ini.",
+            "formulas": {
+                "pos": "S + am/is/are + V-ing + O",
+                "neg": "S + am/is/are + not + V-ing + O",
+                "ask": "Am/Is/Are + S + V-ing + O?"
+            },
+            "examples": [
+                {
+                    "condition": "Sedang Terjadi Detik Ini (Live Action)",
+                    "pos": "Look outside! It is raining heavily right now.",
+                    "neg": "It is not raining right now, so we can walk to the café.",
+                    "ask": "Is it raining outside right now?",
+                    "note": "Aksi sedang berlangsung nyata tepat saat kalimat diucapkan."
+                },
+                {
+                    "condition": "Proyek Sementara (Bulan/Sprint Ini)",
+                    "pos": "I am building an interactive English matrix app this month.",
+                    "neg": "I am not taking extra freelance projects this semester.",
+                    "ask": "Are you working on the authentication module this week?",
+                    "note": "Proses sedang berjalan dalam rentang waktu sekarang, meski saat bicara tidak sedang mengetik."
+                },
+                {
+                    "condition": "Agenda Pribadi Terjadwal (Confirmed Arrangement)",
+                    "pos": "We are meeting the client at the office tomorrow at 10 AM.",
+                    "neg": "We are not meeting the client tomorrow because they rescheduled.",
+                    "ask": "What are you doing tonight after work?",
+                    "note": "Janji temu pribadi yang sudah disepakati bersama pihak lain."
+                }
+            ]
+        },
+        {
+            "id": "present-perfect",
+            "aspectNumber": "03",
+            "name": "Present Perfect",
+            "time": "present",
+            "timeLabel": "Present",
+            "aspect": "perfect",
+            "aspectLabel": "03 • Perfect",
+            "timelineGeometry": "───|====▶● (Tuntas sebelum kini, efek menempel di kini)",
+            "signalWords": [
+                "already",
+                "just",
+                "yet",
+                "ever",
+                "never",
+                "since",
+                "for",
+                "so far"
+            ],
+            "reason": "Gabungan Present (sekarang) dan Perfect (tuntas). Aksinya sudah selesai sebelum sekarang, namun hasil, pengalaman, atau dampaknya masih menempel erat di masa sekarang.",
+            "formulas": {
+                "pos": "S + have/has + V3 + O",
+                "neg": "S + have/has + not + V3 + O",
+                "ask": "Have/Has + S + V3 + O?",
+                "nominalPos": "S + have/has + been + Adj/Noun"
+            },
+            "examples": [
+                {
+                    "condition": "Hasil Terasa Sekarang (Present Result)",
+                    "pos": "I have lost my house keys, so I cannot open the door now.",
+                    "neg": "I have not found my house keys yet.",
+                    "ask": "Have you seen my house keys anywhere?",
+                    "note": "Kuncinya hilang tadi, tetapi masalahnya terasa sekarang."
+                },
+                {
+                    "condition": "Pengalaman Hidup Tanpa Waktu Spesifik",
+                    "pos": "She has deployed three full-stack apps to production so far.",
+                    "neg": "She has never missed a sprint deadline.",
+                    "ask": "Have you ever integrated a payment gateway into a web app?",
+                    "note": "Fokus pada akumulasi pengalaman hingga hari ini, tanpa menyebut kapan tanggalnya."
+                },
+                {
+                    "condition": "Status Nominal yang Bertahan Hingga Kini",
+                    "pos": "They have been close friends since high school.",
+                    "neg": "The API has not been stable since last night.",
+                    "ask": "How long have you been in Jakarta?",
+                    "note": "To Be berubah menjadi V3 (been) untuk status yang dimulai di masa lalu dan masih berlaku."
+                }
+            ]
+        },
+        {
+            "id": "present-perfect-continuous",
+            "aspectNumber": "04",
+            "name": "Present Perfect Continuous",
+            "time": "present",
+            "timeLabel": "Present",
+            "aspect": "perfect-continuous",
+            "aspectLabel": "04 • Perfect Continuous",
+            "timelineGeometry": "───|≈≈≈≈≈▶● (Dimulai lalu, masih terus mengalir ke detik ini)",
+            "signalWords": [
+                "for two hours",
+                "since morning",
+                "all day",
+                "lately",
+                "recently"
+            ],
+            "reason": "Gabungan Present (sekarang) + Perfect (sudah dimulai sebelumnya) + Continuous (masih berlangsung). Menekankan akumulasi durasi aktivitas dari masa lalu yang menembus hingga detik ini.",
+            "formulas": {
+                "pos": "S + have/has + been + V-ing + O",
+                "neg": "S + have/has + not + been + V-ing + O",
+                "ask": "Have/Has + S + been + V-ing + O?"
+            },
+            "examples": [
+                {
+                    "condition": "Durasi Berlanjut Sampai Detik Ini",
+                    "pos": "I have been coding this platform for four hours straight.",
+                    "neg": "I have not been sleeping well lately due to the tight deadline.",
+                    "ask": "How long have you been studying English grammar?",
+                    "note": "Mulai 4 jam lalu dan hingga detik ini aktivitasnya masih berjalan."
+                },
+                {
+                    "condition": "Baru Berhenti Tapi Jejak Fisiknya Terlihat Sekarang",
+                    "pos": "You look exhausted because you have been running in the park.",
+                    "neg": "He has not been resting enough since this morning.",
+                    "ask": "You are out of breath—have you been running?",
+                    "note": "Napas terengah-engah sekarang menjadi bukti nyata durasi aktivitas barusan."
+                }
+            ]
+        },
+        {
+            "id": "past-simple",
+            "aspectNumber": "01",
+            "name": "Simple Past",
+            "time": "past",
+            "timeLabel": "Past",
+            "aspect": "simple",
+            "aspectLabel": "01 • Simple",
+            "timelineGeometry": "───●───|─── (Selesai & terputus total di masa lampau)",
+            "signalWords": [
+                "yesterday",
+                "last night",
+                "two days ago",
+                "in 2025",
+                "when I was..."
+            ],
+            "reason": "Gabungan Simple (fakta tunggal) dan Past (lampau). Kejadian terjadi dan tuntas sepenuhnya di masa lalu pada waktu yang tertutup serta terputus dari masa kini.",
+            "formulas": {
+                "pos": "S + V2 + O",
+                "neg": "S + did + not + V1 + O",
+                "ask": "Did + S + V1 + O?",
+                "nominalPos": "S + was/were + Adj/Noun"
+            },
+            "examples": [
+                {
+                    "condition": "Peristiwa Spesifik Masa Lampau",
+                    "pos": "We deployed the production build yesterday afternoon.",
+                    "neg": "We did not encounter any critical bugs during testing.",
+                    "ask": "Did you push the latest commit last night?",
+                    "note": "Perhatikan V2 (deployed) kembali menjadi V1 (encounter, push) saat did/didn't hadir."
+                },
+                {
+                    "condition": "Keadaan atau Lokasi Lampau (Nominal To Be)",
+                    "pos": "The conference in Bandung was super insightful.",
+                    "neg": "They were not at the coworking space yesterday.",
+                    "ask": "Were you busy last weekend?",
+                    "note": "Menggunakan was/were tanpa 'did' karena tidak ada kata kerja aksi."
+                }
+            ]
+        },
+        {
+            "id": "past-continuous",
+            "aspectNumber": "02",
+            "name": "Past Continuous",
+            "time": "past",
+            "timeLabel": "Past",
+            "aspect": "continuous",
+            "aspectLabel": "02 • Continuous",
+            "timelineGeometry": "──[~~~⚡~~~]──|── (Sedang berjalan saat momen lampau memotong)",
+            "signalWords": [
+                "at 8 PM yesterday",
+                "while",
+                "when",
+                "all night last night"
+            ],
+            "reason": "Gabungan Past (lampau) dan Continuous (sedang berlangsung). Menunjukkan bahwa pada titik spesifik di masa lalu, ada aksi yang sedang di tengah proses saat kejadian lain memotong.",
+            "formulas": {
+                "pos": "S + was/were + V-ing + O",
+                "neg": "S + was/were + not + V-ing + O",
+                "ask": "Was/Were + S + V-ing + O?"
+            },
+            "examples": [
+                {
+                    "condition": "Aksi Latar yang Terpotong Kejadian Singkat",
+                    "pos": "I was sleeping deeply when you called me last night.",
+                    "neg": "I was not paying attention when the error alert popped up.",
+                    "ask": "What were you doing when the server went down?",
+                    "note": "Proses panjang (was sleeping) dipotong aksi singkat (called)."
+                },
+                {
+                    "condition": "Dua Aktivitas Paralel di Masa Lalu",
+                    "pos": "While I was refactoring the UI, she was testing the API endpoints.",
+                    "neg": "They were not watching TV while we were discussing the sprint.",
+                    "ask": "Were you listening to music while you were studying?",
+                    "note": "Dua proses berjalan bersamaan pada waktu lampau yang sama."
+                }
+            ]
+        },
+        {
+            "id": "past-perfect",
+            "aspectNumber": "03",
+            "name": "Past Perfect",
+            "time": "past",
+            "timeLabel": "Past",
+            "aspect": "perfect",
+            "aspectLabel": "03 • Perfect",
+            "timelineGeometry": "──●(1)══▶●(2)──|── ('Masa lalu di dalam masa lalu')",
+            "signalWords": [
+                "before",
+                "after",
+                "by the time",
+                "already",
+                "until",
+                "when"
+            ],
+            "reason": "Gabungan Past (lampau) dan Perfect (tuntas). Menandai kejadian masa lalu mana yang sudah selesai LEBIH DULU sebelum kejadian masa lalu berikutnya terjadi.",
+            "formulas": {
+                "pos": "S + had + V3 + O",
+                "neg": "S + had + not + V3 + O",
+                "ask": "Had + S + V3 + O?",
+                "nominalPos": "S + had + been + Adj/Noun"
+            },
+            "examples": [
+                {
+                    "condition": "Urutan Kronologi Dua Kejadian Lampau",
+                    "pos": "When I arrived at the station, the train had already left.",
+                    "neg": "When I arrived at the station, the train had not left yet, so I caught it.",
+                    "ask": "Had the train already left when you arrived at the station?",
+                    "note": "Kereta berangkat lebih dulu (had left), baru saya tiba (arrived)."
+                },
+                {
+                    "condition": "Status Sebelum Titik Waktu Lampau",
+                    "pos": "She had been a backend engineer for three years before she joined us.",
+                    "neg": "She had never seen real snow before she moved to Canada in 2022.",
+                    "ask": "Had you backed up the database before running the migration?",
+                    "note": "Memastikan urutan mana yang terjadi lebih awal di masa lalu."
+                }
+            ]
+        },
+        {
+            "id": "past-perfect-continuous",
+            "aspectNumber": "04",
+            "name": "Past Perfect Continuous",
+            "time": "past",
+            "timeLabel": "Past",
+            "aspect": "perfect-continuous",
+            "aspectLabel": "04 • Perfect Continuous",
+            "timelineGeometry": "──|≈≈≈≈≈▶●(Past)──|── (Durasi berjalan sebelum titik lampau)",
+            "signalWords": [
+                "for two hours before...",
+                "since morning when...",
+                "all night"
+            ],
+            "reason": "Gabungan Past + Perfect + Continuous. Mengukur berapa lama durasi suatu aktivitas sudah berjalan di masa lalu sebelum aktivitas masa lalu lainnya terjadi.",
+            "formulas": {
+                "pos": "S + had + been + V-ing + O",
+                "neg": "S + had + not + been + V-ing + O",
+                "ask": "Had + S + been + V-ing + O?"
+            },
+            "examples": [
+                {
+                    "condition": "Durasi Penantian Sebelum Momen Lampau",
+                    "pos": "We had been waiting in the lobby for two hours before the client arrived.",
+                    "neg": "We had not been waiting long before they called our names.",
+                    "ask": "How long had you been debugging before you found the root cause?",
+                    "note": "Menyoroti durasi penuh 2 jam sebelum titik kejadian kedua di masa lalu."
+                },
+                {
+                    "condition": "Penyebab Kondisi Fisik di Masa Lalu",
+                    "pos": "The ground was completely wet because it had been raining all night.",
+                    "neg": "The team wasn't tired because they had not been working overtime.",
+                    "ask": "Had it been raining all night before you woke up?",
+                    "note": "Tanah basah di masa lalu disebabkan oleh durasi hujan sepanjang malam sebelumnya."
+                }
+            ]
+        },
+        {
+            "id": "future-simple",
+            "aspectNumber": "01",
+            "name": "Simple Future",
+            "time": "future",
+            "timeLabel": "Future",
+            "aspect": "simple",
+            "aspectLabel": "01 • Simple",
+            "timelineGeometry": "───|────●─── (Proyeksi keputusan/rencana setelah kini)",
+            "signalWords": [
+                "tomorrow",
+                "next week",
+                "soon",
+                "I think",
+                "probably",
+                "tonight"
+            ],
+            "reason": "Gabungan Simple (fakta/niat tunggal) dan Future (masa depan). Memproyeksikan keputusan spontan (will) atau rencana yang sudah diniatkan (be going to) setelah titik sekarang.",
+            "formulas": {
+                "pos": "S + will + V1 + O   |   S + am/is/are + going to + V1",
+                "neg": "S + will + not (won't) + V1 + O",
+                "ask": "Will + S + V1 + O?",
+                "nominalPos": "S + will + be + Adj/Noun"
+            },
+            "examples": [
+                {
+                    "condition": "Keputusan Spontan & Janji (Will)",
+                    "pos": "Oh, the link is broken? I will fix it right away.",
+                    "neg": "Don't worry, I will not forget to send you the meeting notes.",
+                    "ask": "Will you help me review this pull request tonight?",
+                    "note": "Keputusan baru dibuat tepat saat berbicara tanpa perencanaan sebelumnya."
+                },
+                {
+                    "condition": "Rencana Matang & Prediksi Berbukti (Be Going To)",
+                    "pos": "We are going to migrate the database next month.",
+                    "neg": "I am not going to take any side gigs during finals week.",
+                    "ask": "Are you going to apply for the developer cohort?",
+                    "note": "Niat yang sudah diputuskan sebelum percakapan berlangsung."
+                },
+                {
+                    "condition": "Keadaan di Masa Depan (Nominal Will Be)",
+                    "pos": "Everything will be ready before the launch tomorrow.",
+                    "neg": "The office will not be open this Sunday.",
+                    "ask": "Will you be available for a quick sync tomorrow?",
+                    "note": "Menggunakan 'will be' untuk kondisi tanpa kata kerja aksi."
+                }
+            ]
+        },
+        {
+            "id": "future-continuous",
+            "aspectNumber": "02",
+            "name": "Future Continuous",
+            "time": "future",
+            "timeLabel": "Future",
+            "aspect": "continuous",
+            "aspectLabel": "02 • Continuous",
+            "timelineGeometry": "───|───[~~~●~~~]─── (Sedang berlangsung di jam tertentu besok)",
+            "signalWords": [
+                "at 8 PM tonight",
+                "this time tomorrow",
+                "next Monday at 10"
+            ],
+            "reason": "Gabungan Future (masa depan) dan Continuous (sedang berlangsung). Membayangkan kamera melompat ke titik waktu spesifik di masa depan saat suatu aksi sedang di tengah proses.",
+            "formulas": {
+                "pos": "S + will + be + V-ing + O",
+                "neg": "S + will + not + be + V-ing + O",
+                "ask": "Will + S + be + V-ing + O?"
+            },
+            "examples": [
+                {
+                    "condition": "Sedang Berlangsung pada Jam Spesifik Mendatang",
+                    "pos": "Don't call me at 8 PM tonight because I will be driving home.",
+                    "neg": "At 8 PM tonight, I will not be working anymore; I'll be relaxing.",
+                    "ask": "What will you be doing at this time tomorrow?",
+                    "note": "Tepat pukul 8 malam nanti, aktivitas menyetir sedang berlangsung."
+                },
+                {
+                    "condition": "Menanyakan Rencana Orang Lain Secara Halus",
+                    "pos": "I will be passing by the central station on my way tomorrow.",
+                    "neg": "I will not be using my laptop tomorrow morning, so you can borrow it.",
+                    "ask": "Will you be using your car tomorrow morning?",
+                    "note": "Cara sopan menanyakan apakah barang/waktu seseorang sedang dipakai besok."
+                }
+            ]
+        },
+        {
+            "id": "future-perfect",
+            "aspectNumber": "03",
+            "name": "Future Perfect",
+            "time": "future",
+            "timeLabel": "Future",
+            "aspect": "perfect",
+            "aspectLabel": "03 • Perfect",
+            "timelineGeometry": "───|====▶●(Deadline Future) (Sudah tuntas sebelum tenggat)",
+            "signalWords": [
+                "by next Friday",
+                "by tomorrow",
+                "by the end of...",
+                "before 2027"
+            ],
+            "reason": "Gabungan Future (masa depan) dan Perfect (tuntas). Membayangkan sebuah deadline di masa depan dan memastikan bahwa sebelum titik itu tiba, aksinya sudah berstatus selesai.",
+            "formulas": {
+                "pos": "S + will + have + V3 + O",
+                "neg": "S + will + not + have + V3 + O",
+                "ask": "Will + S + have + V3 + O?",
+                "nominalPos": "S + will + have + been + Adj/Noun"
+            },
+            "examples": [
+                {
+                    "condition": "Target Selesai Sebelum Deadline",
+                    "pos": "By next Friday, I will have finished building this entire platform.",
+                    "neg": "By next Friday, we will not have completed the final security audit yet.",
+                    "ask": "Will you have finished the prototype by Monday morning?",
+                    "note": "Kata kunci utama adalah 'by + waktu masa depan' (paling lambat pada saat itu)."
+                },
+                {
+                    "condition": "Akumulasi Status Nominal di Masa Depan",
+                    "pos": "By December, she will have been a senior engineer for three years.",
+                    "neg": "By next month, they will not have been in Jakarta for a full year yet.",
+                    "ask": "How long will you have been at this company by December?",
+                    "note": "Menggunakan 'will have been' untuk status tanpa kata kerja aksi."
+                }
+            ]
+        },
+        {
+            "id": "future-perfect-continuous",
+            "aspectNumber": "04",
+            "name": "Future Perfect Continuous",
+            "time": "future",
+            "timeLabel": "Future",
+            "aspect": "perfect-continuous",
+            "aspectLabel": "04 • Perfect Continuous",
+            "timelineGeometry": "───|≈≈≈≈≈▶●(Future Anchor) (Akumulasi durasi di titik depan)",
+            "signalWords": [
+                "by December ... for 5 years",
+                "by 5 PM ... for 8 hours"
+            ],
+            "reason": "Gabungan Future + Perfect + Continuous. Menghitung total durasi berjalan sebuah aktivitas ketika mencapai titik acuan tertentu di masa depan.",
+            "formulas": {
+                "pos": "S + will + have + been + V-ing + O",
+                "neg": "S + will + not + have + been + V-ing + O",
+                "ask": "Will + S + have + been + V-ing + O?"
+            },
+            "examples": [
+                {
+                    "condition": "Akumulasi Durasi Kerja atau Belajar di Masa Depan",
+                    "pos": "By December, I will have been working at this tech company for five full years.",
+                    "neg": "By December, he will not have been living in Bandung for even six months.",
+                    "ask": "How many years will you have been coding by the time you graduate?",
+                    "note": "Menekankan total lama durasi saat titik waktu masa depan tercapai."
+                }
+            ]
+        },
+        {
+            "id": "past-future-simple",
+            "aspectNumber": "01",
+            "name": "Simple Past Future",
+            "time": "past-future",
+            "timeLabel": "Past Future",
+            "aspect": "simple",
+            "aspectLabel": "01 • Simple",
+            "timelineGeometry": "──●(Past Anchor) ──▶ ○ (Proyeksi ke depan dari masa lalu)",
+            "signalWords": [
+                "he said that...",
+                "yesterday ... would",
+                "if + Simple Past (Type 2)"
+            ],
+            "reason": "Gabungan Simple + Past + Future. Mundur ke titik masa lalu lalu memandang ke depan: dipakai untuk rencana masa lalu yang batal, kutipan tidak langsung (reported speech), dan pengandaian masa kini (Conditional Type 2).",
+            "formulas": {
+                "pos": "S + would + V1 + O",
+                "neg": "S + would + not + V1 + O",
+                "ask": "Would + S + V1 + O?",
+                "nominalPos": "S + would + be + Adj/Noun"
+            },
+            "examples": [
+                {
+                    "condition": "Kutipan Tidak Langsung & Rencana Masa Lalu",
+                    "pos": "He promised yesterday that he would arrive at 9 AM sharp.",
+                    "neg": "I knew he would not agree with the legacy architecture.",
+                    "ask": "Did he tell you whether he would attend the sprint review?",
+                    "note": "Saat dia berjanji di masa lalu, kalimat aslinya adalah 'I will arrive at 9 AM'."
+                },
+                {
+                    "condition": "Pengandaian Masa Kini (Conditional Type 2)",
+                    "pos": "If I had more free time, I would build an open-source compiler.",
+                    "neg": "If I were in your shoes, I would not accept that unfair offer.",
+                    "ask": "What would you change if you redesigned this app today?",
+                    "note": "Berandai-andai tentang situasi yang berlawanan dengan kenyataan saat ini."
+                }
+            ]
+        },
+        {
+            "id": "past-future-continuous",
+            "aspectNumber": "02",
+            "name": "Past Future Continuous",
+            "time": "past-future",
+            "timeLabel": "Past Future",
+            "aspect": "continuous",
+            "aspectLabel": "02 • Continuous",
+            "timelineGeometry": "──●(Past) ──▶ [~~~○~~~] (Seharusnya sedang berlangsung)",
+            "signalWords": [
+                "right now if...",
+                "at this time if... had not..."
+            ],
+            "reason": "Gabungan Past + Future + Continuous. Menyatakan aktivitas yang seharusnya sedang berlangsung pada titik waktu tertentu (namun kenyataannya meleset karena suatu hal).",
+            "formulas": {
+                "pos": "S + would + be + V-ing + O",
+                "neg": "S + would + not + be + V-ing + O",
+                "ask": "Would + S + be + V-ing + O?"
+            },
+            "examples": [
+                {
+                    "condition": "Ekspektasi yang Meleset Sekarang",
+                    "pos": "I would be sitting on a beach in Bali right now if my flight hadn't been canceled.",
+                    "neg": "We would not be debugging this hotfix right now if we had written unit tests.",
+                    "ask": "Where would you be staying right now if the hotel hadn't been full?",
+                    "note": "Seharusnya detik ini sedang bersantai di Bali seandainya penerbangan tidak batal."
+                }
+            ]
+        },
+        {
+            "id": "past-future-perfect",
+            "aspectNumber": "03",
+            "name": "Past Future Perfect",
+            "time": "past-future",
+            "timeLabel": "Past Future",
+            "aspect": "perfect",
+            "aspectLabel": "03 • Perfect",
+            "timelineGeometry": "──●(Past) ──▶ |====▶○ (Seharusnya sudah tuntas di masa lalu)",
+            "signalWords": [
+                "if + had + V3 (Conditional Type 3)",
+                "otherwise"
+            ],
+            "reason": "Gabungan Past + Future + Perfect. Menyatakan sesuatu yang seharusnya sudah selesai di masa lalu seandainya syarat masa lalu terpenuhi—senjata utama untuk evaluasi dan penyesalan lampau (Conditional Type 3).",
+            "formulas": {
+                "pos": "S + would + have + V3 + O",
+                "neg": "S + would + not + have + V3 + O",
+                "ask": "Would + S + have + V3 + O?",
+                "nominalPos": "S + would + have + been + Adj/Noun"
+            },
+            "examples": [
+                {
+                    "condition": "Evaluasi & Penyesalan Masa Lalu (Conditional Type 3)",
+                    "pos": "If I had studied harder last semester, I would have passed the exam easily.",
+                    "neg": "If you had told me earlier, I would not have made that costly mistake.",
+                    "ask": "Would you have accepted the offer if they had provided remote flexibility?",
+                    "note": "Faktanya di masa lalu: syarat tidak terpenuhi dan hasil tidak terjadi."
+                }
+            ]
+        },
+        {
+            "id": "past-future-perfect-continuous",
+            "aspectNumber": "04",
+            "name": "Past Future Perfect Continuous",
+            "time": "past-future",
+            "timeLabel": "Past Future",
+            "aspect": "perfect-continuous",
+            "aspectLabel": "04 • Perfect Continuous",
+            "timelineGeometry": "──●(Past) ──▶ |≈≈≈≈≈▶○ (Durasi hipotesis di masa lalu)",
+            "signalWords": [
+                "for X years by last month if...",
+                "if + had not + V3"
+            ],
+            "reason": "Gabungan Past + Future + Perfect + Continuous. Menghitung durasi hipotesis—berapa lama sesuatu seharusnya sudah berlangsung hingga titik masa lalu tertentu seandainya tidak ada halangan.",
+            "formulas": {
+                "pos": "S + would + have + been + V-ing + O",
+                "neg": "S + would + not + have + been + V-ing + O",
+                "ask": "Would + S + have + been + V-ing + O?"
+            },
+            "examples": [
+                {
+                    "condition": "Durasi Pengandaian Masa Lalu",
+                    "pos": "If he hadn't resigned in 2024, he would have been working here for ten years by last month.",
+                    "neg": "If the highway hadn't been flooded, we would not have been driving for six hours.",
+                    "ask": "How long would she have been studying abroad if she hadn't returned early?",
+                    "note": "Menghitung akumulasi durasi imajiner 10 tahun hingga bulan lalu."
+                }
+            ]
+        }
+    ],
+    "plotTwists": [
+        {
+            "number": "01",
+            "title": "Stative Verbs Anti-Continuous",
+            "subtitle": "Kata Kerja Pikiran, Perasaan, Kepemilikan & Indra",
+            "explanation": "Kata kerja yang menggambarkan keadaan mental atau kepemilikan (know, understand, believe, want, need, love, hate, own) tidak memakai -ing meskipun dirasakan detik ini. Pengecualian terjadi jika maknanya bergeser menjadi aktivitas fisik sementara ('have' = memiliki vs. 'having lunch' = sedang makan).",
+            "wrongExample": "I am knowing the answer to that algorithm.",
+            "correctExample": "I know the answer to that algorithm.",
+            "nuanceNote": "Gunakan Simple Present untuk kondisi mental statis saat ini."
+        },
+        {
+            "number": "02",
+            "title": "Unreal Past (Jarak Psikologis di Masa Kini)",
+            "subtitle": "Wish / If Only / It's High Time + Simple Past",
+            "explanation": "Setelah 'wish', 'if only', atau 'It's time', bahasa Inggris memakai Simple Past bukan untuk masa lalu, melainkan menciptakan jarak psikologis antara kenyataan saat ini dan khayalan.",
+            "wrongExample": "I wish I know how to speak Japanese fluently.",
+            "correctExample": "I wish I knew (or could speak) Japanese fluently.",
+            "nuanceNote": "Bentuk lampau 'knew' memberi sinyal bahwa faktanya saat ini saya belum bisa."
+        },
+        {
+            "number": "03",
+            "title": "Historical Present (Dramatisasi Cerita Lampau)",
+            "subtitle": "Storytelling Lisan & Sinopsis Film/Buku",
+            "explanation": "Saat menceritakan pengalaman seru secara lisan atau menulis sinopsis cerita agar pendengar merasa masuk ke dalam adegan secara langsung, penutur asli sering memakai Simple Present untuk kejadian lampau.",
+            "correctExample": "So yesterday I walk into the room, and guess who is sitting at my desk?",
+            "nuanceNote": "Menghidupkan adegan masa lalu seolah terputar ulang di depan mata."
+        },
+        {
+            "number": "04",
+            "title": "Timetable Future (Simple Present untuk Jadwal Publik)",
+            "subtitle": "Pesawat, Kereta, Bioskop & Kalender Akademik",
+            "explanation": "Peristiwa masa depan yang dikendalikan sistem jadwal publik yang kaku memakai Simple Present, bukan 'will', karena jadwal tersebut dipandang sebagai fakta tetap.",
+            "wrongExample": "My flight will depart at 6 AM tomorrow morning.",
+            "correctExample": "My flight departs at 6 AM tomorrow morning.",
+            "nuanceNote": "Berlaku untuk jadwal transportasi, konser, kuliah, dan jadwal rilis resmi."
+        },
+        {
+            "number": "05",
+            "title": "Time-Clause Future Lock (Anti-Will Setelah When / If / Before)",
+            "subtitle": "Klausa Waktu & Syarat Masa Depan",
+            "explanation": "Dalam kalimat majemuk masa depan, klausa yang diawali kata hubung waktu/syarat (when, as soon as, before, after, until, if) DILARANG memakai 'will'—wajib menggunakan Simple Present!",
+            "wrongExample": "I will text you as soon as I will arrive at the airport.",
+            "correctExample": "I will text you as soon as I arrive at the airport.",
+            "nuanceNote": "Klausa utama memakai 'will', klausa anak setelah 'as soon as / when / if' terkunci di V1."
+        },
+        {
+            "number": "06",
+            "title": "Spektrum 3 Tingkat Kepastian Masa Depan",
+            "subtitle": "Will (Spontan) → Going To (Niat/Bukti) → Present Continuous (Jadwal Terkunci)",
+            "explanation": "Ketiga bentuk ini membedakan tingkat kesiapan rencana: 'I'll call him' (baru terpikir detik ini), 'I'm going to call him' (sudah diniatkan sebelumnya), 'I'm meeting him at 3 PM' (sudah janjian & masuk kalender).",
+            "correctExample": "Look at those dark clouds—it's going to rain! (Bukti nyata → going to)",
+            "nuanceNote": "Memilih tingkat kepastian yang tepat membuat percakapanmu terdengar sangat natural."
+        }
+    ],
+    "cognitivePsychology": [
+        {
+            "number": "01",
+            "title": "Hukum Pareto 80/20 (Prioritas 5 Inti)",
+            "tag": "Corpus Linguistics",
+            "description": "Riset korpus bahasa Inggris membuktikan lebih dari 80% percakapan nyata hanya memakai 5 sel dari matriks 4×4: Simple Present, Simple Past, Present Continuous, Present Perfect, dan Simple Future.",
+            "actionableSteps": [
+                "Otomatisasikan 5 sel utama terlebih dahulu hingga keluar tanpa berpikir.",
+                "Gunakan 11 sel lainnya untuk presisi nuansa kronologi, durasi, dan pengandaian."
+            ],
+            "takeaway": "Kuasai 5 Inti → 80%+ Komunikasi Sehari-Hari & Kerja Lancar"
+        },
+        {
+            "number": "02",
+            "title": "Mental Time Travel (Simulasi Kamera Episodik)",
+            "tag": "Episodic Memory",
+            "description": "Saat berbicara, jangan menerjemahkan nama tense. Pindahkan 'kamera mental' di kepalamu ke posisi waktunya terlebih dahulu, lalu tentukan sifat geraknya.",
+            "actionableSteps": [
+                "Langkah 1: Kamera di Kini (Present), Lalu (Past), atau Depan (Future)?",
+                "Langkah 2: Aksinya fakta utuh (Simple), sedang bergerak (-ing), atau sudah tuntas (V3)?"
+            ],
+            "takeaway": "Posisi Kamera + Status Gerak = Struktur Otomatis"
+        },
+        {
+            "number": "03",
+            "title": "Time Anchor Conditioning (Pemicu Kata Waktu)",
+            "tag": "Associative Reflex",
+            "description": "Latih otak mengikat kata keterangan waktu sebagai satu paket refleks dengan bentuk kata kerjanya sehingga tidak perlu menghitung rumus.",
+            "actionableSteps": [
+                "Yesterday / ago / last night → langsung picu V2 atau did + V1.",
+                "Since / for / already / yet → langsung picu have/has + V3.",
+                "By next week / by 2027 → langsung picu will have + V3."
+            ],
+            "takeaway": "Kata Keterangan Waktu = Tombol Pintas Memori Prosedural"
+        },
+        {
+            "number": "04",
+            "title": "Contrastive Pair Drilling (Pasangan Kontras)",
+            "tag": "Noticing Hypothesis",
+            "description": "Otak menangkap perbedaan makna paling tajam ketika dua kalimat mirip disandingkan berdampingan untuk merasakan perbedaan nuansanya.",
+            "actionableSteps": [
+                "Bandingkan: 'I lived in Jakarta for 3 years' (sudah pindah) vs. 'I have lived in Jakarta for 3 years' (masih tinggal di sana).",
+                "Bandingkan: 'I did not buy it' (V1 setelah did) vs. 'I bought it' (V2 di kalimat positif)."
+            ],
+            "takeaway": "Rasakan Pergeseran Nuansa Lewat Kontras Berdampingan"
+        }
+    ],
+    "quiz": [
+        {
+            "id": "mq-01",
+            "categoryTag": "Present • 04 Perfect Continuous",
+            "situation": "Temanmu masuk ruangan dengan napas terengah-engah dan baju basah keringat detik ini. Kamu ingin menanyakan aktivitas yang baru saja ia lakukan dalam durasi tertentu hingga jejak fisiknya terlihat sekarang.",
+            "question": "Kalimat tanya (?) mana yang paling tepat secara 'feeling' dan kondisi?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Did you run?",
+                    "isCorrect": false,
+                    "explanation": "Simple Past hanya menanyakan fakta lampau yang terputus tanpa menonjolkan jejak fisik yang terlihat detik ini."
+                },
+                {
+                    "id": "b",
+                    "text": "Have you been running?",
+                    "isCorrect": true,
+                    "explanation": "Tepat sekali! Present Perfect Continuous (?) dipakai ketika aktivitas baru saja berhenti tetapi jejak fisiknya terlihat jelas sekarang."
+                },
+                {
+                    "id": "c",
+                    "text": "Are you running?",
+                    "isCorrect": false,
+                    "explanation": "Kurang tepat karena temanmu sudah berhenti berlari dan masuk ke ruangan."
+                }
+            ]
+        },
+        {
+            "id": "mq-02",
+            "categoryTag": "Past • 01 Simple & Dummy Do",
+            "situation": "Kamu ingin membuat kalimat NEGATIF (-) dalam Simple Past untuk menyatakan bahwa kamu tidak membeli laptop tersebut kemarin.",
+            "question": "Manakah struktur yang benar secara anatomi kata kerja?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "I did not bought the laptop yesterday.",
+                    "isCorrect": false,
+                    "explanation": "Salah! Karena kata bantu lampau 'did' sudah muncul, kata kerja utama wajib kembali murni ke V1 (buy)."
+                },
+                {
+                    "id": "b",
+                    "text": "I did not buy the laptop yesterday.",
+                    "isCorrect": true,
+                    "explanation": "Sempurna! Dummy auxiliary 'did' mengambil alih penanda waktu lampau, sehingga kata kerja utamanya kembali ke V1 (buy)."
+                },
+                {
+                    "id": "c",
+                    "text": "I was not buy the laptop yesterday.",
+                    "isCorrect": false,
+                    "explanation": "Salah! 'Was' adalah To Be untuk kalimat Nominal atau V-ing, bukan pendamping V1."
+                }
+            ]
+        },
+        {
+            "id": "mq-03",
+            "categoryTag": "Sistem To Be • 03 Perfect Nominal",
+            "situation": "Kamu ingin menyatakan kalimat nominal tanpa kata kerja aksi: 'Mereka sudah menjadi sahabat karib sejak SMA.'",
+            "question": "Bentuk To Be manakah yang wajib digunakan setelah 'have'?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "They have be close friends since high school.",
+                    "isCorrect": false,
+                    "explanation": "Salah. Setelah have/has/had, To Be wajib berubah ke bentuk V3."
+                },
+                {
+                    "id": "b",
+                    "text": "They have been close friends since high school.",
+                    "isCorrect": true,
+                    "explanation": "Tepat! Dalam Present Perfect nominal, To Be berubah menjadi V3-nya yaitu 'been'."
+                },
+                {
+                    "id": "c",
+                    "text": "They were been close friends since high school.",
+                    "isCorrect": false,
+                    "explanation": "Salah struktur. 'Were' tidak boleh digabungkan langsung dengan 'been' dalam kalimat aktif."
+                }
+            ]
+        },
+        {
+            "id": "mq-04",
+            "categoryTag": "Past • 03 Perfect ('Past in the Past')",
+            "situation": "Kemarin malam kamu tiba di stasiun pukul 19.15, padahal kereta berangkat pukul 19.00. Kamu ingin menunjukkan kejadian mana yang sudah tuntas lebih dulu.",
+            "question": "Manakah kalimat yang menggambarkan urutan masa lalu dengan presisi?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "When I arrived at the station, the train already left.",
+                    "isCorrect": false,
+                    "explanation": "Kurang presisi secara urutan waktu karena keduanya memakai Simple Past."
+                },
+                {
+                    "id": "b",
+                    "text": "When I arrived at the station, the train had already left.",
+                    "isCorrect": true,
+                    "explanation": "Sempurna! Past Perfect (had left) menandai kejadian yang sudah selesai lebih dulu sebelum kejadian lampau kedua (arrived)."
+                },
+                {
+                    "id": "c",
+                    "text": "When I arrived at the station, the train has already left.",
+                    "isCorrect": false,
+                    "explanation": "Salah dimensi waktu. 'Has left' terikat dengan masa sekarang, bukan cerita masa lalu."
+                }
+            ]
+        },
+        {
+            "id": "mq-05",
+            "categoryTag": "Plot Twist 05 • Time-Clause Lock",
+            "situation": "Kamu berjanji akan mengabari rekan timmu begitu kamu tiba di kantor besok pagi.",
+            "question": "Pilih kalimat yang bebas dari jebakan 'double will':",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "I will message you as soon as I will arrive at the office.",
+                    "isCorrect": false,
+                    "explanation": "Salah! Klausa waktu setelah 'as soon as / when / if' dilarang memakai 'will'."
+                },
+                {
+                    "id": "b",
+                    "text": "I will message you as soon as I arrive at the office.",
+                    "isCorrect": true,
+                    "explanation": "Tepat! Klausa utama memakai 'will message', sedangkan klausa waktu setelah 'as soon as' terkunci di Simple Present ('arrive')."
+                },
+                {
+                    "id": "c",
+                    "text": "I message you as soon as I will arrive at the office.",
+                    "isCorrect": false,
+                    "explanation": "Terbalik! Justru klausa utama yang harus memakai 'will', bukan klausa anak setelah 'as soon as'."
+                }
+            ]
+        }
+    ]
+}

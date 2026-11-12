@@ -1,4 +1,3 @@
-// src/components/layout/FloatingSidebar.tsx
 "use client";
 
 import { useState } from "react";
@@ -6,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
     LayoutDashboard,
+    Compass,
     Zap,
     ChevronDown,
     ChevronRight,
@@ -49,8 +49,24 @@ const TIER_VISUALS: Record<
     },
 };
 
+const THEMATIC_LAB_LINKS = [
+    {
+        href: "/learn/conversations/workplace-pragmatics",
+        label: "Conversational Pragmatics",
+        icon: MessageCircleHeart,
+        iconWrapper: "bg-rose-500/15 text-rose-600",
+    },
+    {
+        href: "/learn/vocabulary/situational-lexicon",
+        label: "Thematic Lexicon & Idioms",
+        icon: Globe,
+        iconWrapper: "bg-indigo-500/15 text-indigo-600",
+    },
+] as const;
+
 export function FloatingSidebar() {
     const pathname = usePathname();
+
     // Default membuka Beginner (level A2 pengguna saat ini) & Intermediate (target B2)
     const [openTiers, setOpenTiers] = useState<Record<string, boolean>>({
         beginner: true,
@@ -75,7 +91,7 @@ export function FloatingSidebar() {
             <div className="space-y-5">
                 {/* Brand Header */}
                 <div className="flex items-center justify-between px-1.5">
-                    <div className="flex items-center gap-3">
+                    <Link href="/dashboard" className="flex items-center gap-3">
                         <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-linear-to-br from-sky-500 via-blue-600 to-indigo-600 text-white shadow-md shadow-sky-500/25">
                             <BookOpen className="h-5 w-5" />
                         </div>
@@ -87,11 +103,12 @@ export function FloatingSidebar() {
                                 CEFR A2 → B2 Workspace
                             </p>
                         </div>
-                    </div>
+                    </Link>
                 </div>
 
                 {/* Core Workspace Navigation */}
                 <div className="space-y-1">
+                    {/* 1. Dashboard / Command Center */}
                     <Link
                         href="/dashboard"
                         className={cn(
@@ -107,6 +124,28 @@ export function FloatingSidebar() {
                         <span>Command Center</span>
                     </Link>
 
+                    {/* 2. Panduan Waktu & Kata Kerja */}
+                    <Link
+                        href="/time-matrix"
+                        className={cn(
+                            "flex items-center justify-between rounded-2xl px-3 py-2.5 text-[13px] font-bold transition-all duration-150",
+                            pathname === "/time-matrix"
+                                ? "border border-white bg-linear-to-r from-indigo-500/15 via-sky-500/10 to-white text-indigo-950 shadow-sm"
+                                : "text-slate-600 hover:bg-white/80 hover:text-slate-900"
+                        )}
+                    >
+                        <span className="flex items-center gap-3">
+                            <span className="flex h-7 w-7 items-center justify-center rounded-xl bg-indigo-600 text-white shadow-xs">
+                                <Compass className="h-3.5 w-3.5" />
+                            </span>
+                            <span>Waktu & Kata Kerja</span>
+                        </span>
+                        <span className="rounded-full bg-indigo-500/15 px-2 py-0.5 text-[10px] font-bold text-indigo-700">
+                            Panduan
+                        </span>
+                    </Link>
+
+                    {/* 3. Practice Arena (Quiz) */}
                     <Link
                         href="/practice/nouns-foundations"
                         className={cn(
@@ -154,7 +193,7 @@ export function FloatingSidebar() {
                                     <button
                                         type="button"
                                         onClick={() => toggleTier(tier.id)}
-                                        className="flex w-full items-center justify-between px-3 py-2.5 text-left"
+                                        className="flex w-full cursor-pointer items-center justify-between px-3 py-2.5 text-left"
                                     >
                                         <span className="flex items-center gap-2.5">
                                             <span
@@ -193,7 +232,7 @@ export function FloatingSidebar() {
                                                         <button
                                                             type="button"
                                                             onClick={() => toggleCategory(catKey)}
-                                                            className="flex w-full items-center justify-between rounded-xl px-2.5 py-1.5 text-xs font-bold text-slate-700 hover:bg-white/80"
+                                                            className="flex w-full cursor-pointer items-center justify-between rounded-xl px-2.5 py-1.5 text-xs font-bold text-slate-700 hover:bg-white/80"
                                                         >
                                                             <span className="flex items-center gap-2">
                                                                 <FolderOpen className="h-3.5 w-3.5 text-slate-400" />
@@ -256,24 +295,33 @@ export function FloatingSidebar() {
                         Thematic & Cross-Level Labs
                     </p>
                     <div className="space-y-1">
-                        <Link
-                            href="/learn/conversations/workplace-pragmatics"
-                            className="flex items-center gap-2.5 rounded-2xl px-3 py-2 text-xs font-semibold text-slate-600 hover:bg-white/80 hover:text-slate-900"
-                        >
-                            <span className="flex h-7 w-7 items-center justify-center rounded-xl bg-rose-500/15 text-rose-600">
-                                <MessageCircleHeart className="h-3.5 w-3.5" />
-                            </span>
-                            <span>Conversational Pragmatics</span>
-                        </Link>
-                        <Link
-                            href="/learn/vocabulary/situational-lexicon"
-                            className="flex items-center gap-2.5 rounded-2xl px-3 py-2 text-xs font-semibold text-slate-600 hover:bg-white/80 hover:text-slate-900"
-                        >
-                            <span className="flex h-7 w-7 items-center justify-center rounded-xl bg-indigo-500/15 text-indigo-600">
-                                <Globe className="h-3.5 w-3.5" />
-                            </span>
-                            <span>Thematic Lexicon & Idioms</span>
-                        </Link>
+                        {THEMATIC_LAB_LINKS.map((lab) => {
+                            const LabIcon = lab.icon;
+                            const isActive = pathname === lab.href;
+
+                            return (
+                                <Link
+                                    key={lab.href}
+                                    href={lab.href}
+                                    className={cn(
+                                        "flex items-center gap-2.5 rounded-2xl px-3 py-2 text-xs font-semibold transition-all",
+                                        isActive
+                                            ? "bg-slate-900 font-bold text-white shadow-xs"
+                                            : "text-slate-600 hover:bg-white/80 hover:text-slate-900"
+                                    )}
+                                >
+                                    <span
+                                        className={cn(
+                                            "flex h-7 w-7 items-center justify-center rounded-xl",
+                                            isActive ? "bg-white/15 text-white" : lab.iconWrapper
+                                        )}
+                                    >
+                                        <LabIcon className="h-3.5 w-3.5" />
+                                    </span>
+                                    <span>{lab.label}</span>
+                                </Link>
+                            );
+                        })}
                     </div>
                 </div>
             </div>
