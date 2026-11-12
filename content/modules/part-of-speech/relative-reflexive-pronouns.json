@@ -1,0 +1,171 @@
+{
+    "id": "int-pos-pronouns",
+    "slug": "relative-reflexive-pronouns",
+    "tier": "intermediate",
+    "category": "part-of-speech",
+    "layoutVariant": "asymmetric-spotlight",
+    "order": 12,
+    "title": "Relative & Reflexive Pronouns: Clause Linking & Self-Reference",
+    "subtitle": "CEFR B1–B2 • Defining Clauses (Who, Which, That) & Reflexive Intensifiers",
+    "estimatedMinutes": 20,
+    "topics": [
+        {
+            "id": "relative-pronouns-clauses",
+            "badgeNumber": 1,
+            "colSpan": "medium",
+            "tags": [
+                "Pronouns",
+                "Relative Clauses"
+            ],
+            "title": "1. Relative Pronouns (Who, Which, That, Where)",
+            "subtitle": "Connecting Two Short Sentences into One Fluid Thought",
+            "explanation": "Kata ganti penghubung (who untuk orang, which untuk benda/ide, that untuk orang/benda dalam klausa penting, where untuk tempat) menggabungkan dua kalimat pendek menjadi satu kalimat kompleks yang mengalir tanpa pengulangan kata benda.",
+            "rationale": "Ciri utama pembicara tingkat B1–B2 adalah kemampuan menyisipkan informasi tambahan langsung di belakang kata benda tanpa memutus kalimat menjadi potongan pendek.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "[Person + who / that + V]  |  [Thing + which / that + V]  |  [Place + where + S + V]"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "[Noun] + who / which / that + Aux + not + V"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Is this the [Noun] + who / which / that + S + V?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "EXPLAINING TOOLS & PEOPLE",
+                    "register": "Workplace",
+                    "positive": "She is the engineer who built the parser that handles JSON validation.",
+                    "negative": "We shouldn't use libraries which don't have active maintenance.",
+                    "question": "Is this the coworking space where the hackathon took place?",
+                    "nuanceNote": "Dalam klausa yang memuat informasi ekstra (diapit koma), gunakan 'which' atau 'who'—jangan gunakan 'that'.",
+                    "xrayTokens": [
+                        {
+                            "word": "who built",
+                            "role": "Relative Pronoun (Human Subject)",
+                            "nuance": "Menghubungkan 'engineer' langsung dengan aksinya",
+                            "colorTag": "subject"
+                        },
+                        {
+                            "word": "that handles",
+                            "role": "Defining Relative Clause",
+                            "nuance": "Mengidentifikasi parser spesifik yang dimaksud",
+                            "colorTag": "nuance"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Jangan Mengulang Kata Ganti Objek di Dalam Relative Clause",
+                    "explanation": "Kata 'which/that/who' sudah mewakili objeknya, jadi jangan tambahkan 'it/him/her' lagi di akhir klausa.",
+                    "wrongExample": "The feature that we deployed it yesterday works smoothly.",
+                    "correctExample": "The feature that we deployed yesterday works smoothly."
+                }
+            ],
+            "tipsAndTricks": [
+                "Jika 'who/which/that' diikuti langsung oleh Subjek baru (the book [that] I read), kamu boleh menghilangkan 'that' agar kalimat terdengar lebih cepat dan natural."
+            ]
+        },
+        {
+            "id": "reflexive-pronouns",
+            "badgeNumber": 2,
+            "colSpan": "narrow",
+            "tags": [
+                "Pronouns",
+                "Self-Reference"
+            ],
+            "title": "2. Reflexive Pronouns (Myself, Yourself, Themselves)",
+            "subtitle": "Same Subject-Object & Autonomous Action Emphasis",
+            "explanation": "Digunakan ketika pelaku dan penerima aksi adalah orang yang sama (I taught myself), atau untuk menegaskan bahwa seseorang melakukan sesuatu secara mandiri tanpa bantuan (by myself).",
+            "rationale": "Membedakan makna 'dia melukai orang lain' (he hurt him) dengan 'dia melukai dirinya sendiri' (he hurt himself).",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "Subject + Verb + [myself / yourself / himself / herself / itself / ourselves / themselves]"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "Subject + Aux + not + Verb + [Reflexive Pronoun]"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Did + Subject + Verb + [Reflexive Pronoun] + (by yourself)?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "SELF-LEARNING & AUTONOMY",
+                    "register": "Daily Life",
+                    "positive": "I taught myself TypeScript by building real projects.",
+                    "negative": "The system doesn't restart itself after a kernel panic.",
+                    "question": "Did you configure the deployment pipeline by yourself?",
+                    "nuanceNote": "'By myself' berarti sendirian atau secara mandiri tanpa bantuan orang lain.",
+                    "xrayTokens": [
+                        {
+                            "word": "myself",
+                            "role": "Reflexive Object Pronoun",
+                            "nuance": "Merujuk kembali ke subjek 'I'",
+                            "colorTag": "hack"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Bentuk Jamak Berakhiran -selves (Bukan -selfs)",
+                    "explanation": "Untuk kata ganti jamak (we, you plural, they), akhiran berubah menjadi -selves: ourselves, yourselves, themselves.",
+                    "wrongExample": "They prepared the presentation themself.",
+                    "correctExample": "They prepared the presentation themselves."
+                }
+            ],
+            "tipsAndTricks": [
+                "Hindari memakai 'myself' sebagai pengganti 'me' di email formal (jangan tulis 'Please contact John or myself'—cukup 'Please contact John or me')."
+            ]
+        }
+    ],
+    "practiceQuiz": [
+        {
+            "id": "q-int-pron-01",
+            "topicId": "relative-pronouns-clauses",
+            "scenario": {
+                "setting": "Presentasi Arsitektur Aplikasi",
+                "interlocutor": "Reviewer teknis menanyakan fungsi salah satu modul backend",
+                "intent": "Menjelaskan fungsi modul dalam satu kalimat terhubung tanpa redundansi kata ganti."
+            },
+            "question": "Pilih kalimat yang paling tepat:",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "This is the service which it authenticates user tokens.",
+                    "isCorrect": false
+                },
+                {
+                    "id": "b",
+                    "text": "This is the service which authenticates user tokens.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "c",
+                    "text": "This is the service who authenticates user tokens.",
+                    "isCorrect": false
+                }
+            ],
+            "deepExplanation": {
+                "whyCorrect": "'Which' sudah menggantikan subjek 'the service', sehingga langsung diikuti kata kerja 'authenticates'.",
+                "whyOthersFail": "Opsi A mengulang subjek dengan 'it', sedangkan Opsi C memakai 'who' yang hanya berlaku untuk manusia.",
+                "realLifeHack": "Gunakan 'who' untuk manusia, 'which' untuk sistem/benda, dan 'that' sebagai jembatan serbaguna."
+            }
+        }
+    ]
+}

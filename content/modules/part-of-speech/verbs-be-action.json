@@ -1,0 +1,165 @@
+{
+    "id": "beg-pos-verbs",
+    "slug": "verbs-be-action",
+    "tier": "beginner",
+    "category": "part-of-speech",
+    "layoutVariant": "comparative-split",
+    "order": 4,
+    "title": "Verbs: Copular 'To Be' vs. Lexical Action Verbs",
+    "subtitle": "CEFR A1–A2 • State-of-Being Sentences vs. Dynamic Action Predicates",
+    "estimatedMinutes": 16,
+    "topics": [
+        {
+            "id": "copular-to-be",
+            "badgeNumber": 1,
+            "colSpan": "half",
+            "tags": [
+                "Verbs",
+                "Nominal Predicate"
+            ],
+            "title": "1. Copular 'To Be' (Am, Is, Are)",
+            "subtitle": "Identity, Roles, Adjectives & Locations (No Action)",
+            "explanation": "Digunakan ketika kalimat tidak memiliki aktivitas fisik, melainkan menjelaskan identitas, profesi, sifat, perasaan, atau lokasi (Nominal Sentence).",
+            "rationale": "Dalam bahasa Inggris, setiap kalimat wajib punya kata kerja. Jika predikatnya adalah kata sifat ('busy') atau kata benda ('an engineer'), 'am/is/are' hadir sebagai jembatan penghubung.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "Subject + am / is / are + [Noun / Adjective / Preposition + Place]"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "Subject + am / is / are + not + [Noun / Adjective / Place]"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Am / Is / Are + Subject + [Noun / Adjective / Place]?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "STATUS & LOCATION",
+                    "register": "Workplace",
+                    "positive": "The server is online, and the developers are ready.",
+                    "negative": "I am not available for a call right now.",
+                    "question": "Are you in the Jakarta office today?",
+                    "nuanceNote": "Karena 'online', 'ready', dan 'available' adalah kata sifat (Adjective), wajib memakai 'is/are/am'.",
+                    "xrayTokens": [
+                        {
+                            "word": "is",
+                            "role": "Linking Verb (To Be)",
+                            "nuance": "Menghubungkan subjek tunggal 'server' dengan kondisi 'online'",
+                            "colorTag": "verb"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Dilarang Menggabungkan 'Am/Is/Are' dengan Verb-1 Murni",
+                    "explanation": "Jangan pernah menaruh 'am/is/are' sebelum kata kerja dasar (V1) untuk kalimat aktif biasa.",
+                    "wrongExample": "I am agree with your idea. / She is work here.",
+                    "correctExample": "I agree with your idea. / She works here."
+                }
+            ],
+            "tipsAndTricks": [
+                "Cek kata setelah subjek: Jika bukan aktivitas (misal: lapar, di kantor, mahasiswa), pakai To Be. Jika aktivitas (makan, coding, tidur), buang To Be!"
+            ]
+        },
+        {
+            "id": "lexical-action-verbs",
+            "badgeNumber": 2,
+            "colSpan": "half",
+            "tags": [
+                "Verbs",
+                "Action Predicate"
+            ],
+            "title": "2. Lexical Action Verbs (Do / Does)",
+            "subtitle": "Dynamic Actions & Auxiliary Support in Negatives/Questions",
+            "explanation": "Kata kerja yang menunjukkan tindakan nyata (write, build, speak, study). Pada bentuk positif berdiri langsung setelah subjek, dan meminjam 'do/does' saat menjadi kalimat negatif atau tanya.",
+            "rationale": "Kata kerja aksi tidak bisa langsung ditempeli kata 'not' (*I work not*). Bahasa Inggris memakai kata kerja bantu 'do/does' untuk menanggung beban negatif dan pertanyaan.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "I/You/We/They + V1  |  He/She/It + V1 (-s/-es)"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "I/You/We/They + don't + V1  |  He/She/It + doesn't + V1"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Do + I/you/we/they + V1?  |  Does + he/she/it + V1?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "DAILY WORKFLOW",
+                    "register": "Workplace",
+                    "positive": "He writes clean TypeScript code every day.",
+                    "negative": "He doesn't write legacy code anymore.",
+                    "question": "Does he review pull requests in the morning?",
+                    "nuanceNote": "Saat 'doesn't' atau 'does' muncul, akhiran '-s' pada 'writes' otomatis lepas kembali ke 'write'.",
+                    "xrayTokens": [
+                        {
+                            "word": "doesn't write",
+                            "role": "Auxiliary + Base Verb",
+                            "nuance": "Akhiran -s sudah diserap oleh 'does', jadi 'write' kembali murni",
+                            "colorTag": "hack"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Aturan Ejaan Akhiran -es & -ies untuk He/She/It",
+                    "explanation": "Kata kerja berakhiran -ch, -sh, -s, -x, -o ditambah -es (watches, goes). Konsonan + y berubah menjadi -ies (study → studies).",
+                    "wrongExample": "She studys English and watchs tutorials.",
+                    "correctExample": "She studies English and watches tutorials."
+                }
+            ],
+            "tipsAndTricks": [
+                "Hukum Konservasi S: Dalam satu klausa He/She/It, huruf 'S' hanya boleh muncul satu kali—di kata kerjanya (works) ATAU di kata bantunya (does), tidak pernah keduanya."
+            ]
+        }
+    ],
+    "practiceQuiz": [
+        {
+            "id": "q-verbs-01",
+            "topicId": "copular-to-be",
+            "scenario": {
+                "setting": "Chat Koordinasi Tim",
+                "interlocutor": "Rekan kerja bertanya apakah kamu setuju dengan jadwal rilis",
+                "intent": "Menyatakan persetujuan menggunakan kata kerja aksi yang benar."
+            },
+            "question": "Kalimat mana yang benar?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Yes, I am agree with the timeline.",
+                    "isCorrect": false
+                },
+                {
+                    "id": "b",
+                    "text": "Yes, I agree with the timeline.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "c",
+                    "text": "Yes, I agreeing with the timeline.",
+                    "isCorrect": false
+                }
+            ],
+            "deepExplanation": {
+                "whyCorrect": "'Agree' adalah kata kerja (verb), bukan kata sifat, sehingga langsung mengikuti subjek 'I' tanpa 'am'.",
+                "whyOthersFail": "Menambahkan 'am' sebelum V1 adalah interferensi bahasa Indonesia ('saya adalah setuju').",
+                "realLifeHack": "Gunakan 'I agree' (tanpa am) atau jika ingin memakai 'am', gunakan bentuk sifatnya: 'I am in agreement'."
+            }
+        }
+    ]
+}

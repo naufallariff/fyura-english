@@ -1,0 +1,165 @@
+{
+    "id": "int-gram-passive",
+    "slug": "passive-voice-core",
+    "tier": "intermediate",
+    "category": "grammar",
+    "layoutVariant": "asymmetric-spotlight",
+    "order": 17,
+    "title": "Passive Voice: Object-Focus, Process Reporting & Impersonal Style",
+    "subtitle": "CEFR B1–B2 • Be + Past Participle (Verb-3) Across Core Tenses",
+    "estimatedMinutes": 18,
+    "topics": [
+        {
+            "id": "passive-core-structure",
+            "badgeNumber": 1,
+            "colSpan": "medium",
+            "tags": [
+                "Passive Voice",
+                "Core Mechanism"
+            ],
+            "title": "1. Passive Voice Architecture (Be + Verb-3)",
+            "subtitle": "Shifting Focus from the Doer to the Action & Result",
+            "explanation": "Digunakan ketika hasil tindakan atau objek yang dikenai tindakan jauh lebih penting daripada siapa pelakunya, atau ketika pelakunya tidak diketahui/tidak perlu disebut. Rumus intinya selalu: To Be (sesuai tenses) + Verb-3.",
+            "rationale": "Dalam dokumentasi teknis, berita, dan laporan kerja, menyebut 'The update was deployed' jauh lebih objektif daripada 'Someone deployed the update'.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "Object + [am/is/are | was/were | has been | will be] + Verb-3 + (by Agent)"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "Object + [Be / Aux + not + Be] + Verb-3"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "[Am/Is/Are | Was/Were | Has] + Object + (been) + Verb-3?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "SYSTEM UPDATES & INCIDENT REPORTS",
+                    "register": "Workplace",
+                    "positive": "All user passwords are encrypted, and the patch was deployed last night.",
+                    "negative": "The legacy endpoint hasn't been deprecated yet.",
+                    "question": "Has the pull request been reviewed by the lead engineer?",
+                    "nuanceNote": "Waktu kejadian dikendalikan oleh bentuk 'To Be' (is = rutin, was = lampau, has been = baru saja), sementara kata kerja utamanya terkunci di Verb-3.",
+                    "xrayTokens": [
+                        {
+                            "word": "was deployed",
+                            "role": "Past Simple Passive",
+                            "nuance": "'was' menandai waktu lampau + 'deployed' (V3) menandai aksi pasif",
+                            "colorTag": "verb"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Kata Kerja Intransitif Tidak Bisa Dipasifkan",
+                    "explanation": "Kata kerja yang tidak punya objek seperti 'happen', 'arrive', 'sleep', 'exist', dan 'occur' tidak pernah memiliki bentuk pasif.",
+                    "wrongExample": "The error was happened during startup.",
+                    "correctExample": "The error happened during startup."
+                }
+            ],
+            "tipsAndTricks": [
+                "Rumus rahasia menguasai Passive Voice semua tenses: Cukup ubah kata 'BE' ke tenses yang diinginkan, lalu tempelkan Verb-3 di belakangnya!"
+            ]
+        },
+        {
+            "id": "passive-with-modals",
+            "badgeNumber": 2,
+            "colSpan": "narrow",
+            "tags": [
+                "Passive Voice",
+                "Modals"
+            ],
+            "title": "2. Modal Passive (Can / Must / Should + Be + Verb-3)",
+            "subtitle": "Instructions, Specifications & System Capabilities",
+            "explanation": "Menggabungkan modal verb (can, must, should, will) dengan struktur pasif untuk menyatakan aturan, kemampuan sistem, atau instruksi prosedur.",
+            "rationale": "Sangat sering dipakai di dokumentasi perangkat lunak, manual pengguna, dan kebijakan perusahaan.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "Subject + [can / must / should / will] + be + Verb-3"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "Subject + [can't / mustn't / shouldn't] + be + Verb-3"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Can / Should + Subject + be + Verb-3?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "TECHNICAL SPECIFICATIONS",
+                    "register": "Workplace",
+                    "positive": "Progress data can be exported as a JSON file at any time.",
+                    "negative": "Sensitive tokens must not be stored in local storage.",
+                    "question": "Can this component be reused across different routes?",
+                    "nuanceNote": "Setelah modal verb, kata 'be' selalu berbentuk murni ('be', bukan 'is/was/been').",
+                    "xrayTokens": [
+                        {
+                            "word": "can be exported",
+                            "role": "Modal + Bare Be + Past Participle",
+                            "nuance": "Menjelaskan kapabilitas fitur secara objektif",
+                            "colorTag": "hack"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Jangan Lupa Kata 'Be' di Antara Modal dan Verb-3",
+                    "explanation": "Tanpa 'be', kalimat berubah menjadi aktif dan salah makna.",
+                    "wrongExample": "The report must submitted before 5 PM.",
+                    "correctExample": "The report must be submitted before 5 PM."
+                }
+            ],
+            "tipsAndTricks": [
+                "Setiap kali menulis dokumentasi fitur atau SOP, gunakan pola '[Fitur] can be [Verb-3]' agar terdengar setara dokumentasi resmi internasional."
+            ]
+        }
+    ],
+    "practiceQuiz": [
+        {
+            "id": "q-int-pass-01",
+            "topicId": "passive-core-structure",
+            "scenario": {
+                "setting": "Pesan Status Insiden Aplikasi",
+                "interlocutor": "Pengguna melaporkan bug yang terjadi tadi pagi",
+                "intent": "Menginformasikan bahwa bug tersebut sudah diperbaiki oleh tim."
+            },
+            "question": "Pilih kalimat status yang paling tepat:",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The issue has been resolved by our engineering team.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "b",
+                    "text": "The issue has resolved by our engineering team.",
+                    "isCorrect": false
+                },
+                {
+                    "id": "c",
+                    "text": "The issue was happened and resolved.",
+                    "isCorrect": false
+                }
+            ],
+            "deepExplanation": {
+                "whyCorrect": "Present Perfect Passive menggunakan pola 'has been + Verb-3' ('has been resolved').",
+                "whyOthersFail": "Opsi B kehilangan 'been' sehingga bermakna aktif, dan Opsi C mempasifkan kata 'happen' yang tidak bisa dipasifkan.",
+                "realLifeHack": "Cek apakah subjek melakukan aksi atau dikenai aksi: 'issue' dikenai aksi 'resolve', maka wajib ada unsur 'be + V3'."
+            }
+        }
+    ]
+}

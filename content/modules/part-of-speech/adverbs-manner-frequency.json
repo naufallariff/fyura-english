@@ -1,0 +1,165 @@
+{
+    "id": "int-pos-adverbs",
+    "slug": "adverbs-manner-frequency",
+    "tier": "intermediate",
+    "category": "part-of-speech",
+    "layoutVariant": "comparative-split",
+    "order": 13,
+    "title": "Adverbs of Manner & Degree: Action Precision & Nuance Modifiers",
+    "subtitle": "CEFR B1–B2 • Verb Modification (-ly) & Intensity Gradation",
+    "estimatedMinutes": 16,
+    "topics": [
+        {
+            "id": "adverbs-of-manner",
+            "badgeNumber": 1,
+            "colSpan": "half",
+            "tags": [
+                "Adverbs",
+                "Action Manner"
+            ],
+            "title": "1. Adverbs of Manner (How an Action Happens)",
+            "subtitle": "Modifying Verbs with Precision (-ly Forms)",
+            "explanation": "Kata keterangan cara (quickly, smoothly, accurately, reliably) menjelaskan BAGAIMANA sebuah tindakan dilakukan. Dibentuk dengan menambahkan '-ly' pada kata sifat dan diletakkan setelah kata kerja atau objek.",
+            "rationale": "Adjective menjelaskan BENDA (a fast server), sedangkan Adverb menjelaskan AKSI (the server responds fast / quickly). Membedakan keduanya menjaga akurasi tata bahasa profesional.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "Subject + Verb + (Object) + [Adverb of Manner: Adj + -ly]"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "Subject + Aux + not + Verb + (Object) + [Adverb of Manner]"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "How + Aux + Subject + Verb + (Object)?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "PERFORMANCE & EXECUTION",
+                    "register": "Workplace",
+                    "positive": "The new caching layer handles concurrent requests smoothly.",
+                    "negative": "The legacy script didn't parse edge cases accurately.",
+                    "question": "Did the candidate explain their problem-solving process clearly?",
+                    "nuanceNote": "Jangan pernah menaruh adverb di antara kata kerja dan objeknya (*handles smoothly requests).",
+                    "xrayTokens": [
+                        {
+                            "word": "smoothly",
+                            "role": "Adverb of Manner",
+                            "nuance": "Diletakkan di akhir setelah objek 'concurrent requests'",
+                            "colorTag": "verb"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Good (Adjective) vs. Well (Adverb) & Flat Adverbs",
+                    "explanation": "'Good' adalah kata sifat, bentuk adverb-nya adalah 'well'. Sementara 'fast', 'hard', dan 'late' memiliki bentuk yang sama untuk adjective maupun adverb.",
+                    "wrongExample": "She speaks English very good and works hardly.",
+                    "correctExample": "She speaks English very well and works hard. ('Hardly' berarti hampir tidak!)"
+                }
+            ],
+            "tipsAndTricks": [
+                "Waspadai jebakan makna ganda: 'work hard' = bekerja keras, sedangkan 'hardly work' = hampir tidak bekerja."
+            ]
+        },
+        {
+            "id": "adverbs-of-degree",
+            "badgeNumber": 2,
+            "colSpan": "half",
+            "tags": [
+                "Adverbs",
+                "Intensity"
+            ],
+            "title": "2. Adverbs of Degree (Fairly, Quite, Extremely, Enough)",
+            "subtitle": "Calibrating Intensity Before Adjectives & Adverbs",
+            "explanation": "Digunakan untuk mengatur tingkat intensitas suatu sifat atau tindakan—mulai dari level sedang (fairly, quite, rather) hingga ekstrem (extremely, remarkably, significantly)—serta batas kecukupan (too vs. enough).",
+            "rationale": "Di level B1–B2, menghindari kata 'very' yang berulang dan menggantinya dengan pengukur intensitas yang presisi membuat komunikasi terdengar jauh lebih artikulatif.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "S + Be + [quite / fairly / significantly] + Adj  |  S + Be + Adj + enough"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "S + Be + not + Adj + enough  |  S + Be + too + Adj + to + V1"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Is + S + Adj + enough + to + V1?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "EVALUATING READINESS & CONSTRAINTS",
+                    "register": "Workplace",
+                    "positive": "The bundle size is significantly smaller and fast enough for mobile users.",
+                    "negative": "The current bandwidth isn't stable enough for 4K streaming.",
+                    "question": "Is the documentation clear enough for new contributors?",
+                    "nuanceNote": "'Too + Adj' bermakna negatif (berlebihan sehingga gagal), sedangkan 'Adj + enough' bermakna positif (memenuhi syarat).",
+                    "xrayTokens": [
+                        {
+                            "word": "fast enough",
+                            "role": "Adjective + Post-Modifier Enough",
+                            "nuance": "'Enough' selalu diletakkan SETELAH kata sifat",
+                            "colorTag": "hack"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Posisi 'Enough': Sebelum Noun, Setelah Adjective",
+                    "explanation": "'Enough' berdiri di DEPAN kata benda (enough time), tetapi di BELAKANG kata sifat (strong enough).",
+                    "wrongExample": "We don't have time enough, and the server isn't enough fast.",
+                    "correctExample": "We don't have enough time, and the server isn't fast enough."
+                }
+            ],
+            "tipsAndTricks": [
+                "Ganti 'very important' dengan 'crucial/essential', dan 'very fast' dengan 'remarkably fast' untuk meningkatkan kualitas kosakata B2."
+            ]
+        }
+    ],
+    "practiceQuiz": [
+        {
+            "id": "q-int-adv-01",
+            "topicId": "adverbs-of-degree",
+            "scenario": {
+                "setting": "Evaluasi Kesiapan Rilis Aplikasi",
+                "interlocutor": "Product Manager bertanya apakah performa aplikasi sudah layak rilis",
+                "intent": "Menyatakan bahwa performa sudah memenuhi standar menggunakan 'enough'."
+            },
+            "question": "Pilih kalimat dengan urutan kata yang benar:",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "The response time is enough fast for production.",
+                    "isCorrect": false
+                },
+                {
+                    "id": "b",
+                    "text": "The response time is fast enough for production.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "c",
+                    "text": "The response time is too fast enough for production.",
+                    "isCorrect": false
+                }
+            ],
+            "deepExplanation": {
+                "whyCorrect": "'Enough' wajib diletakkan setelah kata sifat ('fast enough').",
+                "whyOthersFail": "Opsi A menaruh 'enough' sebelum adjective, dan Opsi C menggabungkan 'too' dan 'enough' secara keliru.",
+                "realLifeHack": "Ingat pasangan kontras: 'too slow' (terlalu lambat) vs. 'fast enough' (cukup cepat)."
+            }
+        }
+    ]
+}

@@ -9,79 +9,142 @@
     "estimatedMinutes": 15,
     "topics": [
         {
-            "id": "countable-uncountable-nouns",
-            "title": "Countable vs. Uncountable Nouns",
-            "subtitle": "Distinguishing Discrete Units from Continuous Mass Nouns",
-            "explanation": {
-                "summary": "Dalam bahasa Inggris, setiap kata benda dibagi menjadi dua cara pandang: benda yang bisa dihitung satuan per biji (Countable) dan benda yang dianggap satu kesatuan massa atau konsep utuh sehingga tidak bisa dihitung satuan (Uncountable).",
-                "mentalModel": "Bayangkan '1 apel' (Countable): jika dipotong dua, bentuk aslinya rusak. Sekarang bayangkan 'air' atau 'informasi' (Uncountable): jika dibagi dua ke dua wadah, wujudnya tetap 'air' dan 'informasi'."
-            },
+            "id": "countable-nouns",
+            "badgeNumber": 1,
+            "tags": [
+                "Nouns",
+                "Countable"
+            ],
+            "title": "1. Countable Nouns",
+            "subtitle": "Discrete Units & Individual Objects",
+            "explanation": "Kata benda yang merujuk pada objek terpisah yang bisa dihitung satu per satu secara fisik maupun konseptual (seperti book, idea, meeting, laptop). Memiliki bentuk tunggal (singular) dan jamak (plural).",
+            "rationale": "Otak penutur asli wajib menandai apakah benda tersebut berjumlah satu (memakai a/an/one) atau lebih dari satu (ditambah akhiran -s/-es). Tanpa penanda ini, kalimat terdengar belum selesai.",
             "formulas": [
                 {
-                    "type": "positive",
-                    "label": "Positive Statement (+)",
-                    "formula": "Subject + Verb + [a/an / Number + Countable Noun] OR [some / much + Uncountable Noun]",
-                    "example": "She gave me a useful tip and some helpful feedback.",
-                    "translation": "Dia memberiku satu tips berguna dan beberapa masukan yang membantu."
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "S + V + a/an + Singular Noun  |  S + V + Number/Many + Plural Noun (-s)"
                 },
                 {
-                    "type": "negative",
-                    "label": "Negative Statement (-)",
-                    "formula": "Subject + Auxiliary + not + Verb + [many + Countable-s] OR [much / any + Uncountable]",
-                    "example": "We don't have much time left before the meeting.",
-                    "translation": "Kita tidak punya banyak waktu tersisa sebelum rapat dimulai."
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "S + Aux + not + V + a/an + Singular  |  any/many + Plural Noun (-s)"
                 },
                 {
-                    "type": "question",
-                    "label": "Interrogative (?)",
-                    "formula": "How many + [Countable-s] / How much + [Uncountable] + Auxiliary + Subject + Verb?",
-                    "example": "How much luggage are you checking in today?",
-                    "translation": "Berapa banyak bagasi yang kamu daftarkan hari ini?"
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "How many + Plural Noun (-s) + Aux + S + V?"
                 }
             ],
-            "rationale": {
-                "coreLogic": "Penutur bahasa Inggris wajib memberi sinyal kuantitas sebelum kata benda. Jika benda itu terpisah-pisah, wajib memakai 'a/an' (tunggal) atau akhiran '-s' (jamak). Jika benda itu berupa cairan, bubuk, kumpulan barang, atau ide abstrak, otaknya menganggap benda itu tunggal secara tata bahasa.",
-                "nativePerspective": "Kata seperti 'advice', 'information', 'luggage', 'furniture', dan 'equipment' dipandang sebagai 'satu kategori besar'—bukan kumpulan item kecil—sehingga tidak pernah diberi akhiran '-s'."
-            },
             "conditionalExamples": [
                 {
-                    "conditionLabel": "Kondisi 1: Situasi Kerja & Review Tugas (Workplace)",
+                    "conditionTitle": "WORKPLACE & MEETINGS",
                     "register": "Workplace",
-                    "sentence": "Could you share some feedback on my project proposal?",
-                    "indonesianMeaning": "Bisakah kamu berbagi masukan mengenai proposal proyekku?",
-                    "contextNote": "Menggunakan 'some feedback' (tanpa -s) terdengar sopan, alami, dan profesional di email atau Slack kantor.",
+                    "positive": "We have three client meetings scheduled this afternoon.",
+                    "negative": "We don't have any client meetings scheduled this afternoon.",
+                    "question": "How many client meetings do we have this afternoon?",
+                    "nuanceNote": "Kata 'meeting' dihitung per sesi acara, sehingga otomatis berubah menjadi 'meetings' saat lebih dari satu.",
                     "xrayTokens": [
                         {
-                            "word": "some",
-                            "role": "Quantifier",
-                            "nuance": "Penanda jumlah tak spesifik yang aman dipakai untuk Uncountable Noun",
+                            "word": "three",
+                            "role": "Cardinal Quantifier",
+                            "nuance": "Menentukan jumlah unit terpisah secara eksak",
                             "colorTag": "hack"
                         },
                         {
-                            "word": "feedback",
-                            "role": "Uncountable Noun",
-                            "nuance": "Selalu berbentuk tunggal, meskipun masukannya terdiri dari banyak poin",
+                            "word": "client meetings",
+                            "role": "Plural Countable Noun",
+                            "nuance": "Akhiran -s wajib muncul karena jumlah > 1",
+                            "colorTag": "subject"
+                        }
+                    ]
+                },
+                {
+                    "conditionTitle": "DAILY STUDY & TOOLS",
+                    "register": "Daily Life",
+                    "positive": "I always carry a notebook and two pens in my bag.",
+                    "negative": "I don't carry a notebook when I only bring my tablet.",
+                    "question": "Do you carry a notebook in your bag every day?",
+                    "nuanceNote": "Benda tunggal yang dapat dihitung tidak pernah berdiri telanjang—selalu didahului 'a', 'an', 'the', atau 'my'.",
+                    "xrayTokens": [
+                        {
+                            "word": "a notebook",
+                            "role": "Singular Determiner + Noun",
+                            "nuance": "Artikel 'a' menandakan satu unit umum",
+                            "colorTag": "nuance"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Irregular Plurals (Jamak Tanpa -s)",
+                    "explanation": "Beberapa kata benda umum berubah bentuk vokal/konsonan saat jamak dan tidak boleh ditambah '-s'.",
+                    "wrongExample": "Two persons, three childs, many womens",
+                    "correctExample": "Two people, three children, many women"
+                }
+            ],
+            "tipsAndTricks": [
+                "Tes Cepat Unit: Coba pasang angka '1, 2, 3' di depan kata benda dalam bahasa Indonesia. Jika masuk akal (1 rapat, 2 buku), maka itu Countable."
+            ]
+        },
+        {
+            "id": "uncountable-nouns",
+            "badgeNumber": 2,
+            "tags": [
+                "Nouns",
+                "Uncountable"
+            ],
+            "title": "2. Uncountable Nouns",
+            "subtitle": "Continuous Mass, Liquids & Abstract Concepts",
+            "explanation": "Kata benda yang dipandang sebagai satu kesatuan massa, cairan, bahan, kumpulan kolektif, atau konsep abstrak (seperti information, advice, feedback, water, luggage) yang tidak dibagi per unit.",
+            "rationale": "Karena dianggap satu kesatuan utuh tanpa batas unit, kata benda ini selalu diperlakukan sebagai tunggal (singular verb) dan diukur memakai wadah atau takaran (some, much, a piece of).",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "S + V (Singular) + some / a lot of / a piece of + Uncountable Noun"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "S + Aux + not + V + much / any + Uncountable Noun"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "How much + Uncountable Noun + Aux + S + V?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "FEEDBACK & COLLABORATION",
+                    "register": "Workplace",
+                    "positive": "She gave me some useful feedback on my design draft.",
+                    "negative": "She didn't give me much feedback on the first draft.",
+                    "question": "How much feedback did you get from the senior engineer?",
+                    "nuanceNote": "Meskipun masukan terdiri dari banyak poin, kata 'feedback' dan 'advice' tetap tanpa akhiran '-s'.",
+                    "xrayTokens": [
+                        {
+                            "word": "some useful feedback",
+                            "role": "Quantifier + Uncountable Noun",
+                            "nuance": "Tanpa 'a' dan tanpa '-s'; gunakan 'some' atau 'a piece of'",
                             "colorTag": "nuance"
                         }
                     ]
                 },
                 {
-                    "conditionLabel": "Kondisi 2: Perjalanan & Bandara (Daily Life)",
-                    "register": "Daily Life",
-                    "sentence": "I only brought two carry-on bags and a piece of hand luggage.",
-                    "indonesianMeaning": "Saya hanya membawa dua tas kabin dan satu koper jinjing.",
-                    "contextNote": "'Bags' bisa dihitung (two bags), sedangkan 'luggage' tidak bisa dihitung sehingga memakai wadah 'a piece of'.",
+                    "conditionTitle": "AIRPORT & TRAVEL",
+                    "register": "Travel",
+                    "positive": "I only have one piece of hand luggage today.",
+                    "negative": "I don't have much luggage for this weekend trip.",
+                    "question": "How much luggage are you checking in?",
+                    "nuanceNote": "Gunakan wadah 'a piece of' jika ingin menghitung jumlah unit dari benda Uncountable.",
                     "xrayTokens": [
                         {
-                            "word": "two carry-on bags",
-                            "role": "Plural Countable",
-                            "nuance": "Memakai angka 'two' dan akhiran jamak '-s'",
-                            "colorTag": "subject"
-                        },
-                        {
-                            "word": "a piece of hand luggage",
-                            "role": "Partitive Container",
-                            "nuance": "Wadah penghitung untuk mengubah Uncountable menjadi satuan",
+                            "word": "one piece of",
+                            "role": "Partitive Unit Container",
+                            "nuance": "Mengubah kategori massa (luggage) menjadi hitungan satuan",
                             "colorTag": "hack"
                         }
                     ]
@@ -89,28 +152,21 @@
             ],
             "specialExceptions": [
                 {
-                    "title": "Kata Benda Bermakna Ganda (Dual-Nature Nouns)",
-                    "ruleDetail": "Beberapa kata bisa menjadi Uncountable (jika merujuk bahan/konsep) maupun Countable (jika merujuk porsi atau kejadian spesifik), seperti 'coffee', 'paper', dan 'experience'.",
-                    "wrongExample": "I had many great experiences in Java. (Jika maksudnya pengalaman kerja secara umum)",
-                    "correctExample": "I have five years of work experience. (Uncountable) | That trip was an unforgettable experience. (Countable: 1 peristiwa)"
-                },
-                {
                     "title": "Jebakan Terjemahan Bahasa Indonesia",
-                    "ruleDetail": "Dalam bahasa Indonesia kita biasa berkata 'banyak informasi' atau 'dua nasihat', sehingga sering tergoda menambahkan '-s' dalam bahasa Inggris.",
-                    "wrongExample": "Thank you for the informations and advices.",
-                    "correctExample": "Thank you for the information and advice."
+                    "explanation": "Kata seperti information, advice, furniture, equipment, dan news sering diterjemahkan jamak, padahal selalu tunggal dalam bahasa Inggris.",
+                    "wrongExample": "Thank you for the informations and good advices.",
+                    "correctExample": "Thank you for the information and good advice."
                 }
             ],
             "tipsAndTricks": [
-                "Gunakan rumus wadah 'a piece of...' setiap kali ingin menghitung kata benda abstrak/kolektif: a piece of advice, a piece of news, a piece of furniture.",
-                "Jika ragu apakah suatu kata benda bisa dihitung atau tidak saat berbicara cepat, gunakan kata 'some' atau 'a lot of'—keduanya valid untuk Countable maupun Uncountable!"
+                "Gunakan 'some' atau 'a lot of' saat ragu—keduanya aman dipakai untuk Countable maupun Uncountable tanpa risiko salah tata bahasa."
             ]
         }
     ],
     "practiceQuiz": [
         {
             "id": "q-nouns-beg-01",
-            "topicId": "countable-uncountable-nouns",
+            "topicId": "uncountable-nouns",
             "scenario": {
                 "setting": "Bandara Internasional — Meja Check-in",
                 "interlocutor": "Petugas maskapai menanyakan jumlah barang bawaanmu",
@@ -137,7 +193,7 @@
             "deepExplanation": {
                 "whyCorrect": "'Luggage' adalah Uncountable Noun (kategori barang bawaan), sehingga dihitung memakai wadah 'two pieces of luggage', sedangkan 'backpack' bisa langsung memakai 'a'.",
                 "whyOthersFail": "Opsi A salah menambahkan '-s' pada 'luggages', dan Opsi C memakai 'many' yang hanya berlaku untuk benda jamak terpisah.",
-                "realLifeHack": "Dalam percakapan sehari-hari yang lebih santai, kamu juga bisa langsung menyebut jenis tasnya: 'I have two suitcases and a backpack.'"
+                "realLifeHack": "Dalam percakapan sehari-hari yang santai, kamu juga bisa langsung menyebut jenis tasnya: 'I have two suitcases and a backpack.'"
             }
         }
     ]

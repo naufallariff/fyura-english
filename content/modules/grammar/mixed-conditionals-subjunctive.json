@@ -1,0 +1,177 @@
+{
+    "id": "prof-gram-mixed-subjunctive",
+    "slug": "mixed-conditionals-subjunctive",
+    "tier": "proficient",
+    "category": "grammar",
+    "layoutVariant": "comparative-split",
+    "order": 22,
+    "title": "Mixed Conditionals & Mandative Subjunctive Mood",
+    "subtitle": "CEFR C1–C2 • Cross-Time Counterfactuals & Formal Policy Directives",
+    "estimatedMinutes": 24,
+    "topics": [
+        {
+            "id": "mixed-conditionals-cross-time",
+            "badgeNumber": 1,
+            "colSpan": "half",
+            "tags": [
+                "Conditionals",
+                "Counterfactuals"
+            ],
+            "title": "1. Mixed Conditionals (Past Cause → Present Result)",
+            "subtitle": "Connecting Unchanged Past Decisions to Current Realities",
+            "explanation": "Menggabungkan dua zona waktu berbeda dalam satu kalimat pengandaian: kondisi lampau yang tidak terjadi (If + had + Verb-3) yang dampaknya terasa pada kondisi sekarang (would + Verb-1). Dipakai untuk mengevaluasi keputusan masa lalu yang memengaruhi situasi hari ini.",
+            "rationale": "Dalam kehidupan nyata, penyesalan atau evaluasi strategis sering melintasi batas waktu: 'Seandainya dulu kita melakukan A, sekarang kita pasti berada di posisi B'.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "If + Subject + had + Verb-3 (Past), Subject + would ('d) + Verb-1 (Now)"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "If + Subject + hadn't + Verb-3 (Past), Subject + wouldn't + Verb-1 (Now)"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Where would + Subject + be now if + Subject + hadn't + Verb-3?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "POST-MORTEM & STRATEGIC HINDSIGHT",
+                    "register": "Workplace",
+                    "positive": "If we had documented the API schema earlier, onboarding new engineers would be effortless today.",
+                    "negative": "If she hadn't spotted that memory leak last week, our servers wouldn't be running smoothly right now.",
+                    "question": "Would we be facing this technical debt today if we had refactored the core earlier?",
+                    "nuanceNote": "Klausa 'If' memakai Past Perfect ('had documented' = masa lalu), sedangkan klausa hasil memakai 'would + V1' ('would be' = masa kini).",
+                    "xrayTokens": [
+                        {
+                            "word": "had documented",
+                            "role": "Past Counterfactual Condition",
+                            "nuance": "Kejadian masa lalu yang berlawanan dengan fakta",
+                            "colorTag": "subject"
+                        },
+                        {
+                            "word": "would be effortless today",
+                            "role": "Present Hypothetical Result",
+                            "nuance": "Dampak imajiner pada kondisi hari ini",
+                            "colorTag": "verb"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Jangan Mencampur 'Would Have' Jika Dampaknya Masih Berlaku Sekarang",
+                    "explanation": "'Would have + V3' (Third Conditional) dipakai jika hasil maupun syaratnya sama-sama sudah selesai di masa lalu. Jika hasilnya masih berlangsung hari ini, gunakan 'would + V1'.",
+                    "wrongExample": "If I had accepted that job last year, I would have lived in Tokyo right now.",
+                    "correctExample": "If I had accepted that job last year, I would be living in Tokyo right now."
+                }
+            ],
+            "tipsAndTricks": [
+                "Kata penanda waktu 'now', 'today', atau 'at the moment' di klausa kedua adalah kunci utama untuk membedakan Mixed Conditional dari Third Conditional."
+            ]
+        },
+        {
+            "id": "mandative-subjunctive",
+            "badgeNumber": 2,
+            "colSpan": "half",
+            "tags": [
+                "Subjunctive Mood",
+                "Formal Directives"
+            ],
+            "title": "2. The Mandative Subjunctive (Recommend / Insist / Essential that + Bare V1)",
+            "subtitle": "Uninflected Base Verbs After Verbs & Adjectives of Urgency",
+            "explanation": "Setelah kata kerja atau kata sifat yang menyatakan tuntutan, rekomendasi, atau urgensi (recommend, insist, demand, suggest, propose, essential, vital, imperative + that), kata kerja berikutnya wajib berbentuk dasar murni (Bare Infinitive / V1) tanpa '-s', tanpa '-ed', dan memakai 'be' (bukan is/are).",
+            "rationale": "Bentuk subjunctive menunjukkan bahwa tindakan tersebut adalah sebuah keharusan atau proposal ideal, bukan fakta yang sedang terjadi.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "S + [recommend / insist / require] + that + Subject + Bare V1 (be / go / submit)"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "S + [insist / recommend] + that + Subject + NOT + Bare V1 (no 'don't/doesn't'!)"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Is it essential that + Subject + be + [Adjective / Past Participle]?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "GOVERNANCE, SECURITY & RECOMMENDATIONS",
+                    "register": "Workplace",
+                    "positive": "The security policy requires that every engineer enable two-factor authentication.",
+                    "negative": "I strongly recommend that he not deploy directly to the main branch.",
+                    "question": "Is it vital that the server be restarted after updating the kernel?",
+                    "nuanceNote": "Perhatikan: 'every engineer enable' (tanpa -s), 'he not deploy' (tanpa doesn't), dan 'the server be' (bukan is).",
+                    "xrayTokens": [
+                        {
+                            "word": "enable",
+                            "role": "Mandative Subjunctive Verb",
+                            "nuance": "Tetap V1 murni meskipun subjeknya tunggal ('every engineer')",
+                            "colorTag": "hack"
+                        },
+                        {
+                            "word": "not deploy",
+                            "role": "Negative Subjunctive",
+                            "nuance": "Negasi subjunctive langsung memakai 'not + V1' tanpa auxiliary 'does'",
+                            "colorTag": "nuance"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Jangan Menyisipkan 'Does/Don't' dalam Negative Subjunctive",
+                    "explanation": "Dalam bentuk subjunctive formal, negasi dibentuk hanya dengan kata 'not' sebelum V1.",
+                    "wrongExample": "The board insisted that the CEO doesn't resign.",
+                    "correctExample": "The board insisted that the CEO not resign."
+                }
+            ],
+            "tipsAndTricks": [
+                "Gunakan 'It is essential that [Subject] be [Verb-3]' dalam dokumentasi teknis maupun esai IELTS/TOEFL untuk langsung mendongkrak skor grammatical range ke band 8+."
+            ]
+        }
+    ],
+    "practiceQuiz": [
+        {
+            "id": "q-prof-subj-01",
+            "topicId": "mandative-subjunctive",
+            "scenario": {
+                "setting": "Dokumen Kebijakan Keamanan Informasi",
+                "interlocutor": "Compliance Auditor meninjau klausul akses server",
+                "intent": "Menulis aturan wajib menggunakan Mandative Subjunctive standar internasional."
+            },
+            "question": "Kalimat mana yang menggunakan Mandative Subjunctive dengan benar?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Company policy mandates that every contractor signs an NDA before access is granted.",
+                    "isCorrect": false
+                },
+                {
+                    "id": "b",
+                    "text": "Company policy mandates that every contractor sign an NDA before access is granted.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "c",
+                    "text": "Company policy mandates that every contractor to sign an NDA before access is granted.",
+                    "isCorrect": false
+                }
+            ],
+            "deepExplanation": {
+                "whyCorrect": "Setelah 'mandates that', kata kerja subjek tunggal ('every contractor') tetap berbentuk dasar murni ('sign') tanpa akhiran '-s'.",
+                "whyOthersFail": "Opsi A memakai bentuk indikatif biasa ('signs'), dan Opsi C keliru menyisipkan 'to'.",
+                "realLifeHack": "Daftar pemicu Subjunctive: suggest, recommend, insist, demand, require, mandate, vital, essential, imperative."
+            }
+        }
+    ]
+}

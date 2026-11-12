@@ -1,0 +1,165 @@
+{
+    "id": "prof-gram-reduced-clauses",
+    "slug": "reduced-relative-clauses",
+    "tier": "proficient",
+    "category": "grammar",
+    "layoutVariant": "comparative-split",
+    "order": 24,
+    "title": "Reduced Relative & Participle Clauses: Syntactic Economy",
+    "subtitle": "CEFR C1–C2 • Active (-ing) vs. Passive (-ed/V3) Clause Compression",
+    "estimatedMinutes": 20,
+    "topics": [
+        {
+            "id": "reduced-active-participle",
+            "badgeNumber": 1,
+            "colSpan": "half",
+            "tags": [
+                "Participle Clauses",
+                "Active Reduction"
+            ],
+            "title": "1. Active Participle Reduction (Replacing 'Who/Which + Verb' with V-ing)",
+            "subtitle": "Streamlining Active Descriptions & Simultaneous Actions",
+            "explanation": "Ketika relative pronoun (who, which, that) menjadi subjek dari kata kerja AKTIF, kita dapat menghapus pronoun tersebut dan mengubah kata kerjanya menjadi Present Participle (V-ing)—berlaku untuk semua tenses!",
+            "rationale": "Menghapus kata penghubung yang berulang ('developers who work...', 'services which run...') membuat kalimat panjang terasa lincah, padat, dan setara tulisan jurnal atau buku teknis.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "[Noun] + [V-ing Phrase] + Main Verb  (replaces: Noun + who/which + Active Verb)"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "[Noun] + not + [V-ing Phrase] + Main Verb"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Did you inspect the process [consuming / running] + Object?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "TECHNICAL WRITING & SYSTEM DESCRIPTIONS",
+                    "register": "Workplace",
+                    "positive": "Microservices handling payment transactions require strict idempotency.",
+                    "negative": "Users not complying with the rate limit will receive a 429 status.",
+                    "question": "Who is the engineer leading the frontend architecture migration?",
+                    "nuanceNote": "'Microservices handling...' adalah bentuk ringkas dari 'Microservices which handle...'.",
+                    "xrayTokens": [
+                        {
+                            "word": "handling payment transactions",
+                            "role": "Reduced Active Participle Phrase",
+                            "nuance": "Meringkas 'which handle payment transactions' menjadi satu frasa padat",
+                            "colorTag": "verb"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Waspadai Dangling Participle (Subjek Klausa Harus Sama!)",
+                    "explanation": "Jika participle diletakkan di awal kalimat, subjek setelah koma HARUS merupakan pelaku dari V-ing tersebut.",
+                    "wrongExample": "Running the build script, an unexpected syntax error appeared. (Bukan error yang menjalankan script!)",
+                    "correctExample": "Running the build script, I encountered an unexpected syntax error."
+                }
+            ],
+            "tipsAndTricks": [
+                "Setiap kali melihat 'which + V1/V2' dalam tulisanmu, coba hapus 'which' dan ubah kata kerjanya ke V-ing—kalimatmu langsung naik satu level."
+            ]
+        },
+        {
+            "id": "reduced-passive-participle",
+            "badgeNumber": 2,
+            "colSpan": "half",
+            "tags": [
+                "Participle Clauses",
+                "Passive Reduction"
+            ],
+            "title": "2. Passive Participle Reduction (Replacing 'Which + Be + V3' with Bare V3)",
+            "subtitle": "Compact Post-Nominal Modifiers with Past Participles",
+            "explanation": "Ketika relative clause berbentuk PASIF ('the data which was encrypted', 'the guidelines that are outlined'), kita cukup menghapus 'which/that + to be' dan menyisakan Verb-3 langsung di belakang kata benda.",
+            "rationale": "Pola ini adalah standar mutlak dalam spesifikasi teknis, abstrak penelitian, dan kontrak hukum karena menghemat kata tanpa mengurangi ketepatan makna sedikit pun.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "[Noun] + [Verb-3 Phrase] + Main Verb  (replaces: Noun + which/that + be + V3)"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "[Noun] + not + [Verb-3 Phrase] + Main Verb"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Where is the payload [sent / generated] by the webhook?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "SPECIFICATIONS & RESEARCH PAPERS",
+                    "register": "Academic",
+                    "positive": "All metrics collected during the benchmark are stored in PostgreSQL.",
+                    "negative": "Packages not listed in the lockfile will be rejected by CI.",
+                    "question": "Have you reviewed the architecture diagram attached to the ticket?",
+                    "nuanceNote": "'Metrics collected' = 'metrics that were collected'; 'diagram attached' = 'diagram that is attached'.",
+                    "xrayTokens": [
+                        {
+                            "word": "collected during the benchmark",
+                            "role": "Reduced Passive Participle",
+                            "nuance": "Menghapus 'which were' sehingga langsung menempel pada 'metrics'",
+                            "colorTag": "hack"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Jangan Mengacaukan V-ing (Aktif) dan V3 (Pasif) Setelah Kata Benda",
+                    "explanation": "Jika benda melakukan aksi → V-ing (the script running on port 3000). Jika benda dikenai aksi → V3 (the script written in Python).",
+                    "wrongExample": "The email sending yesterday contained the invoice.",
+                    "correctExample": "The email sent yesterday contained the invoice."
+                }
+            ],
+            "tipsAndTricks": [
+                "Tes Aktif vs. Pasif: 'Email dikirim' (pasif → sent), 'Server berjalan' (aktif → running)."
+            ]
+        }
+    ],
+    "practiceQuiz": [
+        {
+            "id": "q-prof-red-01",
+            "topicId": "reduced-passive-participle",
+            "scenario": {
+                "setting": "Dokumentasi API Publik",
+                "interlocutor": "Developer eksternal membaca panduan autentikasi",
+                "intent": "Menjelaskan bahwa token yang dihasilkan oleh server berlaku selama 1 jam."
+            },
+            "question": "Pilih kalimat dengan bentuk Reduced Relative Clause yang benar:",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Tokens generating by the auth server expire after one hour.",
+                    "isCorrect": false
+                },
+                {
+                    "id": "b",
+                    "text": "Tokens generated by the auth server expire after one hour.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "c",
+                    "text": "Tokens are generated by the auth server expire after one hour.",
+                    "isCorrect": false
+                }
+            ],
+            "deepExplanation": {
+                "whyCorrect": "Karena token 'dihasilkan' (pasif), reduksi dari 'Tokens which are generated' menjadi 'Tokens generated'.",
+                "whyOthersFail": "Opsi A memakai bentuk aktif (-ing), dan Opsi C menyisakan 'are' tanpa 'which' sehingga menciptakan dua kata kerja utama.",
+                "realLifeHack": "Jika ada kata 'by [agent]' di belakangnya, 99% itu adalah bentuk pasif sehingga memakai Verb-3."
+            }
+        }
+    ]
+}

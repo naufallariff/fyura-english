@@ -1,5 +1,5 @@
 {
-    "version": "2.0.0",
+    "version": "2.1.0",
     "userPlacement": {
         "currentCefr": "A2",
         "targetCefr": "B2",
@@ -23,29 +23,29 @@
                             "status": "ready"
                         },
                         {
+                            "slug": "prepositions-place-time",
+                            "title": "Prepositions of Time & Place",
+                            "status": "ready"
+                        },
+                        {
                             "slug": "pronouns-case",
-                            "title": "Personal & Demonstrative Pronouns",
-                            "status": "planned"
+                            "title": "Personal & Possessive Pronouns",
+                            "status": "ready"
                         },
                         {
                             "slug": "verbs-be-action",
                             "title": "To Be & Core Action Verbs",
-                            "status": "planned"
+                            "status": "ready"
                         },
                         {
                             "slug": "adjectives-order",
-                            "title": "Descriptive Adjectives",
-                            "status": "planned"
-                        },
-                        {
-                            "slug": "prepositions-place-time",
-                            "title": "Prepositions of Time & Place",
-                            "status": "planned"
+                            "title": "Adjectives & Royal Order",
+                            "status": "ready"
                         },
                         {
                             "slug": "articles-determiners",
                             "title": "Articles (A, An, The)",
-                            "status": "planned"
+                            "status": "ready"
                         }
                     ]
                 },
@@ -61,17 +61,17 @@
                         {
                             "slug": "present-continuous",
                             "title": "Present Continuous Tense",
-                            "status": "planned"
+                            "status": "ready"
                         },
                         {
                             "slug": "simple-past-tense",
                             "title": "Simple Past Tense",
-                            "status": "planned"
+                            "status": "ready"
                         },
                         {
                             "slug": "future-will-going-to",
                             "title": "Future Forms (Will vs. Going To)",
-                            "status": "planned"
+                            "status": "ready"
                         }
                     ]
                 }
@@ -91,22 +91,22 @@
                         {
                             "slug": "abstract-collective-nouns",
                             "title": "Abstract & Collective Nouns",
-                            "status": "planned"
+                            "status": "ready"
                         },
                         {
                             "slug": "relative-reflexive-pronouns",
                             "title": "Relative & Reflexive Pronouns",
-                            "status": "planned"
+                            "status": "ready"
                         },
                         {
                             "slug": "adverbs-manner-frequency",
                             "title": "Adverbs of Manner & Degree",
-                            "status": "planned"
+                            "status": "ready"
                         },
                         {
                             "slug": "coordinating-subordinating-conjunctions",
                             "title": "Conjunctions & Connectors",
-                            "status": "planned"
+                            "status": "ready"
                         }
                     ]
                 },
@@ -122,22 +122,22 @@
                         {
                             "slug": "modal-auxiliaries",
                             "title": "Modal Verbs of Obligation & Advice",
-                            "status": "planned"
+                            "status": "ready"
                         },
                         {
                             "slug": "passive-voice-core",
                             "title": "Passive Voice Structures",
-                            "status": "planned"
+                            "status": "ready"
                         },
                         {
                             "slug": "conditionals-type-1-2",
                             "title": "Conditionals (Type 1 & Type 2)",
-                            "status": "planned"
+                            "status": "ready"
                         },
                         {
                             "slug": "gerunds-vs-infinitives",
                             "title": "Gerunds vs. Infinitives",
-                            "status": "planned"
+                            "status": "ready"
                         }
                     ]
                 }
@@ -156,13 +156,13 @@
                     "modules": [
                         {
                             "slug": "nominalization-derivatives",
-                            "title": "Nominalization & Morphological Derivatives",
-                            "status": "planned"
+                            "title": "Nominalization & Derivatives",
+                            "status": "ready"
                         },
                         {
                             "slug": "complex-prepositional-phrases",
-                            "title": "Idiomatic Prepositional Phrases",
-                            "status": "planned"
+                            "title": "Multi-Word Prepositional Phrases",
+                            "status": "ready"
                         }
                     ]
                 },
@@ -172,23 +172,23 @@
                     "modules": [
                         {
                             "slug": "mixed-conditionals-subjunctive",
-                            "title": "Mixed Conditionals & Subjunctive Mood",
-                            "status": "planned"
+                            "title": "Mixed Conditionals & Subjunctive",
+                            "status": "ready"
                         },
                         {
                             "slug": "causative-structures",
                             "title": "Causative Verbs (Have, Get, Make)",
-                            "status": "planned"
+                            "status": "ready"
                         },
                         {
                             "slug": "reduced-relative-clauses",
-                            "title": "Reduced Adjective & Adverbial Clauses",
-                            "status": "planned"
+                            "title": "Reduced Relative Clauses",
+                            "status": "ready"
                         },
                         {
                             "slug": "inversion-elliptical-constructions",
-                            "title": "Negative Inversion & Elliptical Structures",
-                            "status": "planned"
+                            "title": "Negative Inversion & Ellipsis",
+                            "status": "ready"
                         }
                     ]
                 }

@@ -1,0 +1,171 @@
+{
+    "id": "beg-gram-simple-past",
+    "slug": "simple-past-tense",
+    "tier": "beginner",
+    "category": "grammar",
+    "layoutVariant": "comparative-split",
+    "order": 9,
+    "title": "Simple Past Tense: Completed Events & Past States",
+    "subtitle": "CEFR A1–A2 • Regular/Irregular Verb-2 & Finished Time Anchors",
+    "estimatedMinutes": 18,
+    "topics": [
+        {
+            "id": "past-action-verbs",
+            "badgeNumber": 1,
+            "colSpan": "half",
+            "tags": [
+                "Past",
+                "Action Verbs"
+            ],
+            "title": "1. Past Action Verbs (Verb-2 & Did)",
+            "subtitle": "Finished Actions with Specific Past Time Markers",
+            "explanation": "Digunakan untuk kejadian yang sudah dimulai dan selesai sepenuhnya di masa lampau (yesterday, last night, two days ago, in 2025). Kalimat positif memakai Verb-2, sedangkan negatif dan tanya memakai 'did + Verb-1'.",
+            "rationale": "Dalam bahasa Inggris, setiap peristiwa yang terputus dari masa kini wajib ditandai perubahan bentuk kata kerja ke masa lampau agar pendengar langsung tahu ceritanya sudah berlalu.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "Subject + Verb-2 (Regular -ed / Irregular) + Object"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "Subject + did not (didn't) + Verb-1 + Object"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Did + Subject + Verb-1 + Object?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "COMPLETED WORK & STUDY",
+                    "register": "Workplace",
+                    "positive": "I deployed the production build yesterday afternoon.",
+                    "negative": "We didn't encounter any critical bugs during testing.",
+                    "question": "Did you push the latest commit last night?",
+                    "nuanceNote": "Begitu 'didn't' atau 'Did' dipakai, kata kerja kembali ke bentuk dasar V1 (encounter, push).",
+                    "xrayTokens": [
+                        {
+                            "word": "deployed",
+                            "role": "Regular Past Verb (V2)",
+                            "nuance": "Aksi selesai di waktu spesifik 'yesterday afternoon'",
+                            "colorTag": "verb"
+                        },
+                        {
+                            "word": "didn't encounter",
+                            "role": "Past Auxiliary + Base Verb (V1)",
+                            "nuance": "Waktu lampau sudah diwakili oleh 'didn't'",
+                            "colorTag": "hack"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Kesalahan Ganda: 'Didn't + Verb-2'",
+                    "explanation": "Jangan memakai Verb-2 setelah 'did' atau 'didn't'.",
+                    "wrongExample": "I didn't went to the office yesterday.",
+                    "correctExample": "I didn't go to the office yesterday."
+                }
+            ],
+            "tipsAndTricks": [
+                "Irregular verbs (go→went, write→wrote, take→took, see→saw, buy→bought) sering muncul dalam percakapan sehari-hari—kuasai 30 kata paling umum terlebih dahulu."
+            ]
+        },
+        {
+            "id": "past-nominal-was-were",
+            "badgeNumber": 2,
+            "colSpan": "half",
+            "tags": [
+                "Past",
+                "Nominal To Be"
+            ],
+            "title": "2. Past Nominal 'Was / Were'",
+            "subtitle": "Past Conditions, Locations & States Without Action",
+            "explanation": "Bentuk lampau dari 'am/is/are'. Gunakan 'was' untuk subjek tunggal (I, he, she, it) dan 'were' untuk subjek jamak serta 'you' (you, we, they) ketika tidak ada kata kerja aksi.",
+            "rationale": "Karena 'was/were' sudah merupakan kata kerja penuh, kalimat negatif dan tanya tidak memakai 'did'—cukup tambahkan 'not' atau pindahkan ke depan.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "I/He/She/It + was  |  You/We/They + were + [Adj/Noun/Place]"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "Subject + wasn't / weren't + [Adj/Noun/Place]"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Was / Were + Subject + [Adj/Noun/Place]?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "PAST STATUS & EVENTS",
+                    "register": "Daily Life",
+                    "positive": "The conference in Bandung was super insightful.",
+                    "negative": "They weren't at the coworking space yesterday.",
+                    "question": "Were you busy last weekend?",
+                    "nuanceNote": "'Insightful', 'at the coworking space', dan 'busy' bukan aktivitas, sehingga memakai 'was/were'.",
+                    "xrayTokens": [
+                        {
+                            "word": "was",
+                            "role": "Singular Past Copula",
+                            "nuance": "Menjelaskan kualitas acara 'conference' di masa lalu",
+                            "colorTag": "verb"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Dilarang Memakai 'Did' Bersama 'Was/Were'",
+                    "explanation": "'Did' hanya untuk kata kerja aksi (V1), tidak pernah digabung dengan 'was/were'.",
+                    "wrongExample": "Did you were tired after the exam?",
+                    "correctExample": "Were you tired after the exam?"
+                }
+            ],
+            "tipsAndTricks": [
+                "Ingat pasangan 'You': meskipun kamu berbicara dengan 1 orang, 'You' selalu memakai 'were' (You were great!), tidak pernah 'was'."
+            ]
+        }
+    ],
+    "practiceQuiz": [
+        {
+            "id": "q-spast-01",
+            "topicId": "past-action-verbs",
+            "scenario": {
+                "setting": "Retrospective Meeting",
+                "interlocutor": "Tech Lead bertanya mengapa fitur belum di-deploy kemarin",
+                "intent": "Menjelaskan kejadian lampau dengan struktur negatif yang benar."
+            },
+            "question": "Pilih kalimat yang benar:",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "We didn't received the API key yesterday.",
+                    "isCorrect": false
+                },
+                {
+                    "id": "b",
+                    "text": "We didn't receive the API key yesterday.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "c",
+                    "text": "We weren't receive the API key yesterday.",
+                    "isCorrect": false
+                }
+            ],
+            "deepExplanation": {
+                "whyCorrect": "Setelah 'didn't', kata kerja wajib kembali ke Verb-1 murni ('receive').",
+                "whyOthersFail": "Opsi A memakai Verb-2 ganda, dan Opsi C salah memakai 'weren't' untuk kata kerja aksi.",
+                "realLifeHack": "'Didn't' bertindak seperti magnet yang menyedot bentuk lampau dari kata kerja di belakangnya."
+            }
+        }
+    ]
+}

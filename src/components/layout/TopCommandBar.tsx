@@ -1,41 +1,48 @@
-// src/components/layout/TopCommandBar.tsx
 "use client";
 
 import { useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import {
     Search,
+    X,
     Download,
     Upload,
     Sparkles,
     CheckCircle2,
 } from "lucide-react";
 import { useLearningStore } from "@/store/useLearningStore";
+import { useIsMounted } from "@/hooks/useIsMounted";
+import curriculumIndex from "@content/curriculum-index.json";
 
 interface SearchableTopic {
     title: string;
-    pillar: string;
+    category: string;
     slug: string;
-    stage: string;
+    tier: string;
 }
 
-const QUICK_TOPICS: SearchableTopic[] = [
-    {
-        title: "Bab 1: Nouns — Concrete, Abstract, Countable & Uncountable",
-        pillar: "part-of-speech",
-        slug: "bab-01-nouns",
-        stage: "Foundation",
-    },
-    {
-        title: "Bab 1: Tenses — Present Perfect vs Simple Past & Will vs Going To",
-        pillar: "grammar",
-        slug: "bab-01-tenses",
-        stage: "Precision",
-    },
+const ALL_SEARCHABLE_MODULES: SearchableTopic[] = [
+    ...curriculumIndex.tiers.flatMap((tier) =>
+        tier.categories.flatMap((cat) =>
+            cat.modules.map((mod) => ({
+                title: mod.title,
+                category: cat.id,
+                slug: mod.slug,
+                tier: tier.label,
+            }))
+        )
+    ),
+    ...curriculumIndex.thematicLabs.map((lab) => ({
+        title: lab.label,
+        category: lab.id,
+        slug: lab.slug,
+        tier: "Thematic Lab",
+    })),
 ];
 
 export function TopCommandBar() {
     const router = useRouter();
+    const mounted = useIsMounted();
     const [query, setQuery] = useState("");
     const [isOpen, setIsOpen] = useState(false);
     const [toastMsg, setToastMsg] = useState<string | null>(null);
@@ -44,8 +51,12 @@ export function TopCommandBar() {
     const { streakDays, exportProgressJson, importProgressJson } =
         useLearningStore();
 
-    const filtered = QUICK_TOPICS.filter((t) =>
-        t.title.toLowerCase().includes(query.toLowerCase())
+    const normalizedQuery = query.trim().toLowerCase();
+    const filtered = ALL_SEARCHABLE_MODULES.filter(
+        (t) =>
+            t.title.toLowerCase().includes(normalizedQuery) ||
+            t.tier.toLowerCase().includes(normalizedQuery) ||
+            t.category.toLowerCase().includes(normalizedQuery)
     );
 
     const showToast = (msg: string) => {
@@ -76,14 +87,15 @@ export function TopCommandBar() {
             );
         };
         reader.readAsText(file);
+        e.target.value = "";
     };
 
     return (
         <header className="relative z-20 flex flex-wrap items-center justify-between gap-4">
-            {/* Search Pill (Inspirasi Top Search Bar di Referensi) */}
+            {/* Search Pill */}
             <div className="relative w-full max-w-md">
-                <div className="flex items-center gap-2.5 rounded-2xl border border-white/90 bg-white/85 px-4 py-2.5 shadow-(--shadow-soft-card) backdrop-blur-md">
-                    <Search className="h-4 w-4 text-slate-400" />
+                <div className="flex items-center gap-2.5 rounded-2xl border border-white/90 bg-white/85 px-4 py-2.5 shadow-(--shadow-soft-card) backdrop-blur-md transition-colors focus-within:border-sky-300 focus-within:bg-white">
+                    <Search className="h-4 w-4 shrink-0 text-slate-400" />
                     <input
                         type="text"
                         value={query}
@@ -93,35 +105,46 @@ export function TopCommandBar() {
                             setQuery(e.target.value);
                             setIsOpen(true);
                         }}
-                        placeholder="Cari materi, rumus, atau situasi..."
+                        placeholder="Search topics, tiers, or situations..."
                         className="w-full bg-transparent text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none"
                     />
-                    <kbd className="rounded-lg bg-slate-100 px-2 py-0.5 text-[11px] font-semibold text-slate-500">
-                        ⌘K
-                    </kbd>
+                    {query && (
+                        <button
+                            type="button"
+                            onMouseDown={(e) => {
+                                e.preventDefault();
+                                setQuery("");
+                            }}
+                            aria-label="Clear search"
+                            className="rounded-lg p-1 text-slate-400 transition-colors hover:bg-slate-100 hover:text-slate-600"
+                        >
+                            <X className="h-3.5 w-3.5" />
+                        </button>
+                    )}
                 </div>
 
                 {isOpen && (
-                    <div className="absolute top-full left-0 mt-2 w-full rounded-2xl border border-white bg-white/95 p-2 shadow-xl backdrop-blur-xl">
+                    <div className="absolute top-full left-0 mt-2 max-h-72 w-full overflow-y-auto rounded-2xl border border-white bg-white/95 p-2 shadow-xl backdrop-blur-xl">
                         {filtered.length === 0 ? (
-                            <p className="px-3 py-2 text-xs text-slate-400">
-                                Topik tidak ditemukan.
+                            <p className="px-3 py-3 text-center text-xs text-slate-400">
+                                No matching modules found for “{query}”.
                             </p>
                         ) : (
                             filtered.map((item) => (
                                 <button
-                                    key={item.slug}
+                                    key={`${item.category}-${item.slug}`}
                                     type="button"
-                                    onMouseDown={() =>
-                                        router.push(`/learn/${item.pillar}/${item.slug}`)
-                                    }
-                                    className="flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-left text-xs transition-colors hover:bg-sky-50"
+                                    onMouseDown={() => {
+                                        setIsOpen(false);
+                                        router.push(`/learn/${item.category}/${item.slug}`);
+                                    }}
+                                    className="flex w-full items-center justify-between gap-3 rounded-xl px-3 py-2.5 text-left text-xs transition-colors hover:bg-sky-50"
                                 >
-                                    <span className="font-medium text-slate-800">
+                                    <span className="truncate font-medium text-slate-800">
                                         {item.title}
                                     </span>
-                                    <span className="rounded-full bg-sky-100 px-2 py-0.5 text-[10px] font-semibold text-sky-700">
-                                        {item.stage}
+                                    <span className="shrink-0 rounded-full bg-sky-100 px-2.5 py-0.5 text-[10px] font-semibold text-sky-700">
+                                        {item.tier}
                                     </span>
                                 </button>
                             ))
@@ -141,14 +164,16 @@ export function TopCommandBar() {
 
                 <div className="flex items-center gap-1.5 rounded-2xl border border-white/90 bg-white/85 px-3.5 py-2 text-xs font-semibold text-amber-700 shadow-(--shadow-soft-card)">
                     <Sparkles className="h-3.5 w-3.5 text-amber-500" />
-                    <span className="tabular-nums">{streakDays} Hari Streak</span>
+                    <span className="tabular-nums">
+                        {mounted ? streakDays : 1} Days Streak
+                    </span>
                 </div>
 
                 <button
                     type="button"
                     onClick={handleExport}
-                    title="Export Progres ke JSON"
-                    className="flex items-center gap-1.5 rounded-2xl border border-white/90 bg-white/85 px-3.5 py-2 text-xs font-semibold text-slate-700 shadow-(--shadow-soft-card) transition-transform duration-150 active:scale-[0.97] hover:bg-white"
+                    title="Export Progress JSON"
+                    className="flex items-center gap-1.5 rounded-2xl border border-white/90 bg-white/85 px-3.5 py-2 text-xs font-semibold text-slate-700 shadow-(--shadow-soft-card) transition-transform duration-150 hover:bg-white active:scale-[0.97]"
                 >
                     <Download className="h-3.5 w-3.5 text-sky-600" />
                     <span className="hidden sm:inline">Backup</span>
@@ -157,8 +182,8 @@ export function TopCommandBar() {
                 <button
                     type="button"
                     onClick={() => fileInputRef.current?.click()}
-                    title="Restore Progres dari JSON"
-                    className="flex items-center gap-1.5 rounded-2xl border border-white/90 bg-white/85 px-3.5 py-2 text-xs font-semibold text-slate-700 shadow-(--shadow-soft-card) transition-transform duration-150 active:scale-[0.97] hover:bg-white"
+                    title="Restore Progress JSON"
+                    className="flex items-center gap-1.5 rounded-2xl border border-white/90 bg-white/85 px-3.5 py-2 text-xs font-semibold text-slate-700 shadow-(--shadow-soft-card) transition-transform duration-150 hover:bg-white active:scale-[0.97]"
                 >
                     <Upload className="h-3.5 w-3.5 text-violet-600" />
                     <span className="hidden sm:inline">Restore</span>

@@ -1,0 +1,171 @@
+{
+    "id": "prof-pos-nominalization",
+    "slug": "nominalization-derivatives",
+    "tier": "proficient",
+    "category": "part-of-speech",
+    "layoutVariant": "comparative-split",
+    "order": 20,
+    "title": "Nominalization & Morphological Derivatives: Academic & Executive Density",
+    "subtitle": "CEFR C1–C2 • Transforming Verbs & Adjectives into High-Precision Noun Phrases",
+    "estimatedMinutes": 22,
+    "topics": [
+        {
+            "id": "verb-to-noun-nominalization",
+            "badgeNumber": 1,
+            "colSpan": "half",
+            "tags": [
+                "Morphology",
+                "C1 Executive Style"
+            ],
+            "title": "1. Nominalization (Action-to-Concept Compression)",
+            "subtitle": "Elevating Spoken Clauses into Concise Analytical Statements",
+            "explanation": "Nominalization adalah proses mengubah kata kerja (decide, fail, adopt, mitigate) atau kata sifat (vulnerable, resilient) menjadi kata benda (decision, failure, adoption, mitigation, resilience) agar ide kompleks dapat dijadikan subjek atau objek utama dalam laporan eksekutif dan tulisan akademik.",
+            "rationale": "Dalam percakapan santai kita memakai banyak kata kerja ('Because the team failed to validate inputs, the server crashed'). Dalam tulisan level C1–C2, seluruh klausa sebab tersebut dipadatkan menjadi satu frasa benda ('The failure to validate inputs caused a server crash') sehingga alur argumen menjadi jauh lebih objektif dan berwibawa.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "[Nominalized Phrase: The + Noun + of + Object] + Analytical Verb + Result"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "[The lack / absence of + Nominalized Noun] + prevented / delayed + [Outcome]"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "What impact did [the + Nominalized Noun] have on + [System / Metric]?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "EXECUTIVE REPORTS & ARCHITECTURE REVIEWS",
+                    "register": "Workplace",
+                    "positive": "The rapid adoption of automated testing significantly reduced production regressions.",
+                    "negative": "The absence of strict input validation exposed the endpoint to injection risks.",
+                    "question": "How did the implementation of edge caching affect global latency?",
+                    "nuanceNote": "Bandingkan: 'We adopted automated testing rapidly' (B1) vs. 'The rapid adoption of automated testing' (C1).",
+                    "xrayTokens": [
+                        {
+                            "word": "The rapid adoption",
+                            "role": "Nominalized Subject Phrase",
+                            "nuance": "Mengubah 'adopted rapidly' menjadi entitas konsep di awal kalimat",
+                            "colorTag": "subject"
+                        },
+                        {
+                            "word": "reduced",
+                            "role": "Causal Analytical Verb",
+                            "nuance": "Menghubungkan konsep penyebab langsung ke dampak terukur",
+                            "colorTag": "verb"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Hindari Over-Nominalization yang Kaku (Zombie Nouns)",
+                    "explanation": "Jangan menumpuk tiga nominalisasi berturut-turut dalam satu kalimat karena membuat pembaca lelah. Seimbangkan frasa benda padat dengan kata kerja aktif yang kuat.",
+                    "wrongExample": "The facilitation of the optimization of the utilization of memory was achieved.",
+                    "correctExample": "We achieved significant memory optimization across all worker nodes."
+                }
+            ],
+            "tipsAndTricks": [
+                "Ganti kata kerja lemah 'make/do/give' dengan pasangan kolokasi nominalisasi tingkat lanjut: 'conduct an assessment', 'implement a solution', 'mitigate a risk'."
+            ]
+        },
+        {
+            "id": "derivational-affixes",
+            "badgeNumber": 2,
+            "colSpan": "half",
+            "tags": [
+                "Morphology",
+                "Word Families"
+            ],
+            "title": "2. Derivational Prefixes & Suffixes (Word Family Precision)",
+            "subtitle": "Nuanced Negation (Un-, In-, Dis-, Mis-) & Part-of-Speech Shifts",
+            "explanation": "Menguasai keluarga kata (analyze → analysis → analytical → analytically) serta perbedaan nuansa awalan negatif: 'un-' (netral/tidak), 'mis-' (keliru/salah arah), 'dis-' (kebalikan/memutus), dan 'non-' (di luar kategori).",
+            "rationale": "Di level C1–C2, salah memilih awalan mengubah makna secara drastis—misalnya 'disinterested' (objektif/tidak memihak) vs. 'uninterested' (tidak tertarik/bosan).",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "[Root Word] + [-ity / -ance / -cy (Noun)]  |  [-ive / -able / -ous (Adj)]"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "[mis- (wrongly)] / [un- (not)] / [in-/im-/ir- (opposite)] + Base Word"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Was the metric [misinterpreted] or simply [underestimated]?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "CRITICAL EVALUATION & PEER REVIEW",
+                    "register": "Academic",
+                    "positive": "Her empirical analysis provided an indispensable framework for the study.",
+                    "negative": "The initial specification wasn't ambiguous, yet it was widely misinterpreted.",
+                    "question": "Is this legacy module completely irreplaceable, or can we decouple it?",
+                    "nuanceNote": "'Misinterpreted' berarti ditafsirkan secara keliru (bukan tidak ditafsirkan sama sekali).",
+                    "xrayTokens": [
+                        {
+                            "word": "indispensable",
+                            "role": "Prefixed Adjective",
+                            "nuance": "Bermakna 'sangat esensial dan tidak tergantikan'",
+                            "colorTag": "nuance"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Pasangan Kata Menipu: Disinterested vs. Uninterested & Flammable vs. Inflammable",
+                    "explanation": "'Disinterested' = adil/tidak punya konflik kepentingan; 'Uninterested' = tidak berminat. Sementara 'flammable' dan 'inflammable' KEDUANYA berarti mudah terbakar (lawannya adalah 'non-flammable').",
+                    "wrongExample": "A judge must be uninterested in the case.",
+                    "correctExample": "A judge must be disinterested (impartial) in the case."
+                }
+            ],
+            "tipsAndTricks": [
+                "Saat mempelajari satu kosakata baru tingkat C1, catat sekaligus 4 bentuknya: Verb, Noun, Adjective, dan Adverb."
+            ]
+        }
+    ],
+    "practiceQuiz": [
+        {
+            "id": "q-prof-nom-01",
+            "topicId": "verb-to-noun-nominalization",
+            "scenario": {
+                "setting": "Ringkasan Eksekutif Laporan Kuartalan",
+                "interlocutor": "VP of Engineering meninjau ringkasan penyebab peningkatan stabilitas server",
+                "intent": "Mengubah kalimat deskriptif panjang menjadi pernyataan eksekutif ringkas berstandar C1."
+            },
+            "question": "Kalimat mana yang paling ringkas, objektif, dan berstandar C1?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Because we migrated the database early, the system stopped crashing.",
+                    "isCorrect": false
+                },
+                {
+                    "id": "b",
+                    "text": "The early migration of the database eliminated system crashes.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "c",
+                    "text": "The migrating early of database made system no crash.",
+                    "isCorrect": false
+                }
+            ],
+            "deepExplanation": {
+                "whyCorrect": "Nominalisasi 'The early migration of the database' memadatkan klausa sebab menjadi subjek benda tunggal yang berpasangan dengan kata kerja presisi 'eliminated'.",
+                "whyOthersFail": "Opsi A benar secara tata bahasa namun masih bergaya percakapan B1, sedangkan Opsi C tidak gramatikal.",
+                "realLifeHack": "Ubah pola 'Because S + V...' menjadi 'The [Noun] of [Object] + caused/enabled/eliminated...' saat menulis laporan formal."
+            }
+        }
+    ]
+}

@@ -3,314 +3,350 @@
 
 import { useState } from "react";
 import {
-    Brain,
-    Sparkles,
-    FunctionSquare,
-    Compass,
+    BookOpen,
+    Terminal,
     Layers,
-    AlertTriangle,
-    Lightbulb,
+    AlertCircle,
+    Sparkles,
     CheckCircle2,
     XCircle,
     Check,
+    Compass,
 } from "lucide-react";
-import type { LessonModule } from "@/content/schemas/lesson.schema";
+import type {
+    BentoSpan,
+    LessonModule,
+} from "@/content/schemas/lesson.schema";
 import { XRaySentence } from "@/components/workspace/XRaySentence";
 import { useLearningStore } from "@/store/useLearningStore";
+import { useIsMounted } from "@/hooks/useIsMounted";
 import { cn } from "@/lib/utils";
 
-const FORMULA_BADGES: Record<
-    "positive" | "negative" | "question",
-    { badge: string; border: string }
-> = {
-    positive: {
-        badge: "bg-emerald-500/15 text-emerald-800",
-        border: "border-emerald-200/80 bg-emerald-50/40",
-    },
-    negative: {
-        badge: "bg-rose-500/15 text-rose-800",
-        border: "border-rose-200/80 bg-rose-50/40",
-    },
-    question: {
-        badge: "bg-sky-500/15 text-sky-800",
-        border: "border-sky-200/80 bg-sky-50/40",
-    },
+const SPAN_CLASSES: Record<BentoSpan, string> = {
+    full: "col-span-12",
+    wide: "col-span-12 xl:col-span-8",
+    medium: "col-span-12 xl:col-span-7",
+    half: "col-span-12 xl:col-span-6",
+    narrow: "col-span-12 xl:col-span-5",
+    third: "col-span-12 md:col-span-6 xl:col-span-4",
+};
+
+const FORMULA_SYMBOL_STYLE: Record<"(+)" | "(-)" | "(?)", string> = {
+    "(+)": "text-emerald-400",
+    "(-)": "text-amber-300",
+    "(?)": "text-sky-300",
+};
+
+const POLARITY_PILL_STYLE: Record<"(+)" | "(-)" | "(?)", string> = {
+    "(+)": "bg-emerald-500/12 text-emerald-700",
+    "(-)": "bg-rose-500/12 text-rose-700",
+    "(?)": "bg-sky-500/12 text-sky-700",
 };
 
 export function GuidedLessonViewer({ lesson }: { lesson: LessonModule }) {
-    const [activeIndex, setActiveIndex] = useState(0);
+    const mounted = useIsMounted();
+    const [selectedTopicIndex, setSelectedTopicIndex] = useState(0);
     const { completedSections, markSectionComplete } = useLearningStore();
 
-    const topic = lesson.topics[activeIndex] ?? lesson.topics[0];
-    if (!topic) return null;
-
-    const isCompleted = Boolean(completedSections[topic.id]);
+    const activeTopic =
+        lesson.topics[selectedTopicIndex] ?? lesson.topics[0];
 
     return (
-        <div className="space-y-5">
-            {/* Topic Selector Bar */}
-            <div className="flex flex-wrap items-center gap-2 rounded-3xl border border-white/95 bg-white/85 p-3 shadow-(--shadow-soft-card)">
-                {lesson.topics.map((item, idx) => {
-                    const done = Boolean(completedSections[item.id]);
-                    const selected = idx === activeIndex;
+        <div className="space-y-7">
+            {/* Primary Asymmetric Bento Canvas */}
+            <section className="grid grid-cols-12 gap-5 items-stretch">
+                {lesson.topics.map((topic, index) => {
+                    const isMastered = mounted && Boolean(completedSections[topic.id]);
+                    const isSelected = selectedTopicIndex === index;
+                    const isCompact = topic.colSpan === "third";
+
                     return (
-                        <button
-                            key={item.id}
-                            type="button"
-                            onClick={() => setActiveIndex(idx)}
+                        <article
+                            key={topic.id}
+                            onClick={() => setSelectedTopicIndex(index)}
                             className={cn(
-                                "flex items-center gap-2.5 rounded-2xl px-4 py-2.5 text-xs font-bold transition-all duration-150",
-                                selected
-                                    ? "bg-slate-900 text-white shadow-md"
-                                    : "bg-surface text-slate-600 hover:bg-white hover:text-slate-900"
+                                SPAN_CLASSES[topic.colSpan],
+                                "group relative flex cursor-pointer flex-col justify-between rounded-[28px] border bg-white/95 p-6 sm:p-7 shadow-(--shadow-soft-card) transition-all duration-150 ease-out active:scale-[0.992]",
+                                isSelected
+                                    ? "border-slate-900/15 ring-2 ring-sky-500/25"
+                                    : "border-white hover:border-slate-200/80"
                             )}
                         >
-                            <span
-                                className={cn(
-                                    "flex h-5 w-5 items-center justify-center rounded-full text-[11px]",
-                                    done
-                                        ? "bg-emerald-500 text-white"
-                                        : selected
-                                            ? "bg-white/20 text-white"
-                                            : "bg-slate-200 text-slate-700"
-                                )}
-                            >
-                                {done ? <Check className="h-3 w-3" /> : idx + 1}
-                            </span>
-                            <span>{item.title}</span>
-                        </button>
+                            <div className="space-y-5">
+                                {/* Header: Clean Tags + Optical Heading + Index Badge */}
+                                <div className="flex items-start justify-between gap-4">
+                                    <div className="space-y-1.5">
+                                        <div className="flex flex-wrap items-center gap-1.5">
+                                            {topic.tags.map((tag) => (
+                                                <span
+                                                    key={tag}
+                                                    className="rounded-full bg-slate-100 px-2.5 py-0.5 text-[11px] font-semibold tracking-wide text-slate-600"
+                                                >
+                                                    {tag}
+                                                </span>
+                                            ))}
+                                        </div>
+                                        <h2 className="text-xl font-bold tracking-[-0.015em] text-slate-900 leading-snug">
+                                            {topic.title}
+                                        </h2>
+                                        <p className="text-xs font-medium text-slate-400">
+                                            {topic.subtitle}
+                                        </p>
+                                    </div>
+
+                                    <button
+                                        type="button"
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            markSectionComplete(topic.id);
+                                        }}
+                                        aria-label={`Mark ${topic.title} as mastered`}
+                                        className={cn(
+                                            "flex h-9 w-9 shrink-0 items-center justify-center rounded-2xl text-xs font-bold tabular-nums transition-transform duration-100 ease-out active:scale-95",
+                                            isMastered
+                                                ? "bg-emerald-600 text-white shadow-xs"
+                                                : "bg-slate-100 text-slate-700 hover:bg-slate-900 hover:text-white"
+                                        )}
+                                    >
+                                        {isMastered ? (
+                                            <Check className="h-4 w-4" />
+                                        ) : (
+                                            topic.badgeNumber
+                                        )}
+                                    </button>
+                                </div>
+
+                                {/* Block 1: Explanation & Rationale */}
+                                <div className="space-y-2 border-t border-slate-100 pt-4">
+                                    <div className="flex items-center gap-1.5 text-[11px] font-bold tracking-wider text-slate-400 uppercase">
+                                        <BookOpen className="h-3.5 w-3.5 text-slate-400" />
+                                        <span>Explanation & Rationale</span>
+                                    </div>
+                                    <p className="text-[13.5px] leading-relaxed text-slate-700">
+                                        {topic.explanation}
+                                    </p>
+                                    <p className="text-[12.5px] leading-relaxed text-slate-500">
+                                        {topic.rationale}
+                                    </p>
+                                </div>
+
+                                {/* Block 2: Formula Structure (+/-/?) */}
+                                <div className="space-y-2">
+                                    <div className="flex items-center gap-1.5 text-[11px] font-bold tracking-wider text-slate-400 uppercase">
+                                        <Terminal className="h-3.5 w-3.5 text-slate-400" />
+                                        <span>Formula Structure</span>
+                                    </div>
+                                    <div className="space-y-2 rounded-2xl bg-[#0B1F1D] p-4 font-mono text-xs text-slate-100">
+                                        {topic.formulas.map((f) => (
+                                            <div
+                                                key={f.polarity}
+                                                className="flex items-start gap-2.5 leading-relaxed"
+                                            >
+                                                <span
+                                                    className={cn(
+                                                        "shrink-0 font-bold",
+                                                        FORMULA_SYMBOL_STYLE[f.symbol]
+                                                    )}
+                                                >
+                                                    {f.symbol}
+                                                </span>
+                                                <span className="wrap-break-word">{f.pattern}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                {/* Block 3: Conditional Examples (+/-/?) */}
+                                <div className="space-y-2.5">
+                                    <div className="flex items-center gap-1.5 text-[11px] font-bold tracking-wider text-slate-400 uppercase">
+                                        <Layers className="h-3.5 w-3.5 text-slate-400" />
+                                        <span>Conditional Examples</span>
+                                    </div>
+
+                                    <div
+                                        className={cn(
+                                            "grid gap-3",
+                                            topic.colSpan === "full"
+                                                ? "grid-cols-1 lg:grid-cols-2"
+                                                : "grid-cols-1"
+                                        )}
+                                    >
+                                        {topic.conditionalExamples.map((cond, cIdx) => (
+                                            <div
+                                                key={cIdx}
+                                                className="space-y-2.5 rounded-2xl bg-surface/90 p-4 ring-1 ring-slate-200/50"
+                                            >
+                                                <div className="flex items-center justify-between gap-2">
+                                                    <span className="text-[11px] font-bold tracking-wide text-slate-700 uppercase">
+                                                        {cond.conditionTitle}
+                                                    </span>
+                                                    <span className="rounded-full bg-white px-2.5 py-0.5 text-[10px] font-semibold text-slate-500">
+                                                        {cond.register}
+                                                    </span>
+                                                </div>
+
+                                                <div className="space-y-1.5 text-[13px]">
+                                                    <div className="flex items-start gap-2">
+                                                        <span
+                                                            className={cn(
+                                                                "mt-0.5 shrink-0 rounded px-1.5 py-0.5 font-mono text-[10px] font-bold",
+                                                                POLARITY_PILL_STYLE["(+)"]
+                                                            )}
+                                                        >
+                                                            (+)
+                                                        </span>
+                                                        <p className="font-medium text-slate-800">
+                                                            {cond.positive}
+                                                        </p>
+                                                    </div>
+
+                                                    <div className="flex items-start gap-2">
+                                                        <span
+                                                            className={cn(
+                                                                "mt-0.5 shrink-0 rounded px-1.5 py-0.5 font-mono text-[10px] font-bold",
+                                                                POLARITY_PILL_STYLE["(-)"]
+                                                            )}
+                                                        >
+                                                            (-)
+                                                        </span>
+                                                        <p className="text-slate-600">{cond.negative}</p>
+                                                    </div>
+
+                                                    <div className="flex items-start gap-2">
+                                                        <span
+                                                            className={cn(
+                                                                "mt-0.5 shrink-0 rounded px-1.5 py-0.5 font-mono text-[10px] font-bold",
+                                                                POLARITY_PILL_STYLE["(?)"]
+                                                            )}
+                                                        >
+                                                            (?)
+                                                        </span>
+                                                        <p className="text-slate-600">{cond.question}</p>
+                                                    </div>
+                                                </div>
+
+                                                {!isCompact && (
+                                                    <p className="border-t border-slate-200/60 pt-2 text-[11.5px] leading-relaxed text-slate-500">
+                                                        <span className="font-semibold text-slate-700">
+                                                            Nuance:
+                                                        </span>{" "}
+                                                        {cond.nuanceNote}
+                                                    </p>
+                                                )}
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Subtle Interactive Footer Cue */}
+                            <div className="mt-5 flex items-center justify-between border-t border-slate-100 pt-3 text-[11px] font-medium text-slate-400">
+                                <span>
+                                    {isSelected
+                                        ? "Active in Deep-Dive Inspector below"
+                                        : "Click card to inspect X-Ray & Exceptions"}
+                                </span>
+                                <span className="font-semibold text-slate-600 group-hover:text-sky-600">
+                                    {isMastered ? "Completed" : "Inspect →"}
+                                </span>
+                            </div>
+                        </article>
                     );
                 })}
-            </div>
+            </section>
 
-            {/* Main Structured Lesson Blueprint */}
-            <article className="space-y-8 rounded-3xl border border-white/95 bg-white/95 p-6 sm:p-8 shadow-(--shadow-soft-card)">
-                {/* Topic Header (International Standard Title & Subtitle) */}
-                <div className="flex flex-wrap items-start justify-between gap-4 border-b border-slate-100 pb-5">
-                    <div className="space-y-1">
-                        <h2 className="text-2xl font-extrabold tracking-tight text-slate-900">
-                            {topic.title}
-                        </h2>
-                        <p className="text-sm font-medium text-slate-500">{topic.subtitle}</p>
-                    </div>
+            {/* Secondary Bento Deep-Dive Dock (X-Ray + Exceptions + Tips & Tricks) */}
+            {activeTopic && (
+                <section className="grid grid-cols-12 gap-5">
+                    {/* X-Ray Sentence Breakdown (5 cols) */}
+                    <div className="col-span-12 lg:col-span-5 rounded-[28px] border border-white bg-white/95 p-6 shadow-(--shadow-soft-card) space-y-3.5">
+                        <div className="flex items-center justify-between gap-2">
+                            <h3 className="flex items-center gap-2 text-sm font-bold tracking-tight text-slate-900">
+                                <Sparkles className="h-4 w-4 text-sky-600" />
+                                <span>Sentence X-Ray</span>
+                            </h3>
+                            <span className="truncate rounded-full bg-slate-100 px-2.5 py-0.5 text-[11px] font-semibold text-slate-600">
+                                {activeTopic.title}
+                            </span>
+                        </div>
 
-                    <button
-                        type="button"
-                        onClick={() => markSectionComplete(topic.id)}
-                        className={cn(
-                            "inline-flex items-center gap-2 rounded-2xl px-4 py-2.5 text-xs font-bold transition-transform duration-150 active:scale-[0.97]",
-                            isCompleted
-                                ? "bg-emerald-500/15 text-emerald-800"
-                                : "bg-sky-600 text-white shadow-md shadow-sky-500/20 hover:bg-sky-500"
+                        {activeTopic.conditionalExamples[0] && (
+                            <XRaySentence
+                                sentence={activeTopic.conditionalExamples[0].positive}
+                                contextLabel={activeTopic.conditionalExamples[0].register}
+                                tokens={activeTopic.conditionalExamples[0].xrayTokens}
+                            />
                         )}
-                    >
-                        <CheckCircle2 className="h-4 w-4" />
-                        {isCompleted ? "Mastered ✓" : "Mark Topic Mastered"}
-                    </button>
-                </div>
+                    </div>
 
-                {/* STAGE 1: Penjelasan Mudah & Mental Model */}
-                <section className="space-y-3">
-                    <div className="flex items-center gap-2.5">
-                        <span className="flex h-7 w-7 items-center justify-center rounded-xl bg-sky-600 text-xs font-extrabold text-white">
-                            1
-                        </span>
-                        <h3 className="text-base font-extrabold text-slate-900">
-                            Penjelasan Konsep & Gambaran Visual
+                    {/* Special Exceptions & Contrasts (4 cols) */}
+                    <div className="col-span-12 lg:col-span-4 rounded-[28px] border border-white bg-white/95 p-6 shadow-(--shadow-soft-card) space-y-3.5">
+                        <h3 className="flex items-center gap-2 text-sm font-bold tracking-tight text-slate-900">
+                            <AlertCircle className="h-4 w-4 text-rose-500" />
+                            <span>Special Exceptions</span>
                         </h3>
-                    </div>
 
-                    <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
-                        <div className="rounded-2xl border border-slate-100 bg-surface p-5 space-y-2">
-                            <p className="flex items-center gap-1.5 text-xs font-bold text-slate-700 uppercase">
-                                <Brain className="h-4 w-4 text-sky-600" /> Penjelasan Sederhana
-                            </p>
-                            <p className="text-sm leading-relaxed text-slate-700">
-                                {topic.explanation.summary}
-                            </p>
-                        </div>
-
-                        <div className="rounded-2xl border border-violet-100 bg-violet-50/60 p-5 space-y-2">
-                            <p className="flex items-center gap-1.5 text-xs font-bold text-violet-800 uppercase">
-                                <Sparkles className="h-4 w-4" /> Analogi Mental Model
-                            </p>
-                            <p className="text-sm leading-relaxed text-slate-700">
-                                {topic.explanation.mentalModel}
-                            </p>
-                        </div>
-                    </div>
-                </section>
-
-                {/* STAGE 2: Formula (+, -, ?) */}
-                <section className="space-y-3">
-                    <div className="flex items-center gap-2.5">
-                        <span className="flex h-7 w-7 items-center justify-center rounded-xl bg-indigo-600 text-xs font-extrabold text-white">
-                            2
-                        </span>
-                        <h3 className="flex items-center gap-2 text-base font-extrabold text-slate-900">
-                            <FunctionSquare className="h-4 w-4 text-indigo-600" />
-                            Sentence Formulas (Positive, Negative, Question)
-                        </h3>
-                    </div>
-
-                    <div className="grid grid-cols-1 gap-3 lg:grid-cols-3">
-                        {topic.formulas.map((f) => {
-                            const style = FORMULA_BADGES[f.type];
-                            return (
+                        <div className="space-y-3">
+                            {activeTopic.specialExceptions.map((exc, idx) => (
                                 <div
-                                    key={f.type}
-                                    className={cn(
-                                        "flex flex-col justify-between rounded-2xl border p-4 space-y-3",
-                                        style.border
-                                    )}
+                                    key={idx}
+                                    className="space-y-2.5 rounded-2xl bg-surface/90 p-4 ring-1 ring-slate-200/50"
                                 >
-                                    <div className="space-y-2">
-                                        <span
-                                            className={cn(
-                                                "inline-block rounded-full px-2.5 py-0.5 text-[11px] font-bold",
-                                                style.badge
-                                            )}
-                                        >
-                                            {f.label}
-                                        </span>
-                                        <code className="block rounded-xl bg-white/95 p-2.5 text-xs font-bold text-slate-800 shadow-2xs">
-                                            {f.formula}
-                                        </code>
-                                    </div>
-                                    <div className="border-t border-slate-200/60 pt-2.5">
-                                        <p className="text-xs font-bold text-slate-900">
-                                            “{f.example}”
-                                        </p>
-                                        <p className="mt-0.5 text-[11px] text-slate-500">
-                                            {f.translation}
-                                        </p>
+                                    <p className="text-xs font-bold text-slate-900">{exc.title}</p>
+                                    <p className="text-xs leading-relaxed text-slate-600">
+                                        {exc.explanation}
+                                    </p>
+                                    <div className="space-y-1.5 text-xs">
+                                        <div className="flex items-start gap-2 rounded-xl bg-white p-2.5 text-rose-800">
+                                            <XCircle className="mt-0.5 h-3.5 w-3.5 shrink-0 text-rose-500" />
+                                            <span>{exc.wrongExample}</span>
+                                        </div>
+                                        <div className="flex items-start gap-2 rounded-xl bg-white p-2.5 text-emerald-800">
+                                            <CheckCircle2 className="mt-0.5 h-3.5 w-3.5 shrink-0 text-emerald-600" />
+                                            <span>{exc.correctExample}</span>
+                                        </div>
                                     </div>
                                 </div>
-                            );
-                        })}
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Practical Tips & Tricks (3 cols) */}
+                    <div className="col-span-12 lg:col-span-3 flex flex-col justify-between rounded-[28px] border border-white bg-white/95 p-6 shadow-(--shadow-soft-card) space-y-4">
+                        <div className="space-y-3">
+                            <h3 className="flex items-center gap-2 text-sm font-bold tracking-tight text-slate-900">
+                                <Compass className="h-4 w-4 text-amber-500" />
+                                <span>Tips & Tricks</span>
+                            </h3>
+                            <ul className="space-y-2 text-xs leading-relaxed text-slate-600">
+                                {activeTopic.tipsAndTricks.map((tip, idx) => (
+                                    <li
+                                        key={idx}
+                                        className="rounded-2xl bg-surface/90 p-3.5 ring-1 ring-slate-200/50"
+                                    >
+                                        {tip}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        <button
+                            type="button"
+                            onClick={() => markSectionComplete(activeTopic.id)}
+                            className={cn(
+                                "w-full rounded-2xl py-2.5 text-xs font-bold transition-all duration-100 ease-out active:scale-[0.98]",
+                                mounted && completedSections[activeTopic.id]
+                                    ? "bg-emerald-600 text-white"
+                                    : "bg-slate-900 text-white hover:bg-slate-800"
+                            )}
+                        >
+                            {mounted && completedSections[activeTopic.id]
+                                ? "Mastered"
+                                : "Mark Topic Mastered"}
+                        </button>
                     </div>
                 </section>
-
-                {/* STAGE 3: Kenapa & Alasannya */}
-                <section className="space-y-3">
-                    <div className="flex items-center gap-2.5">
-                        <span className="flex h-7 w-7 items-center justify-center rounded-xl bg-emerald-600 text-xs font-extrabold text-white">
-                            3
-                        </span>
-                        <h3 className="flex items-center gap-2 text-base font-extrabold text-slate-900">
-                            <Compass className="h-4 w-4 text-emerald-600" />
-                            Kenapa & Alasannya (Logika Penutur Asli)
-                        </h3>
-                    </div>
-
-                    <div className="rounded-2xl border border-emerald-100 bg-emerald-50/50 p-5 space-y-2.5">
-                        <p className="text-sm leading-relaxed text-slate-800">
-                            <strong>Logika Struktur:</strong> {topic.rationale.coreLogic}
-                        </p>
-                        <p className="text-sm leading-relaxed text-slate-700">
-                            <strong>Cara Pandang Native:</strong>{" "}
-                            {topic.rationale.nativePerspective}
-                        </p>
-                    </div>
-                </section>
-
-                {/* STAGE 4: Contoh-Contoh di Banyak Kondisi + X-Ray */}
-                <section className="space-y-4">
-                    <div className="flex items-center gap-2.5">
-                        <span className="flex h-7 w-7 items-center justify-center rounded-xl bg-amber-500 text-xs font-extrabold text-white">
-                            4
-                        </span>
-                        <h3 className="flex items-center gap-2 text-base font-extrabold text-slate-900">
-                            <Layers className="h-4 w-4 text-amber-600" />
-                            Contoh dalam Berbagai Kondisi & Bedah X-Ray
-                        </h3>
-                    </div>
-
-                    <div className="space-y-4">
-                        {topic.conditionalExamples.map((ex, idx) => (
-                            <div
-                                key={idx}
-                                className="space-y-3 rounded-2xl border border-slate-100 bg-surface p-5"
-                            >
-                                <div className="flex flex-wrap items-center justify-between gap-2">
-                                    <span className="text-xs font-extrabold text-slate-800">
-                                        {ex.conditionLabel}
-                                    </span>
-                                    <span className="rounded-full bg-sky-500/12 px-2.5 py-0.5 text-[11px] font-bold text-sky-700">
-                                        {ex.register}
-                                    </span>
-                                </div>
-
-                                <p className="text-xs text-slate-600">
-                                    Arti: <em>{ex.indonesianMeaning}</em> — {ex.contextNote}
-                                </p>
-
-                                <XRaySentence
-                                    sentence={ex.sentence}
-                                    contextLabel={ex.register}
-                                    tokens={ex.xrayTokens}
-                                />
-                            </div>
-                        ))}
-                    </div>
-                </section>
-
-                {/* STAGE 5: Kondisi Spesial & Pengecualian */}
-                <section className="space-y-3">
-                    <div className="flex items-center gap-2.5">
-                        <span className="flex h-7 w-7 items-center justify-center rounded-xl bg-rose-600 text-xs font-extrabold text-white">
-                            5
-                        </span>
-                        <h3 className="flex items-center gap-2 text-base font-extrabold text-slate-900">
-                            <AlertTriangle className="h-4 w-4 text-rose-600" />
-                            Kondisi Spesial & Pengecualian
-                        </h3>
-                    </div>
-
-                    <div className="space-y-3">
-                        {topic.specialExceptions.map((exc, idx) => (
-                            <div
-                                key={idx}
-                                className="space-y-3 rounded-2xl border border-rose-100 bg-rose-50/40 p-5"
-                            >
-                                <h4 className="text-sm font-extrabold text-slate-900">
-                                    {exc.title}
-                                </h4>
-                                <p className="text-xs leading-relaxed text-slate-700">
-                                    {exc.ruleDetail}
-                                </p>
-                                <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
-                                    <div className="rounded-xl border border-rose-200 bg-white/90 p-3 text-xs text-rose-900">
-                                        <span className="mb-1 flex items-center gap-1 font-bold text-rose-700">
-                                            <XCircle className="h-3.5 w-3.5" /> Kurang Tepat:
-                                        </span>
-                                        {exc.wrongExample}
-                                    </div>
-                                    <div className="rounded-xl border border-emerald-200 bg-white/90 p-3 text-xs text-emerald-900">
-                                        <span className="mb-1 flex items-center gap-1 font-bold text-emerald-700">
-                                            <CheckCircle2 className="h-3.5 w-3.5" /> Tepat & Alami:
-                                        </span>
-                                        {exc.correctExample}
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </section>
-
-                {/* STAGE 6: Tips & Tricks */}
-                <section className="rounded-2xl border border-amber-200/80 bg-linear-to-r from-amber-50/80 to-orange-50/40 p-5 space-y-2.5">
-                    <p className="flex items-center gap-2 text-xs font-extrabold tracking-wide text-amber-800 uppercase">
-                        <Lightbulb className="h-4 w-4 text-amber-600" />
-                        Tahap 6 • Tips & Tricks Praktis
-                    </p>
-                    <ul className="space-y-1.5 text-sm leading-relaxed text-slate-700">
-                        {topic.tipsAndTricks.map((tip, idx) => (
-                            <li key={idx}>• {tip}</li>
-                        ))}
-                    </ul>
-                </section>
-            </article>
+            )}
         </div>
     );
 }

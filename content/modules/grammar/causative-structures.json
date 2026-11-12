@@ -1,0 +1,171 @@
+{
+    "id": "prof-gram-causative",
+    "slug": "causative-structures",
+    "tier": "proficient",
+    "category": "grammar",
+    "layoutVariant": "comparative-split",
+    "order": 23,
+    "title": "Causative Constructions: Delegating & Orchestrating Actions (Have, Get, Make, Let)",
+    "subtitle": "CEFR C1–C2 • Active Agent Causatives vs. Passive Service Causatives",
+    "estimatedMinutes": 20,
+    "topics": [
+        {
+            "id": "active-causatives",
+            "badgeNumber": 1,
+            "colSpan": "half",
+            "tags": [
+                "Causatives",
+                "Delegation"
+            ],
+            "title": "1. Active Causatives (Have + Person + V1 vs. Get + Person + To V1)",
+            "subtitle": "Delegating Tasks vs. Persuading Someone to Act",
+            "explanation": "Digunakan ketika kamu tidak melakukan pekerjaan itu sendiri, melainkan meminta, menugaskan, atau meyakinkan orang lain untuk melakukannya. 'Have someone do X' berarti memberi tugas secara profesional; 'Get someone to do X' berarti membujuk atau meyakinkan; 'Make someone do X' berarti mewajibkan.",
+            "rationale": "Dalam manajemen proyek dan kepemimpinan tim, kita jarang mengerjakan semuanya sendiri—struktur causative mengomunikasikan pendelegasian secara akurat.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "S + have / make + [Person] + V1  |  S + get + [Person] + to + V1"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "S + didn't have / make + [Person] + V1  |  didn't get + [Person] + to + V1"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "How did you get + [Person] + to + V1?  |  Did you have + [Person] + V1?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "TEAM DELEGATION & PERSUASION",
+                    "register": "Workplace",
+                    "positive": "I'll have our DevOps engineer configure the SSL certificate, and we got the client to approve the scope.",
+                    "negative": "We didn't make the junior developers work overtime during the release.",
+                    "question": "How did you get the legacy system to sync with the new webhook?",
+                    "nuanceNote": "Perhatikan perbedaan struktur: 'have [person] configure' (tanpa to), tetapi 'get [person] to approve' (memakai to).",
+                    "xrayTokens": [
+                        {
+                            "word": "have our DevOps engineer configure",
+                            "role": "Active Delegative Causative",
+                            "nuance": "'Have + Agent + Bare V1' menandakan pendelegasian tugas",
+                            "colorTag": "verb"
+                        },
+                        {
+                            "word": "got the client to approve",
+                            "role": "Persuasive Causative",
+                            "nuance": "'Get + Agent + To-Infinitive' berarti berhasil meyakinkan",
+                            "colorTag": "hack"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Jangan Menyisipkan 'To' Setelah 'Make' atau 'Let' Aktif",
+                    "explanation": "'Make someone do' dan 'Let someone do' selalu memakai V1 murni tanpa 'to'.",
+                    "wrongExample": "The new linter makes us to write cleaner code.",
+                    "correctExample": "The new linter makes us write cleaner code."
+                }
+            ],
+            "tipsAndTricks": [
+                "Ingat aturan 'TO': hanya 'GET + orang' yang memakai 'to + V1' (get him to sign). 'Have', 'Make', dan 'Let' semuanya tanpa 'to'."
+            ]
+        },
+        {
+            "id": "passive-causatives",
+            "badgeNumber": 2,
+            "colSpan": "half",
+            "tags": [
+                "Causatives",
+                "Passive Service"
+            ],
+            "title": "2. Passive Causatives (Have / Get + Something + Verb-3)",
+            "subtitle": "Arranging Services & Outcomes Without Naming the Agent",
+            "explanation": "Digunakan ketika fokusnya adalah benda atau sistem yang diproses oleh pihak lain/profesional, tanpa perlu menyebut siapa yang mengerjakannya (have the contract reviewed, get the server upgraded).",
+            "rationale": "Jika kamu berkata 'I repaired my laptop', artinya kamu membongkarnya sendiri. Jika kamu berkata 'I had my laptop repaired', artinya kamu membawanya ke teknisi profesional.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "Subject + have / get + [Object / Thing] + Verb-3 (Past Participle)"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "Subject + haven't had / didn't get + [Object / Thing] + Verb-3"
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Where did you get / have + [Object / Thing] + Verb-3?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "AUDITS, REVIEWS & SERVICES",
+                    "register": "Workplace",
+                    "positive": "We had the smart contract audited by an external security firm.",
+                    "negative": "I haven't gotten my passport renewed yet.",
+                    "question": "Did you get the translation proofread by a native speaker?",
+                    "nuanceNote": "'Get + Object + V3' sedikit lebih kasual dan dinamis dibandingkan 'Have + Object + V3' yang lebih formal.",
+                    "xrayTokens": [
+                        {
+                            "word": "had the smart contract audited",
+                            "role": "Passive Service Causative",
+                            "nuance": "'Have + Object + V3' menunjukkan pekerjaan dilakukan oleh pihak ahli",
+                            "colorTag": "subject"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Urutan Kata Menentukan Makna Total",
+                    "explanation": "'I had washed the car' (Past Perfect: aku sendiri yang mencuci mobil) vs. 'I had the car washed' (Passive Causative: aku menyuruh pencuci mobil mencucinya).",
+                    "wrongExample": "I had repaired my phone at the service center.",
+                    "correctExample": "I had my phone repaired at the service center."
+                }
+            ],
+            "tipsAndTricks": [
+                "Gunakan pola 'Let's get this [deployed / reviewed / merged]' sebagai ekspresi sehari-hari yang sangat alami di tim engineering."
+            ]
+        }
+    ],
+    "practiceQuiz": [
+        {
+            "id": "q-prof-caus-01",
+            "topicId": "passive-causatives",
+            "scenario": {
+                "setting": "Rapat Kesiapan Peluncuran Produk",
+                "interlocutor": "Investor menanyakan apakah dokumen kontrak sudah diperiksa oleh konsultan hukum",
+                "intent": "Menyatakan bahwa dokumen tersebut telah diperiksakan ke tim legal eksternal."
+            },
+            "question": "Kalimat mana yang paling akurat menyampaikan bahwa pihak luar yang memeriksa kontrak tersebut?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "We had reviewed the contract by a corporate lawyer.",
+                    "isCorrect": false
+                },
+                {
+                    "id": "b",
+                    "text": "We had the contract reviewed by a corporate lawyer.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "c",
+                    "text": "We had the contract review by a corporate lawyer.",
+                    "isCorrect": false
+                }
+            ],
+            "deepExplanation": {
+                "whyCorrect": "Pola Passive Causative meletakkan objek ('the contract') di antara 'had' dan Verb-3 ('reviewed').",
+                "whyOthersFail": "Opsi A berarti kami sendiri yang mereview, dan Opsi C memakai V1 alih-alih V3.",
+                "realLifeHack": "Rumus cepat jasa profesional: 'Have/Get + [Benda] + [Verb-3]'."
+            }
+        }
+    ]
+}

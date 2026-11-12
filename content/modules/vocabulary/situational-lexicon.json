@@ -1,0 +1,165 @@
+{
+    "id": "lab-vocab-lexicon",
+    "slug": "situational-lexicon",
+    "tier": "intermediate",
+    "category": "vocabulary",
+    "layoutVariant": "comparative-split",
+    "order": 27,
+    "title": "Thematic Lexicon & Idioms: Tech Engineering, Travel & Idiomatic Metaphors",
+    "subtitle": "Cross-Level Lab (A2 → C1) • High-Frequency Collocations & Native Expressions",
+    "estimatedMinutes": 20,
+    "topics": [
+        {
+            "id": "tech-workplace-collocations",
+            "badgeNumber": 1,
+            "colSpan": "half",
+            "tags": [
+                "Lexicon",
+                "Tech & Workplace"
+            ],
+            "title": "1. Tech & Product Engineering Collocations",
+            "subtitle": "Natural Verb-Noun Pairings Used by Global Engineering Teams",
+            "explanation": "Menguasai kosakata bukan sekadar menghafal satu kata terpisah, melainkan menghafal pasangan kata yang selalu muncul bersamaan (collocations): bottleneck, edge case, trade-off, boilerplate, technical debt, troubleshoot.",
+            "rationale": "Menggunakan istilah industri yang tepat membuat penjelasanmu langsung dipahami oleh engineer, desainer, maupun product manager internasional tanpa perlu berputar-putar.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "[troubleshoot / reproduce / mitigate] + [a bug / bottleneck / edge case]"
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "We shouldn't accumulate [technical debt] just to [ship a quick workaround]."
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Were you able to [reproduce the issue] in the staging environment?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "DEBUGGING & PRODUCT DELIVERY",
+                    "register": "Workplace",
+                    "positive": "We identified the database bottleneck and shipped a hotfix within an hour.",
+                    "negative": "We couldn't reproduce the edge case on desktop browsers.",
+                    "question": "What are the main trade-offs between server rendering and static caching here?",
+                    "nuanceNote": "'Bottleneck' berarti titik penyempitan yang memperlambat seluruh aliran sistem.",
+                    "xrayTokens": [
+                        {
+                            "word": "identified the database bottleneck",
+                            "role": "Domain Collocation",
+                            "nuance": "Istilah standar internasional untuk sumber perlambatan sistem",
+                            "colorTag": "subject"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "'Fix a Bug' vs. 'Solve a Problem'",
+                    "explanation": "Dalam bahasa Inggris, kita berkata 'fix a bug/error' dan 'solve a problem/challenge'—jangan menukar pasangannya (*solve a bug).",
+                    "wrongExample": "I spent two hours solving a CSS bug.",
+                    "correctExample": "I spent two hours fixing a CSS bug (or troubleshooting a layout issue)."
+                }
+            ],
+            "tipsAndTricks": [
+                "Gunakan 'workaround' untuk solusi sementara yang cepat saat bug utama masih diinvestigasi."
+            ]
+        },
+        {
+            "id": "idiomatic-expressions-work-life",
+            "badgeNumber": 2,
+            "colSpan": "half",
+            "tags": [
+                "Idioms",
+                "Natural Fluency"
+            ],
+            "title": "2. High-Utility Workplace & Daily Idioms",
+            "subtitle": "Decoding Figurative Expressions Without Literal Confusion",
+            "explanation": "Idiom adalah ungkapan yang maknanya tidak bisa ditebak dari arti kata per kata: 'on the same page' (sepaham), 'call it a day' (mengakhiri pekerjaan hari ini), 'from scratch' (dari nol), 'cut corners' (mengambil jalan pintas yang mengurangi kualitas).",
+            "rationale": "Memahami idiom membuatmu tidak bingung saat menonton film tanpa subtitle maupun saat rapat dengan penutur asli.",
+            "formulas": [
+                {
+                    "polarity": "positive",
+                    "symbol": "(+)",
+                    "pattern": "Let's make sure we're [on the same page] before we [build it from scratch]."
+                },
+                {
+                    "polarity": "negative",
+                    "symbol": "(-)",
+                    "pattern": "We never [cut corners] when it comes to user data security."
+                },
+                {
+                    "polarity": "question",
+                    "symbol": "(?)",
+                    "pattern": "Shall we [call it a day] and pick this up tomorrow morning?"
+                }
+            ],
+            "conditionalExamples": [
+                {
+                    "conditionTitle": "TEAM ALIGNMENT & WRAPPING UP",
+                    "register": "Daily Life",
+                    "positive": "We built the design system from scratch, and now everyone is on the same page.",
+                    "negative": "Don't cut corners on error handling just to finish early.",
+                    "question": "We've covered all agenda items—shall we call it a day?",
+                    "nuanceNote": "'Call it a day' digunakan secara positif saat pekerjaan hari itu sudah cukup dan tim siap beristirahat.",
+                    "xrayTokens": [
+                        {
+                            "word": "on the same page",
+                            "role": "Idiomatic Prepositional Phrase",
+                            "nuance": "Bermakna memiliki pemahaman dan kesepakatan yang sama",
+                            "colorTag": "hack"
+                        }
+                    ]
+                }
+            ],
+            "specialExceptions": [
+                {
+                    "title": "Gunakan Idiom Secukupnya (1–2 per Percakapan)",
+                    "explanation": "Memaksakan terlalu banyak idiom dalam satu paragraf terdengar tidak alami. Gunakan hanya idiom yang benar-benar relevan dengan konteks.",
+                    "wrongExample": "Let's bite the bullet, hit the nail on the head, and call it a day from scratch.",
+                    "correctExample": "Let's sync for five minutes to make sure we're on the same page."
+                }
+            ],
+            "tipsAndTricks": [
+                "Tiga idiom paling aman untuk dunia kerja global: 'on the same page' (sepaham), 'from scratch' (dari nol), dan 'touch base' (berkoordinasi singkat)."
+            ]
+        }
+    ],
+    "practiceQuiz": [
+        {
+            "id": "q-lab-voc-01",
+            "topicId": "idiomatic-expressions-work-life",
+            "scenario": {
+                "setting": "Akhir Sesi Kerja Kelompok",
+                "interlocutor": "Rekan tim bertanya apakah kita lanjut lembur atau berhenti dulu sampai besok pagi",
+                "intent": "Mengajak tim menyudahi pekerjaan hari ini karena target harian sudah tercapai."
+            },
+            "question": "Idiom mana yang paling tepat digunakan?",
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Let's cut corners and continue tomorrow.",
+                    "isCorrect": false
+                },
+                {
+                    "id": "b",
+                    "text": "Let's call it a day and pick this up tomorrow morning.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "c",
+                    "text": "Let's build it from scratch tomorrow morning.",
+                    "isCorrect": false
+                }
+            ],
+            "deepExplanation": {
+                "whyCorrect": "'Call it a day' berarti menyepakati untuk mengakhiri aktivitas kerja hari ini.",
+                "whyOthersFail": "'Cut corners' bermakna negatif (mengurangi kualitas demi cepat), dan 'from scratch' berarti mengulang dari nol.",
+                "realLifeHack": "Pasangkan 'call it a day' dengan 'pick this up tomorrow' (melanjutkan kembali besok)."
+            }
+        }
+    ]
+}
